@@ -24,6 +24,16 @@ The algorithm iteratively repeats the following three stages -
 2. `Augmentation`: The path on which the trees touch is augmented and the trees are broken into forest.
 3. `Adpotion`: Trees are restored by removing or reattaching the orphan nodes.
 
-### • __`Growth` Stage__
+### • `Growth` Stage
 
-At this stage, the search trees (S and T) expand. The active nodes explore the adjecent non-saturated edges and acquire new children from a set of free nodes. The newly acquired nodes become active nodes of the tree. When all neighbours of an active node are explored, the active node becomes passive. The growth stage terminates when the two trees touch.
+At this stage, the search trees (S and T) expand. The active nodes explore the adjecent non-saturated edges and acquire new children from a set of free nodes. The newly acquired nodes become active nodes of the tree. When all neighbours of an active node are explored, the active node becomes passive. The growth stage terminates when the two trees touch. The path fromed from source `s` to sink `t` fromed when the trees touch is passed to augmentation stage.
+
+### • `Augmentation` Stage
+
+This stage augments the path found in the growth stage. A flow is sent along the connecting path. Since the largest possible flow is sent, some edge(s) become saturated. The nodes which have saturated link to their parent node are referred to `orphans`. The orphan nodes are no longer available for passing more flow, hence splitting the trees into forest by making the orphan nodes as root nodes. 
+
+### • `Adpotion` Stage
+
+This stage fixes the forest to restore the single-tree structure of sets S and T with roots in the source and sink. This is done by finding new valid parent nodes for each orphan. The new parent should belong to the same set (S or T) as the orphan and should be connected through an unsaturated edge. If there is no qualifying parent, the orphan is removed from the set making it a free node and all its children become orphan nodes. This stage terminates when there are no orphan nodes remaining, restoring the S and T trees in the process. 
+
+After the Adoption stage, the algorithm return to the growth stage. The algorithm terminates when search trees S and T cannot grow, i.e., there are no active nodes, and the trees are separated by saturated edges. This implies the maximum flow is achieved.
