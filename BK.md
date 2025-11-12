@@ -24,6 +24,6 @@ The algorithm iteratively repeats the following three stages -
 2. `Augmentation`: The path on which the trees touch is augmented and the trees are broken into forest.
 3. `Adpotion`: Trees are restored by removing or reattaching the orphan nodes.
 
-### * __`Growth` Stage__
+### • __`Growth` Stage__
 
 At this stage, the search trees (S and T) expand. The active nodes explore the adjecent non-saturated edges and acquire new children from a set of free nodes. The newly acquired nodes become active nodes of the tree. When all neighbours of an active node are explored, the active node becomes passive. The growth stage terminates when the two trees touch.
