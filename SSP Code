@@ -13,9 +13,9 @@ Repeat: Go back to Step 2 and continue until no more paths from s to t can be fo
 Key Characteristic: SSP guarantees that the final flow is both the maximum possible and is achieved at the minimum possible cost.
 
 Code ::
-import collections
 
 # A simplified SSP implementation using Bellman-Ford for handling potential negative costs
+import collections
 def min_cost_max_flow_ssp(graph, source, sink, capacity_key='capacity', cost_key='cost', flow_key='flow'):
     """
     Computes Min-Cost Max-Flow using the Successive Shortest Path algorithm (Bellman-Ford variant).
@@ -39,7 +39,7 @@ def min_cost_max_flow_ssp(graph, source, sink, capacity_key='capacity', cost_key
         #   parent: stores (u, v) for path reconstruction
         dist = {node: float('inf') for node in residual}
         parent = {node: None for node in residual}
-dist[source] = 0
+        dist[source] = 0
         
         # Bellman-Ford passes (V-1 times)
         V = len(residual)
@@ -72,7 +72,7 @@ dist[source] = 0
             path_flow = min(path_flow, residual[prev][curr]['residual_capacity'])
             curr = prev
 
- # 4. Augment flow and update cost
+        # 4. Augment flow and update cost
         max_flow += path_flow
         min_cost += path_flow * dist[sink]
         
@@ -92,15 +92,15 @@ dist[source] = 0
     return max_flow, min_cost
 
 # Example usage structure:
-# graph_data = {
-#     's': {'a': {'capacity': 10, 'cost': 1}, 'c': {'capacity': 5, 'cost': 5}},
-#     'a': {'b': {'capacity': 8, 'cost': 2}},
-#     'c': {'d': {'capacity': 5, 'cost': 1}},
-#     'b': {'t': {'capacity': 10, 'cost': 1}},
-#     'd': {'t': {'capacity': 5, 'cost': 1}}
-# }
-# flow, cost = min_cost_max_flow_ssp(graph_data, 's', 't')
-# print(f"Max Flow: {flow}, Min Cost: {cost}")
+graph_data = {
+    's': {'a': {'capacity': 10, 'cost': 1}, 'c': {'capacity': 5, 'cost': 5}},
+    'a': {'b': {'capacity': 8, 'cost': 2}},
+    'c': {'d': {'capacity': 5, 'cost': 1}},
+    'b': {'t': {'capacity': 10, 'cost': 1}},
+    'd': {'t': {'capacity': 5, 'cost': 1}}
+}
+flow, cost = min_cost_max_flow_ssp(graph_data, 's', 't')
+print(f"Max Flow: {flow}, Min Cost: {cost}")
 
 # Results And TC , SC are included in ,docx not in this since it was in tabuler format .
 
