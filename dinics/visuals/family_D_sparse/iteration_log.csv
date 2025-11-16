@@ -1,0 +1,2 @@
+iteration,bfs_time,dfs_time,flow_added,total_flow_after,num_augmenting_paths
+1,0.000005,0.000005,4,4,1

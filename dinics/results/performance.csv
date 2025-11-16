@@ -1,0 +1,10 @@
+graph_filename,family,n,m,seed,trial,max_flow,total_time,bfs_time_total,dfs_time_total,num_iterations,num_augmenting_paths
+sample1.txt,,6,10,0,0,17,1.532674,0.000017,0.000028,2,4
+sample1.txt,sample,6,10,0,0,17,1.490966,0.000021,0.000033,2,4
+sample2.txt,sample,8,14,0,0,15,1.761619,0.000012,0.000029,2,4
+sample3.txt,sample,10,18,0,0,14,1.452518,0.000007,0.000017,1,3
+family_A_layered.txt,layered,6,7,0,0,14,1.000963,0.000006,0.000017,1,3
+family_B_crosslinked.txt,crosslinked,6,9,0,0,15,1.449793,0.000006,0.000025,1,4
+family_C_dense.txt,dense,6,11,0,0,18,1.527008,0.000013,0.000027,2,4
+family_D_sparse.txt,sparse,6,5,0,0,4,0.256648,0.000005,0.000011,1,1
+family_E_bidirectional.txt,bidirectional,6,10,0,0,11,0.709796,0.000006,0.000012,1,2
