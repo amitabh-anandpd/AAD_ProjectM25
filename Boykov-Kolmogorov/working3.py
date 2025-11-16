@@ -9,7 +9,7 @@ import warnings
 warnings.filterwarnings("ignore", category=RuntimeWarning)
 
 # ---------------- Load and resize ----------------
-path = "relevant.jpeg"
+path = "path/to/image.jpg"  # replace with your image path
 img = Image.open(path).convert("RGB")
 # resize to speed up
 scale = 512 / max(img.size)
