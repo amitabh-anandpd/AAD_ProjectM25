@@ -37,3 +37,63 @@ This stage augments the path found in the growth stage. A flow is sent along the
 This stage fixes the forest to restore the single-tree structure of sets S and T with roots in the source and sink. This is done by finding new valid parent nodes for each orphan. The new parent should belong to the same set (S or T) as the orphan and should be connected through an unsaturated edge. If there is no qualifying parent, the orphan is removed from the set making it a free node and all its children become orphan nodes. This stage terminates when there are no orphan nodes remaining, restoring the S and T trees in the process. 
 
 After the Adoption stage, the algorithm return to the growth stage. The algorithm terminates when search trees S and T cannot grow, i.e., there are no active nodes, and the trees are separated by saturated edges. This implies the maximum flow is achieved.
+
+```pseudocode
+Input: Graph with nodes, edges, Source S, Sink T
+
+Initialize:
+    Label all nodes as FREE (unassigned)
+    Label S as SOURCE-TREE
+    Label T as SINK-TREE
+    Add S and T to ACTIVE queue
+
+    parent[node] = None for all nodes
+
+Loop:
+    1. GROW TREES
+        While ACTIVE not empty:
+            take node p from ACTIVE
+
+            for each neighbor q of p:
+                if residual capacity(p → q) > 0:
+                    if q is FREE:
+                        label q with same tree as p
+                        parent[q] = p
+                        add q to ACTIVE
+
+                    else if q belongs to the opposite tree:
+                        # Trees meet → we found a path from S to T
+                        store meeting edge (p, q)
+                        goto AUGMENT
+
+    If no meeting edge found:
+        break   # Trees can’t grow → done
+
+    2. AUGMENT FLOW
+        Build full path:
+            S → ... → p — q ← ... ← T
+
+        Find bottleneck (minimum residual capacity) along path
+
+        Push flow = bottleneck through the path
+        Some edges may become saturated → cause ORPHANS
+
+        Add those ORPHANS to an ORPHAN queue
+
+    3. ADOPTION (fix orphans)
+        For each orphan o:
+            Try to find a new parent in the same tree
+                (a neighbor that can reach the root S or T)
+
+            If found:
+                parent[o] = that neighbor
+            Else:
+                mark o as FREE
+                any children of o (in the tree) become new orphans
+
+Repeat until ACTIVE empty and no meeting edge occurs
+
+Output:
+    All nodes reachable from S in the final residual graph = FOREGROUND
+    All others = BACKGROUND
+```
