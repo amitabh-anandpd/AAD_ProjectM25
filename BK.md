@@ -38,6 +38,7 @@ This stage fixes the forest to restore the single-tree structure of sets S and T
 
 After the Adoption stage, the algorithm return to the growth stage. The algorithm terminates when search trees S and T cannot grow, i.e., there are no active nodes, and the trees are separated by saturated edges. This implies the maximum flow is achieved.
 
+## 3. Pseudocode
 ```pseudocode
 Input: Graph with nodes, edges, Source S, Sink T
 
@@ -97,3 +98,12 @@ Output:
     All nodes reachable from S in the final residual graph = FOREGROUND
     All others = BACKGROUND
 ```
+
+## 4. Time Complexity of Boykov-Kolmogorov Algorithm
+### Worst-Case Time Complexity
+$$
+T = O(mn^2|C|)
+$$
+Where `n` is the number of nodes, `m` is the number of edges, and `|C|` is the cost of the minimum cut.
+In an image - 
+* $`n = H * W + 2`$
