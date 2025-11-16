@@ -105,7 +105,8 @@ Output:
 T = O(mn^2|C|)
 ```
 Where `n` is the number of nodes, `m` is the number of edges, and `|C|` is the cost of the minimum cut.
+
 In an image - 
 * $`n = H \times W + 2`$
-* $`m \apeq 4 \times H \times W`$
+* $`m \approx 4 \times H \times W`$
 * |C| does not scale directly with H or W
