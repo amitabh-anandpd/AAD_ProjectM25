@@ -1,0 +1,65 @@
+2025-11-13 16:38:23,485 - INFO - Starting Push-Relabel algorithm: source=0 sink=5
+2025-11-13 16:38:23,485 - INFO - Preflow initialized in 0.000012s
+2025-11-13 16:38:32,658 - INFO - Algorithm complete. Max flow: 17 in 8.768744s (pushes=25, relabels=16)
+2025-11-13 16:39:14,904 - INFO - ============================================================
+2025-11-13 16:39:14,904 - INFO - Starting Push-Relabel batch experiments
+2025-11-13 16:39:14,904 - INFO - ============================================================
+2025-11-13 16:39:14,904 - INFO - 
+--- Running Sample Graphs ---
+2025-11-13 16:39:14,904 - INFO - 
+Processing: sample1.txt (source=0, sink=5)
+2025-11-13 16:39:15,371 - INFO - Starting Push-Relabel algorithm: source=0 sink=5
+2025-11-13 16:39:15,371 - INFO - Preflow initialized in 0.000014s
+2025-11-13 16:39:24,586 - INFO - Algorithm complete. Max flow: 17 in 8.782044s (pushes=25, relabels=16)
+2025-11-13 16:39:24,586 - INFO -   ✓ Completed: max_flow=17, runtime=8.782044s
+2025-11-13 16:39:24,586 - INFO - 
+Processing: sample2.txt (source=0, sink=7)
+2025-11-13 16:39:25,056 - INFO - Starting Push-Relabel algorithm: source=0 sink=7
+2025-11-13 16:39:25,056 - INFO - Preflow initialized in 0.000011s
+2025-11-13 16:39:32,420 - INFO - Algorithm complete. Max flow: 15 in 6.925454s (pushes=20, relabels=11)
+2025-11-13 16:39:32,421 - INFO -   ✓ Completed: max_flow=15, runtime=6.925454s
+2025-11-13 16:39:32,421 - INFO - 
+Processing: sample3.txt (source=0, sink=9)
+2025-11-13 16:39:32,902 - INFO - Starting Push-Relabel algorithm: source=0 sink=9
+2025-11-13 16:39:32,902 - INFO - Preflow initialized in 0.000006s
+2025-11-13 16:39:45,897 - INFO - Algorithm complete. Max flow: 14 in 12.509136s (pushes=33, relabels=19)
+2025-11-13 16:39:45,897 - INFO -   ✓ Completed: max_flow=14, runtime=12.509136s
+2025-11-13 16:39:45,898 - INFO - 
+--- Running Family Graphs ---
+2025-11-13 16:39:45,898 - INFO - 
+Processing: family_A_layered.txt (family=layered)
+2025-11-13 16:39:46,283 - INFO - Starting Push-Relabel algorithm: source=0 sink=5
+2025-11-13 16:39:46,283 - INFO - Preflow initialized in 0.000006s
+2025-11-13 16:39:48,588 - INFO - Algorithm complete. Max flow: 14 in 1.928800s (pushes=6, relabels=5)
+2025-11-13 16:39:48,588 - INFO -   ✓ Completed: max_flow=14, runtime=1.928800s
+2025-11-13 16:39:48,588 - INFO - 
+Processing: family_B_crosslinked.txt (family=crosslinked)
+2025-11-13 16:39:49,068 - INFO - Starting Push-Relabel algorithm: source=0 sink=5
+2025-11-13 16:39:49,068 - INFO - Preflow initialized in 0.000006s
+2025-11-13 16:39:51,461 - INFO - Algorithm complete. Max flow: 15 in 2.000305s (pushes=7, relabels=5)
+2025-11-13 16:39:51,461 - INFO -   ✓ Completed: max_flow=15, runtime=2.000305s
+2025-11-13 16:39:51,461 - INFO - 
+Processing: family_C_dense.txt (family=dense)
+2025-11-13 16:39:51,884 - INFO - Starting Push-Relabel algorithm: source=0 sink=5
+2025-11-13 16:39:51,884 - INFO - Preflow initialized in 0.000009s
+2025-11-13 16:39:55,797 - INFO - Algorithm complete. Max flow: 18 in 3.477609s (pushes=11, relabels=7)
+2025-11-13 16:39:55,798 - INFO -   ✓ Completed: max_flow=18, runtime=3.477609s
+2025-11-13 16:39:55,798 - INFO - 
+Processing: family_D_sparse.txt (family=sparse)
+2025-11-13 16:39:56,166 - INFO - Starting Push-Relabel algorithm: source=0 sink=5
+2025-11-13 16:39:56,166 - INFO - Preflow initialized in 0.000006s
+2025-11-13 16:39:59,473 - INFO - Algorithm complete. Max flow: 4 in 2.949091s (pushes=10, relabels=7)
+2025-11-13 16:39:59,474 - INFO -   ✓ Completed: max_flow=4, runtime=2.949091s
+2025-11-13 16:39:59,474 - INFO - 
+Processing: family_E_bidirectional.txt (family=bidirectional)
+2025-11-13 16:39:59,953 - INFO - Starting Push-Relabel algorithm: source=0 sink=5
+2025-11-13 16:39:59,954 - INFO - Preflow initialized in 0.000006s
+2025-11-13 16:40:02,396 - INFO - Algorithm complete. Max flow: 11 in 2.038437s (pushes=5, relabels=5)
+2025-11-13 16:40:02,396 - INFO -   ✓ Completed: max_flow=11, runtime=2.038437s
+2025-11-13 16:40:02,396 - INFO - 
+============================================================
+2025-11-13 16:40:02,396 - INFO - Batch experiments complete!
+2025-11-13 16:40:02,396 - INFO - ============================================================
+2025-11-13 16:40:02,396 - INFO - 
+Results saved to: /home/sami/Desktop/courseProjAAD/Sami_PushRelabel/algorithms/push_relabel/results
+2025-11-13 16:40:02,396 - INFO - Run 'python code/analyze.py' to generate analysis plots
