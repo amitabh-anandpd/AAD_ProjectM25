@@ -101,9 +101,9 @@ Output:
 
 ## 4. Time Complexity of Boykov-Kolmogorov Algorithm
 ### Worst-Case Time Complexity
-$$
+```math
 T = O(mn^2|C|)
-$$
+```
 Where `n` is the number of nodes, `m` is the number of edges, and `|C|` is the cost of the minimum cut.
 In an image - 
 * $`n = H * W + 2`$
