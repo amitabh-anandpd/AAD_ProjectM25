@@ -1,23 +1,9 @@
 """
-Advanced graph generator for Dinic experiments.
+Final Optimized Graph Generator.
 
-This generator produces 4 families x 2 modes x N graphs each:
-  families: general, unitcap, simple, worst
-  modes: V (constant edges, increasing vertices), E (constant vertices, increasing edges)
-
-Output folders (under project root):
-  general_v/, general_e/, unitcap_v/, unitcap_e/, simple_v/, simple_e/, worst_v/, worst_e/
-
-Each graph is saved as: graph_<family>_<mode>_<number>.txt
-
-All graphs satisfy:
- - directed edges allowed
- - no self-loops
- - no duplicate edges
- - guaranteed s->t path (validated)
- - source = 0, sink = n-1
-
-Reproducibility: uses random.seed(1000 + i) per graph.
+Fixes:
+1. Performance: Pre-calculates edge pools for constant-N batches (fixes 'general_e' lag).
+2. Cycles: Adds option to force DAGs (Directed Acyclic Graphs) to debug Dinic loops.
 """
 import os
 import random
@@ -26,21 +12,100 @@ from typing import List, Tuple, Set
 from collections import deque
 
 # ---------------------------------------------------------------------------
-# Global parameters (updated as requested)
+# Global parameters
 # ---------------------------------------------------------------------------
-NUM_GRAPHS_PER_MODE = 20
-BASE_VERTICES_V = 80       # starting vertices for V-mode
-BASE_EDGES_E = 300         # starting edges for E-mode
+NUM_GRAPHS_PER_MODE = 200
+BASE_VERTICES_V = 120
+BASE_EDGES_E = 500
 VERTEX_INCREMENT = 20
-EDGE_INCREMENT = 100
-CONSTANT_EDGES_V = 300     # edges used in V-mode (constant)
-CONSTANT_VERTICES_E = 150  # vertices used in E-mode (constant)
+EDGE_INCREMENT = 200
+CONSTANT_EDGES_V = 1000
+CONSTANT_VERTICES_E = 500
 BASE_SEED = 1000
 
-# Capacity ranges are handled inside family constructors where appropriate.
+# SET THIS TO TRUE if you want to prevent cycles (A->B->A)
+# Useful if your Dinic algorithm is getting stuck in infinite recursion.
+DAG_MODE = True
 
 # ---------------------------------------------------------------------------
-# Helpers
+# Fast Pool Helpers
+# ---------------------------------------------------------------------------
+
+def get_all_possible_edges(n: int, is_dag: bool) -> List[Tuple[int, int]]:
+    """Generates all possible pairs (u, v) efficiently."""
+    pool = []
+    if is_dag:
+        # Only allow u -> v where u < v (Strict DAG)
+        for u in range(n):
+            for v in range(u + 1, n):
+                pool.append((u, v))
+    else:
+        # Allow cycles, just no self-loops
+        for u in range(n):
+            for v in range(n):
+                if u != v:
+                    pool.append((u, v))
+    return pool
+
+def get_edges_from_pool(n: int, current_edges: List[Tuple[int, int, int]], 
+                        target_total: int, capacity_fn, 
+                        precomputed_pool: List[Tuple[int, int]] = None) -> List[Tuple[int, int, int]]:
+    """
+    Super-fast sampling using list comprehension and set subtraction.
+    """
+    if len(current_edges) >= target_total:
+        return current_edges
+
+    needed = target_total - len(current_edges)
+    existing_set = set((u, v) for u, v, _ in current_edges)
+
+    # Use precomputed pool if available (fastest), otherwise generate on fly
+    source_pool = precomputed_pool if precomputed_pool else get_all_possible_edges(n, DAG_MODE)
+
+    # Fast filtering: Python list comprehension is optimized in C
+    available = [pair for pair in source_pool if pair not in existing_set]
+
+    if len(available) < needed:
+        needed = len(available)
+
+    chosen_pairs = random.sample(available, needed)
+    
+    new_edges = []
+    for u, v in chosen_pairs:
+        new_edges.append((u, v, capacity_fn()))
+        
+    return current_edges + new_edges
+
+# ---------------------------------------------------------------------------
+# Construction Logic
+# ---------------------------------------------------------------------------
+
+def construct_general(n: int, m: int, precomputed_pool=None) -> Tuple[int, List[Tuple[int, int, int]]]:
+    edges = []
+    
+    # 1. Guarantee Path
+    # We create a random path from 0 -> ... -> n-1
+    intermediate = list(range(1, n - 1))
+    random.shuffle(intermediate)
+    
+    # Pick a random path length
+    path_len = random.randint(1, min(len(intermediate), max(2, int(n * 0.2))))
+    path_nodes = [0] + intermediate[:path_len] + [n - 1]
+    
+    # If DAG_MODE is on, we must sort the path nodes to ensure u < v
+    if DAG_MODE:
+        path_nodes.sort()
+        # Ensure 0 is first and n-1 is last (sort handles this naturally as 0 is min, n-1 is max)
+
+    for i in range(len(path_nodes) - 1):
+        u, v = path_nodes[i], path_nodes[i+1]
+        edges.append((u, v, random.randint(1, 100)))
+
+    # 2. Fill remaining
+    return n, get_edges_from_pool(n, edges, m, lambda: random.randint(1, 100), precomputed_pool)
+
+# ---------------------------------------------------------------------------
+# File I/O
 # ---------------------------------------------------------------------------
 
 def save_graph(num_vertices: int, edges: List[Tuple[int, int, int]], output_path: str) -> None:
@@ -50,378 +115,61 @@ def save_graph(num_vertices: int, edges: List[Tuple[int, int, int]], output_path
         for u, v, c in edges:
             f.write(f"{u} {v} {c}\n")
 
-
-def has_path(n: int, edges: List[Tuple[int, int, int]]) -> bool:
-    """Simple BFS to check reachability from 0 to n-1 in directed graph."""
-    adj = [[] for _ in range(n)]
-    for u, v, _ in edges:
-        if 0 <= u < n and 0 <= v < n:
-            adj[u].append(v)
-    src, sink = 0, n - 1
-    q = deque([src])
-    seen = [False] * n
-    seen[src] = True
-    while q:
-        u = q.popleft()
-        if u == sink:
-            return True
-        for w in adj[u]:
-            if not seen[w]:
-                seen[w] = True
-                q.append(w)
-    return False
-
-
-def add_random_edges(n: int, target_edges: int, edges: List[Tuple[int, int, int]],
-                     edge_set: Set[Tuple[int, int]], capacity_fn) -> List[Tuple[int, int, int]]:
-    """Add random edges up to target_edges without duplicates or self-loops.
-
-    capacity_fn: function() -> capacity
-    """
-    attempts = 0
-    max_attempts = max(10000, n * n * 2)
-    while len(edges) < target_edges and attempts < max_attempts:
-        u = random.randrange(0, n)
-        v = random.randrange(0, n)
-        if u == v:
-            attempts += 1
-            continue
-        if (u, v) in edge_set:
-            attempts += 1
-            continue
-        c = capacity_fn()
-        if c <= 0:
-            attempts += 1
-            continue
-        edges.append((u, v, c))
-        edge_set.add((u, v))
-        attempts += 1
-    # truncate if overshot
-    return edges[:target_edges]
-
-
-# ---------------------------------------------------------------------------
-# Family constructors
-# Each returns (n, edges)
-# ---------------------------------------------------------------------------
-
-def construct_general(n: int, m: int) -> Tuple[int, List[Tuple[int, int, int]]]:
-    """General graphs: random edges, capacities in [1,100], ensure s->t path."""
-    edges: List[Tuple[int, int, int]] = []
-    edge_set: Set[Tuple[int, int]] = set()
-
-    # Ensure path: build random path from 0 to n-1
-    if n < 2:
-        raise ValueError("n must be >= 2")
-    intermediate = list(range(1, n - 1))
-    random.shuffle(intermediate)
-    # choose a random length path but include sink
-    path = [0]
-    # ensure at least one intermediate sometimes
-    k = min(len(intermediate), max(0, int(len(intermediate) * 0.2)))
-    path.extend(intermediate[:k])
-    path.append(n - 1)
-    for i in range(len(path) - 1):
-        u, v = path[i], path[i + 1]
-        c = random.randint(1, 100)
-        edges.append((u, v, c))
-        edge_set.add((u, v))
-
-    # Add remaining edges randomly (moderate extra connections)
-    def cap():
-        return random.randint(1, 100)
-
-    edges = add_random_edges(n, m, edges, edge_set, cap)
-    return n, edges
-
-
-def construct_unitcap(n: int, m: int) -> Tuple[int, List[Tuple[int, int, int]]]:
-    """Unit capacity: layered graph, capacities = 1, edges only between adjacent layers."""
-    if n < 2:
-        raise ValueError("n must be >= 2")
-    edges: List[Tuple[int, int, int]] = []
-    edge_set: Set[Tuple[int, int]] = set()
-
-    # Determine number of layers k ~ sqrt(n)
-    k = max(2, int(math.sqrt(n)))
-    # distribute nodes into k layers
-    layers = [[] for _ in range(k)]
-    layers[0].append(0)
-    layers[-1].append(n - 1)
-    mids = list(range(1, n - 1))
-    for idx, v in enumerate(mids):
-        layers[1 + (idx % (k - 2))].append(v)
-
-    # Ensure at least one path: connect one node from each consecutive layer
-    path_nodes = []
-    for L in layers:
-        # pick representative
-        path_nodes.append(L[0])
-    for i in range(len(path_nodes) - 1):
-        u, v = path_nodes[i], path_nodes[i + 1]
-        edges.append((u, v, 1))
-        edge_set.add((u, v))
-
-    # Add extra edges only between adjacent layers
-    attempts = 0
-    max_attempts = max(10000, n * n * 2)
-    while len(edges) < m and attempts < max_attempts:
-        layer_i = random.randrange(0, k - 1)
-        u = random.choice(layers[layer_i])
-        v = random.choice(layers[layer_i + 1])
-        if u == v or (u, v) in edge_set:
-            attempts += 1
-            continue
-        edges.append((u, v, 1))
-        edge_set.add((u, v))
-        attempts += 1
-
-    edges = edges[:m]
-    return n, edges
-
-
-def construct_simple(n: int, m: int) -> Tuple[int, List[Tuple[int, int, int]]]:
-    """Simple: source->middle edges cap=1, middle->sink cap=1, internal random [1,100]"""
-    if n < 3:
-        raise ValueError("n must be >= 3 for simple graphs")
-    edges: List[Tuple[int, int, int]] = []
-    edge_set: Set[Tuple[int, int]] = set()
-
-    source = 0
-    sink = n - 1
-    middle = list(range(1, n - 1))
-
-    deg = max(1, int(math.sqrt(n)))
-    # connect source -> random middle nodes with cap=1
-    src_targets = random.sample(middle, min(deg, len(middle)))
-    for v in src_targets:
-        edges.append((source, v, 1))
-        edge_set.add((source, v))
-
-    # connect random middle nodes -> sink with cap=1
-    sink_sources = random.sample(middle, min(deg, len(middle)))
-    for u in sink_sources:
-        if (u, sink) not in edge_set:
-            edges.append((u, sink, 1))
-            edge_set.add((u, sink))
-
-    # Add internal middle->middle edges with random capacities
-    def cap():
-        return random.randint(1, 100)
-
-    edges = add_random_edges(n, m, edges, edge_set, cap)
-    return n, edges
-
-
-def construct_worst(n: int, m: int) -> Tuple[int, List[Tuple[int, int, int]]]:
-    """Approximate worst-case construction for Dinic: chain + misleading dense part. capacities=1"""
-    if n < 3:
-        raise ValueError("n must be >= 3 for worst graphs")
-    edges: List[Tuple[int, int, int]] = []
-    edge_set: Set[Tuple[int, int]] = set()
-
-    source = 0
-    sink = n - 1
-
-    # Create a long chain (the one usable augmenting path)
-    # chain length roughly n//3
-    chain_len = max(2, n // 3)
-    chain_nodes = [0]
-    # pick chain internal nodes
-    available = list(range(1, n - 1))
-    random.shuffle(available)
-    chain_internal = available[: chain_len - 1]
-    chain_nodes.extend(chain_internal)
-    chain_nodes.append(sink)
-    for i in range(len(chain_nodes) - 1):
-        u, v = chain_nodes[i], chain_nodes[i + 1]
-        edges.append((u, v, 1))
-        edge_set.add((u, v))
-
-    # Add many edges that appear useful but do not shortcut the chain
-    non_chain = [v for v in range(n) if v not in chain_nodes]
-
-    attempts = 0
-    max_attempts = max(20000, n * n * 4)
-    while len(edges) < m and attempts < max_attempts:
-        if random.random() < 0.7 and non_chain:
-            u = random.choice(non_chain)
-            v = random.choice(non_chain + chain_nodes)
-        else:
-            u = random.choice(chain_nodes)
-            v = random.choice(non_chain + chain_nodes)
-        if u == v or (u, v) in edge_set:
-            attempts += 1
-            continue
-        # Avoid direct shortcuts from early chain positions to very late chain nodes
-        if u in chain_nodes and v in chain_nodes:
-            idx_u = chain_nodes.index(u)
-            idx_v = chain_nodes.index(v)
-            if idx_u + 1 < idx_v:
-                if random.random() < 0.8:
-                    attempts += 1
-                    continue
-        edges.append((u, v, 1))
-        edge_set.add((u, v))
-        attempts += 1
-
-    edges = edges[:m]
-    return n, edges
-
-
-# ---------------------------------------------------------------------------
-# Mode generators: each computes n/m and calls family constructors
-# ---------------------------------------------------------------------------
-
 def _write_named_graph(folder: str, family: str, mode: str, i: int, n: int, edges: List[Tuple[int, int, int]]):
-    project_root = os.path.dirname(os.path.dirname(__file__))
+    # Saves to project_root/folder/filename
+    project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     out_dir = os.path.join(project_root, folder)
-    os.makedirs(out_dir, exist_ok=True)
-    familyname = f"{family}_{mode}"
-    # Name format requested: familyname_number (no extra prefix)
-    filename = f"{familyname}_{i}.txt"
+    filename = f"{family}_{mode}_{i}.txt"
     save_graph(n, edges, os.path.join(out_dir, filename))
 
+# ---------------------------------------------------------------------------
+# Main Generators
+# ---------------------------------------------------------------------------
 
-def generate_general_v():
-    folder = "general_v"
-    family = "general"
-    mode = "v"
+def generate_general_batches():
+    # --- Batch 1: Varying Vertices (Cannot precompute pool efficiently) ---
+    print(f"--- Generating general_v (DAG_MODE={DAG_MODE}) ---")
     for i in range(1, NUM_GRAPHS_PER_MODE + 1):
         random.seed(BASE_SEED + i)
         n = BASE_VERTICES_V + (i - 1) * VERTEX_INCREMENT
         m = CONSTANT_EDGES_V
+        
+        # Clip m to max possible edges
+        max_edges = (n * (n - 1)) // 2 if DAG_MODE else n * (n - 1)
+        m = min(m, max_edges)
+
         n_out, edges = construct_general(n, m)
-        edges = edges[:m]
-        familyname = f"{family}_{mode}"
-        if not has_path(n_out, edges):
-            raise ValueError(f"Generated {familyname}_{i} has no valid s->t path")
-        _write_named_graph(folder, family, mode, i, n_out, edges)
+        _write_named_graph("general_v", "general", "v", i, n_out, edges)
+        
+        if i % 50 == 0: print(f"  v-mode: {i}/{NUM_GRAPHS_PER_MODE}")
 
+    # --- Batch 2: Varying Edges (Constant Vertices - Optimized!) ---
+    print(f"--- Generating general_e (DAG_MODE={DAG_MODE}) ---")
+    
+    # PRE-CALCULATE POOL ONCE (Huge Speedup)
+    fixed_n = CONSTANT_VERTICES_E
+    print(f"  Pre-calculating edge pool for N={fixed_n}...")
+    shared_pool = get_all_possible_edges(fixed_n, DAG_MODE)
+    print(f"  Pool ready size={len(shared_pool)}. Starting generation...")
 
-def generate_general_e():
-    folder = "general_e"
-    family = "general"
-    mode = "e"
     for i in range(1, NUM_GRAPHS_PER_MODE + 1):
         random.seed(BASE_SEED + i)
-        n = CONSTANT_VERTICES_E
+        n = fixed_n
         m = BASE_EDGES_E + (i - 1) * EDGE_INCREMENT
-        n_out, edges = construct_general(n, m)
-        edges = edges[:m]
-        familyname = f"{family}_{mode}"
-        if not has_path(n_out, edges):
-            raise ValueError(f"Generated {familyname}_{i} has no valid s->t path")
-        _write_named_graph(folder, family, mode, i, n_out, edges)
-
-
-def generate_unitcap_v():
-    folder = "unitcap_v"
-    family = "unitcap"
-    mode = "v"
-    for i in range(1, NUM_GRAPHS_PER_MODE + 1):
-        random.seed(BASE_SEED + i)
-        n = BASE_VERTICES_V + (i - 1) * VERTEX_INCREMENT
-        m = CONSTANT_EDGES_V
-        n_out, edges = construct_unitcap(n, m)
-        edges = edges[:m]
-        familyname = f"{family}_{mode}"
-        if not has_path(n_out, edges):
-            raise ValueError(f"Generated {familyname}_{i} has no valid s->t path")
-        _write_named_graph(folder, family, mode, i, n_out, edges)
-
-
-def generate_unitcap_e():
-    folder = "unitcap_e"
-    family = "unitcap"
-    mode = "e"
-    for i in range(1, NUM_GRAPHS_PER_MODE + 1):
-        random.seed(BASE_SEED + i)
-        n = CONSTANT_VERTICES_E
-        m = BASE_EDGES_E + (i - 1) * EDGE_INCREMENT
-        n_out, edges = construct_unitcap(n, m)
-        edges = edges[:m]
-        familyname = f"{family}_{mode}"
-        if not has_path(n_out, edges):
-            raise ValueError(f"Generated {familyname}_{i} has no valid s->t path")
-        _write_named_graph(folder, family, mode, i, n_out, edges)
-
-
-def generate_simple_v():
-    folder = "simple_v"
-    family = "simple"
-    mode = "v"
-    for i in range(1, NUM_GRAPHS_PER_MODE + 1):
-        random.seed(BASE_SEED + i)
-        n = BASE_VERTICES_V + (i - 1) * VERTEX_INCREMENT
-        m = CONSTANT_EDGES_V
-        n_out, edges = construct_simple(n, m)
-        edges = edges[:m]
-        familyname = f"{family}_{mode}"
-        if not has_path(n_out, edges):
-            raise ValueError(f"Generated {familyname}_{i} has no valid s->t path")
-        _write_named_graph(folder, family, mode, i, n_out, edges)
-
-
-def generate_simple_e():
-    folder = "simple_e"
-    family = "simple"
-    mode = "e"
-    for i in range(1, NUM_GRAPHS_PER_MODE + 1):
-        random.seed(BASE_SEED + i)
-        n = CONSTANT_VERTICES_E
-        m = BASE_EDGES_E + (i - 1) * EDGE_INCREMENT
-        n_out, edges = construct_simple(n, m)
-        edges = edges[:m]
-        if not has_path(n_out, edges):
-            raise ValueError(f"Generated graph_{family}_{mode}_{i:02d} has no valid s->t path")
-        _write_named_graph(folder, family, mode, i, n_out, edges)
-
-
-def generate_worst_v():
-    folder = "worst_v"
-    family = "worst"
-    mode = "v"
-    for i in range(1, NUM_GRAPHS_PER_MODE + 1):
-        random.seed(BASE_SEED + i)
-        n = BASE_VERTICES_V + (i - 1) * VERTEX_INCREMENT
-        m = CONSTANT_EDGES_V
-        n_out, edges = construct_worst(n, m)
-        edges = edges[:m]
-        if not has_path(n_out, edges):
-            raise ValueError(f"Generated graph_{family}_{mode}_{i:02d} has no valid s->t path")
-        _write_named_graph(folder, family, mode, i, n_out, edges)
-
-
-def generate_worst_e():
-    folder = "worst_e"
-    family = "worst"
-    mode = "e"
-    for i in range(1, NUM_GRAPHS_PER_MODE + 1):
-        random.seed(BASE_SEED + i)
-        n = CONSTANT_VERTICES_E
-        m = BASE_EDGES_E + (i - 1) * EDGE_INCREMENT
-        n_out, edges = construct_worst(n, m)
-        edges = edges[:m]
-        if not has_path(n_out, edges):
-            raise ValueError(f"Generated graph_{family}_{mode}_{i:02d} has no valid s->t path")
-        _write_named_graph(folder, family, mode, i, n_out, edges)
-
+        
+        # Clip m
+        max_edges = len(shared_pool)
+        if m > max_edges: m = max_edges
+        
+        # Pass the shared pool to avoid rebuilding it 200 times
+        n_out, edges = construct_general(n, m, precomputed_pool=shared_pool)
+        _write_named_graph("general_e", "general", "e", i, n_out, edges)
+        
+        if i % 50 == 0: print(f"  e-mode: {i}/{NUM_GRAPHS_PER_MODE}")
 
 def main():
-    """Generate all families and modes. This is a convenience wrapper."""
-    print("Generating graphs for all families and modes...")
-    generate_general_v()
-    generate_general_e()
-    generate_unitcap_v()
-    generate_unitcap_e()
-    generate_simple_v()
-    generate_simple_e()
-    generate_worst_v()
-    generate_worst_e()
+    generate_general_batches()
     print("Generation complete.")
-
 
 if __name__ == "__main__":
     main()
-
