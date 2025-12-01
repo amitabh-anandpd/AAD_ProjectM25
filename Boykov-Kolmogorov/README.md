@@ -116,3 +116,52 @@ Theoretically speaking, this is worse than the complexities of the standard algo
 * Search trees rarely break
 * Graphs are regular grids
 * Path lengths are O(1) or O(log n)
+
+### 4.2 Practical Complexity on Image Graphs
+
+For typical computer vision graphs (sparse, grid-structured) the Boykov–Kolmogorov algorithm performs much better than the worst-case bound suggests. Empirically, the runtime is close to linear in the number of pixels:
+
+\[
+T_{\text{practical}} \approx O(m) \approx O(HW).
+\]
+
+Boykov and Kolmogorov attribute this behaviour to several properties of vision graphs:
+
+- augmenting paths are short,
+- the S and T trees are reused and rarely break,
+- the underlying graph is a regular 2D grid,
+- effective path lengths grow at most \(O(1)\) or \(O(\log n)\).
+
+These properties keep the number and cost of augmentations small, which is why BK significantly outperforms generic max-flow algorithms on such instances.
+
+### 4.3 Space Complexity
+
+The algorithm stores capacities, flows and adjacency lists for each edge and node. This leads to
+
+\[
+\text{Space} = O(m + n) \approx O(HW)
+\]
+
+for grid-based image graphs.
+
+### 4.4 Summary
+
+- **Worst-case (general graphs):**  
+  \[
+  T_{\text{worst}} = O(m\,n^{2}\,|C|).
+  \]
+
+- **For an \(H \times W\) image (4-neighbour grid):**  
+  \[
+  T_{\text{worst}} = O(H^{3}W^{3}|C|).
+  \]
+
+- **In practice on vision problems:**  
+  \[
+  T_{\text{practical}} \approx O(HW) \quad \text{(essentially linear in the number of pixels)}.
+  \]
+
+- **Space complexity:**  
+  \[
+  O(HW).
+  \]
