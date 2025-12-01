@@ -229,7 +229,7 @@ Push–Relabel | 1000 | 5000 | 0.82 | Push operations, relabel operations
 Dinic’s | 1000 | 5000 | 0.65 | BFS phases, DFS augmentations
 Ford–Fulkerson (DFS) | 1000 | 5000 | 2.34 | Augmenting paths (DFS), flow updates
 Edmonds–Karp (BFS) | 1000 | 5000 | 1.12 | Augmenting paths (BFS), flow updates
-Boykov–Kolmogorov | 1026 | 4096 | 0.41 | Tree growth, augmentations
+Boykov–Kolmogorov | 1026 | 8064 | 0.005 | Tree growth, augmentations
 Successive Shortest Path | 1000 | 5000 | 3.21 | Shortest path computations, cost updates
 Cycle-Canceling | 1000 | 5000 | 4.05 | Negative cycle detection, flow/cost updates
 
