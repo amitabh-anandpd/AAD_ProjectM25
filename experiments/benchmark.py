@@ -8,7 +8,7 @@ import time
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from utils.graph_generator import GraphGenerator
-from algorithms.fordflurkson import FordFulkerson
+from algorithms.fordfulkerson import FordFulkerson
 from algorithms.dinics import Dinics
 from algorithms.push_relabel import PushRelabel
 
