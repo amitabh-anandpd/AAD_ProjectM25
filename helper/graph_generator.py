@@ -37,19 +37,21 @@ def generate_strongly_connected_graph(n_nodes, n_edges,
     return weighted_edges
 
 
-def save_graph(edges, filename="graph.txt"):
+def save_graph(nodes, edges, filename="graph.txt"):
     with open(filename, "w") as f:
+        f.write(f"{len(edges)} {nodes}\n")
         for u, v, w in edges:
             f.write(f"{u} {v} {w}\n")
 
 
 # Example usage
 if __name__ == "__main__":
+    n = 10
     edges = generate_strongly_connected_graph(
-        n_nodes=10,
+        n_nodes=n,
         n_edges=25,
         min_weight=1,
         max_weight=30
     )
-    save_graph(edges, "graph.txt")
+    save_graph(n, edges, "graph.txt")
     print("Generated strongly connected directed graph without duplicate edges.")
