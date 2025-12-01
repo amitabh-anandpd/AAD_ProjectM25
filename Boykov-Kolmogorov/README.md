@@ -100,7 +100,7 @@ Output:
 ```
 
 ## 4. Time Complexity of Boykov-Kolmogorov Algorithm
-### Worst-Case Time Complexity
+### 4.1 Worst-Case Time Complexity
 ```math
 T = O(mn^2|C|)
 ```
@@ -111,11 +111,7 @@ In an image -
 * $`m \approx 4 \times H \times W`$
 * |C| does not scale directly with H or W
 
-Theoretically speaking, this is worse than the complexities of the standard algorithms.  However, experimental comparison shows that, on typical problem instances in vision, the Boykov-Kolmogorov algorithm significantly outperforms standard algorithms, and hence, the empirical complexity becomes linear. The reason for that, as highlighted by Boykov and Kolmogorov in their paper, is as follows - 
-* Augmenting paths are short
-* Search trees rarely break
-* Graphs are regular grids
-* Path lengths are O(1) or O(log n)
+Theoretically speaking, this is worse than the complexities of the standard algorithms.  However, experimental comparison shows that, on typical problem instances in vision, the Boykov-Kolmogorov algorithm significantly outperforms standard algorithms, and hence, the empirical complexity becomes linear.
 
 ### 4.2 Practical Complexity on Image Graphs
 
