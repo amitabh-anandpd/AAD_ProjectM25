@@ -1,0 +1,1987 @@
+2025-12-01 14:17:05,477 - INFO - ============================================================
+2025-12-01 14:17:05,477 - INFO - Starting batch experiments
+2025-12-01 14:17:05,477 - INFO - Processing batch folder: graphs
+2025-12-01 14:17:05,477 - INFO - ============================================================
+2025-12-01 14:17:05,477 - INFO - 
+============================================================
+2025-12-01 14:17:05,477 - INFO - Processing folder: graphs/ (18 graph(s))
+2025-12-01 14:17:05,477 - INFO - ============================================================
+2025-12-01 14:17:05,477 - INFO - 
+Processing: bidirectional_1.txt (family: bidirectional, source: 0, sink: 5)
+2025-12-01 14:17:05,477 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/graphs/bidirectional_1.txt
+2025-12-01 14:17:05,478 - INFO - Running Dinic's algorithm: source=0, sink=5
+2025-12-01 14:17:05,478 - INFO - Maximum flow: 5
+2025-12-01 14:17:05,478 - INFO - Minimum cut value: 5
+2025-12-01 14:17:05,478 - INFO - Total runtime: 0.000034s (BFS: 0.000010s, DFS: 0.000034s)
+2025-12-01 14:17:05,478 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/graphs/bidirectional_1_execution_data.json
+2025-12-01 14:17:05,478 - INFO - ✓ Completed: max_flow=5, min_cut=5, runtime=0.000034s
+2025-12-01 14:17:05,478 - INFO - 
+Processing: bidirectional_2.txt (family: bidirectional, source: 0, sink: 7)
+2025-12-01 14:17:05,478 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/graphs/bidirectional_2.txt
+2025-12-01 14:17:05,479 - INFO - Running Dinic's algorithm: source=0, sink=7
+2025-12-01 14:17:05,479 - INFO - Maximum flow: 5
+2025-12-01 14:17:05,479 - INFO - Minimum cut value: 5
+2025-12-01 14:17:05,479 - INFO - Total runtime: 0.000019s (BFS: 0.000005s, DFS: 0.000027s)
+2025-12-01 14:17:05,479 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/graphs/bidirectional_2_execution_data.json
+2025-12-01 14:17:05,479 - INFO - ✓ Completed: max_flow=5, min_cut=5, runtime=0.000019s
+2025-12-01 14:17:05,479 - INFO - 
+Processing: bidirectional_3.txt (family: bidirectional, source: 0, sink: 9)
+2025-12-01 14:17:05,479 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/graphs/bidirectional_3.txt
+2025-12-01 14:17:05,479 - INFO - Running Dinic's algorithm: source=0, sink=9
+2025-12-01 14:17:05,479 - INFO - Maximum flow: 6
+2025-12-01 14:17:05,479 - INFO - Minimum cut value: 6
+2025-12-01 14:17:05,479 - INFO - Total runtime: 0.000022s (BFS: 0.000006s, DFS: 0.000040s)
+2025-12-01 14:17:05,479 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/graphs/bidirectional_3_execution_data.json
+2025-12-01 14:17:05,480 - INFO - ✓ Completed: max_flow=6, min_cut=6, runtime=0.000022s
+2025-12-01 14:17:05,480 - INFO - 
+Processing: crosslinked_1.txt (family: crosslinked, source: 0, sink: 6)
+2025-12-01 14:17:05,480 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/graphs/crosslinked_1.txt
+2025-12-01 14:17:05,480 - INFO - Running Dinic's algorithm: source=0, sink=6
+2025-12-01 14:17:05,480 - INFO - Maximum flow: 17
+2025-12-01 14:17:05,480 - INFO - Minimum cut value: 17
+2025-12-01 14:17:05,480 - INFO - Total runtime: 0.000025s (BFS: 0.000004s, DFS: 0.000022s)
+2025-12-01 14:17:05,480 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/graphs/crosslinked_1_execution_data.json
+2025-12-01 14:17:05,481 - INFO - ✓ Completed: max_flow=17, min_cut=17, runtime=0.000025s
+2025-12-01 14:17:05,481 - INFO - 
+Processing: crosslinked_2.txt (family: crosslinked, source: 0, sink: 7)
+2025-12-01 14:17:05,481 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/graphs/crosslinked_2.txt
+2025-12-01 14:17:05,481 - INFO - Running Dinic's algorithm: source=0, sink=7
+2025-12-01 14:17:05,481 - INFO - Maximum flow: 22
+2025-12-01 14:17:05,481 - INFO - Minimum cut value: 22
+2025-12-01 14:17:05,481 - INFO - Total runtime: 0.000038s (BFS: 0.000006s, DFS: 0.000046s)
+2025-12-01 14:17:05,481 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/graphs/crosslinked_2_execution_data.json
+2025-12-01 14:17:05,481 - INFO - ✓ Completed: max_flow=22, min_cut=22, runtime=0.000038s
+2025-12-01 14:17:05,481 - INFO - 
+Processing: crosslinked_3.txt (family: crosslinked, source: 0, sink: 9)
+2025-12-01 14:17:05,481 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/graphs/crosslinked_3.txt
+2025-12-01 14:17:05,482 - INFO - Running Dinic's algorithm: source=0, sink=9
+2025-12-01 14:17:05,482 - INFO - Maximum flow: 20
+2025-12-01 14:17:05,482 - INFO - Minimum cut value: 20
+2025-12-01 14:17:05,482 - INFO - Total runtime: 0.000051s (BFS: 0.000010s, DFS: 0.000081s)
+2025-12-01 14:17:05,482 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/graphs/crosslinked_3_execution_data.json
+2025-12-01 14:17:05,482 - INFO - ✓ Completed: max_flow=20, min_cut=20, runtime=0.000051s
+2025-12-01 14:17:05,482 - INFO - 
+Processing: dense_1.txt (family: dense, source: 0, sink: 5)
+2025-12-01 14:17:05,482 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/graphs/dense_1.txt
+2025-12-01 14:17:05,482 - INFO - Running Dinic's algorithm: source=0, sink=5
+2025-12-01 14:17:05,482 - INFO - Maximum flow: 24
+2025-12-01 14:17:05,483 - INFO - Minimum cut value: 24
+2025-12-01 14:17:05,483 - INFO - Total runtime: 0.000029s (BFS: 0.000006s, DFS: 0.000024s)
+2025-12-01 14:17:05,483 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/graphs/dense_1_execution_data.json
+2025-12-01 14:17:05,483 - INFO - ✓ Completed: max_flow=24, min_cut=24, runtime=0.000029s
+2025-12-01 14:17:05,483 - INFO - 
+Processing: dense_2.txt (family: dense, source: 0, sink: 7)
+2025-12-01 14:17:05,483 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/graphs/dense_2.txt
+2025-12-01 14:17:05,483 - INFO - Running Dinic's algorithm: source=0, sink=7
+2025-12-01 14:17:05,483 - INFO - Maximum flow: 24
+2025-12-01 14:17:05,483 - INFO - Minimum cut value: 24
+2025-12-01 14:17:05,483 - INFO - Total runtime: 0.000040s (BFS: 0.000009s, DFS: 0.000040s)
+2025-12-01 14:17:05,484 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/graphs/dense_2_execution_data.json
+2025-12-01 14:17:05,484 - INFO - ✓ Completed: max_flow=24, min_cut=24, runtime=0.000040s
+2025-12-01 14:17:05,484 - INFO - 
+Processing: dense_3.txt (family: dense, source: 0, sink: 9)
+2025-12-01 14:17:05,484 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/graphs/dense_3.txt
+2025-12-01 14:17:05,484 - INFO - Running Dinic's algorithm: source=0, sink=9
+2025-12-01 14:17:05,484 - INFO - Maximum flow: 25
+2025-12-01 14:17:05,484 - INFO - Minimum cut value: 25
+2025-12-01 14:17:05,484 - INFO - Total runtime: 0.000049s (BFS: 0.000010s, DFS: 0.000054s)
+2025-12-01 14:17:05,485 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/graphs/dense_3_execution_data.json
+2025-12-01 14:17:05,485 - INFO - ✓ Completed: max_flow=25, min_cut=25, runtime=0.000049s
+2025-12-01 14:17:05,485 - INFO - 
+Processing: layered_1.txt (family: layered, source: 0, sink: 5)
+2025-12-01 14:17:05,485 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/graphs/layered_1.txt
+2025-12-01 14:17:05,485 - INFO - Running Dinic's algorithm: source=0, sink=5
+2025-12-01 14:17:05,485 - INFO - Maximum flow: 9
+2025-12-01 14:17:05,485 - INFO - Minimum cut value: 9
+2025-12-01 14:17:05,485 - INFO - Total runtime: 0.000015s (BFS: 0.000003s, DFS: 0.000012s)
+2025-12-01 14:17:05,485 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/graphs/layered_1_execution_data.json
+2025-12-01 14:17:05,485 - INFO - ✓ Completed: max_flow=9, min_cut=9, runtime=0.000015s
+2025-12-01 14:17:05,485 - INFO - 
+Processing: layered_2.txt (family: layered, source: 0, sink: 7)
+2025-12-01 14:17:05,485 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/graphs/layered_2.txt
+2025-12-01 14:17:05,485 - INFO - Running Dinic's algorithm: source=0, sink=7
+2025-12-01 14:17:05,485 - INFO - Maximum flow: 20
+2025-12-01 14:17:05,485 - INFO - Minimum cut value: 20
+2025-12-01 14:17:05,485 - INFO - Total runtime: 0.000022s (BFS: 0.000004s, DFS: 0.000025s)
+2025-12-01 14:17:05,486 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/graphs/layered_2_execution_data.json
+2025-12-01 14:17:05,486 - INFO - ✓ Completed: max_flow=20, min_cut=20, runtime=0.000022s
+2025-12-01 14:17:05,486 - INFO - 
+Processing: layered_3.txt (family: layered, source: 0, sink: 9)
+2025-12-01 14:17:05,486 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/graphs/layered_3.txt
+2025-12-01 14:17:05,486 - INFO - Running Dinic's algorithm: source=0, sink=9
+2025-12-01 14:17:05,486 - INFO - Maximum flow: 20
+2025-12-01 14:17:05,486 - INFO - Minimum cut value: 20
+2025-12-01 14:17:05,486 - INFO - Total runtime: 0.000026s (BFS: 0.000005s, DFS: 0.000039s)
+2025-12-01 14:17:05,486 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/graphs/layered_3_execution_data.json
+2025-12-01 14:17:05,486 - INFO - ✓ Completed: max_flow=20, min_cut=20, runtime=0.000026s
+2025-12-01 14:17:05,486 - INFO - 
+Processing: sample1.txt (family: sample, source: 0, sink: 5)
+2025-12-01 14:17:05,486 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/graphs/sample1.txt
+2025-12-01 14:17:05,486 - INFO - Running Dinic's algorithm: source=0, sink=5
+2025-12-01 14:17:05,486 - INFO - Maximum flow: 17
+2025-12-01 14:17:05,486 - INFO - Minimum cut value: 17
+2025-12-01 14:17:05,486 - INFO - Total runtime: 0.000025s (BFS: 0.000006s, DFS: 0.000026s)
+2025-12-01 14:17:05,487 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/graphs/sample1_execution_data.json
+2025-12-01 14:17:05,487 - INFO - ✓ Completed: max_flow=17, min_cut=17, runtime=0.000025s
+2025-12-01 14:17:05,487 - INFO - 
+Processing: sample2.txt (family: sample, source: 0, sink: 7)
+2025-12-01 14:17:05,487 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/graphs/sample2.txt
+2025-12-01 14:17:05,487 - INFO - Running Dinic's algorithm: source=0, sink=7
+2025-12-01 14:17:05,487 - INFO - Maximum flow: 15
+2025-12-01 14:17:05,487 - INFO - Minimum cut value: 15
+2025-12-01 14:17:05,487 - INFO - Total runtime: 0.000027s (BFS: 0.000006s, DFS: 0.000029s)
+2025-12-01 14:17:05,487 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/graphs/sample2_execution_data.json
+2025-12-01 14:17:05,488 - INFO - ✓ Completed: max_flow=15, min_cut=15, runtime=0.000027s
+2025-12-01 14:17:05,488 - INFO - 
+Processing: sample3.txt (family: sample, source: 0, sink: 9)
+2025-12-01 14:17:05,488 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/graphs/sample3.txt
+2025-12-01 14:17:05,488 - INFO - Running Dinic's algorithm: source=0, sink=9
+2025-12-01 14:17:05,488 - INFO - Maximum flow: 14
+2025-12-01 14:17:05,488 - INFO - Minimum cut value: 14
+2025-12-01 14:17:05,488 - INFO - Total runtime: 0.000024s (BFS: 0.000005s, DFS: 0.000022s)
+2025-12-01 14:17:05,488 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/graphs/sample3_execution_data.json
+2025-12-01 14:17:05,488 - INFO - ✓ Completed: max_flow=14, min_cut=14, runtime=0.000024s
+2025-12-01 14:17:05,488 - INFO - 
+Processing: sparse_1.txt (family: sparse, source: 0, sink: 5)
+2025-12-01 14:17:05,489 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/graphs/sparse_1.txt
+2025-12-01 14:17:05,489 - INFO - Running Dinic's algorithm: source=0, sink=5
+2025-12-01 14:17:05,489 - INFO - Maximum flow: 5
+2025-12-01 14:17:05,489 - INFO - Minimum cut value: 5
+2025-12-01 14:17:05,489 - INFO - Total runtime: 0.000012s (BFS: 0.000003s, DFS: 0.000012s)
+2025-12-01 14:17:05,489 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/graphs/sparse_1_execution_data.json
+2025-12-01 14:17:05,489 - INFO - ✓ Completed: max_flow=5, min_cut=5, runtime=0.000012s
+2025-12-01 14:17:05,489 - INFO - 
+Processing: sparse_2.txt (family: sparse, source: 0, sink: 7)
+2025-12-01 14:17:05,489 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/graphs/sparse_2.txt
+2025-12-01 14:17:05,489 - INFO - Running Dinic's algorithm: source=0, sink=7
+2025-12-01 14:17:05,489 - INFO - Maximum flow: 5
+2025-12-01 14:17:05,489 - INFO - Minimum cut value: 5
+2025-12-01 14:17:05,489 - INFO - Total runtime: 0.000012s (BFS: 0.000003s, DFS: 0.000018s)
+2025-12-01 14:17:05,490 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/graphs/sparse_2_execution_data.json
+2025-12-01 14:17:05,490 - INFO - ✓ Completed: max_flow=5, min_cut=5, runtime=0.000012s
+2025-12-01 14:17:05,490 - INFO - 
+Processing: sparse_3.txt (family: sparse, source: 0, sink: 9)
+2025-12-01 14:17:05,490 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/graphs/sparse_3.txt
+2025-12-01 14:17:05,490 - INFO - Running Dinic's algorithm: source=0, sink=9
+2025-12-01 14:17:05,490 - INFO - Maximum flow: 5
+2025-12-01 14:17:05,490 - INFO - Minimum cut value: 5
+2025-12-01 14:17:05,490 - INFO - Total runtime: 0.000013s (BFS: 0.000003s, DFS: 0.000025s)
+2025-12-01 14:17:05,490 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/graphs/sparse_3_execution_data.json
+2025-12-01 14:17:05,490 - INFO - ✓ Completed: max_flow=5, min_cut=5, runtime=0.000013s
+2025-12-01 14:17:05,490 - INFO - 
+============================================================
+2025-12-01 14:17:05,490 - INFO - Batch experiments complete!
+2025-12-01 14:17:05,490 - INFO - ============================================================
+2025-12-01 14:17:05,490 - INFO - Total graphs processed: 18
+2025-12-01 14:17:05,490 - INFO - 
+Results saved to: /Users/arun/AAD_ProjectM25/algorithms/dinics/results
+2025-12-01 14:17:05,490 - INFO - Execution data organized by folder: results/graphs/, results/graphs_v/, results/graphs_e/
+2025-12-01 14:17:05,490 - INFO - 
+To generate visualizations for a specific batch, run:
+2025-12-01 14:17:05,490 - INFO -   python3 code/visualizer_script.py <batch_folder>
+2025-12-01 14:17:05,490 - INFO - 
+To generate analysis table for a specific batch, run:
+2025-12-01 14:17:05,490 - INFO -   python3 code/analyze.py <batch_folder>
+2025-12-01 14:17:05,490 - INFO - 
+To generate scatter plots for a specific batch, run:
+2025-12-01 14:17:05,490 - INFO -   python3 code/plot.py <batch_folder>
+2025-12-01 14:17:20,314 - INFO - ============================================================
+2025-12-01 14:17:20,314 - INFO - Starting batch experiments
+2025-12-01 14:17:20,314 - INFO - Processing batch folder: general_e
+2025-12-01 14:17:20,314 - INFO - ============================================================
+2025-12-01 14:17:20,314 - INFO - 
+============================================================
+2025-12-01 14:17:20,314 - INFO - Processing folder: general_e/ (20 graph(s))
+2025-12-01 14:17:20,314 - INFO - ============================================================
+2025-12-01 14:17:20,314 - WARNING - Using default source=0, sink=149 for general_e_1.txt
+2025-12-01 14:17:20,314 - INFO - 
+Processing: general_e_1.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:20,314 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_e/general_e_1.txt
+2025-12-01 14:17:20,314 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:20,315 - INFO - Maximum flow: 41
+2025-12-01 14:17:20,315 - INFO - Minimum cut value: 41
+2025-12-01 14:17:20,315 - INFO - Total runtime: 0.000534s (BFS: 0.000157s, DFS: 0.002074s)
+2025-12-01 14:17:20,317 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_e/general_e_1_execution_data.json
+2025-12-01 14:17:20,317 - INFO - ✓ Completed: max_flow=41, min_cut=41, runtime=0.000534s
+2025-12-01 14:17:20,317 - WARNING - Using default source=0, sink=149 for general_e_10.txt
+2025-12-01 14:17:20,317 - INFO - 
+Processing: general_e_10.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:20,317 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_e/general_e_10.txt
+2025-12-01 14:17:20,318 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:20,321 - INFO - Maximum flow: 590
+2025-12-01 14:17:20,321 - INFO - Minimum cut value: 590
+2025-12-01 14:17:20,321 - INFO - Total runtime: 0.002593s (BFS: 0.000718s, DFS: 0.006275s)
+2025-12-01 14:17:20,326 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_e/general_e_10_execution_data.json
+2025-12-01 14:17:20,327 - INFO - ✓ Completed: max_flow=590, min_cut=590, runtime=0.002593s
+2025-12-01 14:17:20,327 - WARNING - Using default source=0, sink=149 for general_e_11.txt
+2025-12-01 14:17:20,327 - INFO - 
+Processing: general_e_11.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:20,327 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_e/general_e_11.txt
+2025-12-01 14:17:20,328 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:20,328 - INFO - Maximum flow: 181
+2025-12-01 14:17:20,328 - INFO - Minimum cut value: 181
+2025-12-01 14:17:20,328 - INFO - Total runtime: 0.000388s (BFS: 0.000129s, DFS: 0.000914s)
+2025-12-01 14:17:20,333 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_e/general_e_11_execution_data.json
+2025-12-01 14:17:20,334 - INFO - ✓ Completed: max_flow=181, min_cut=181, runtime=0.000388s
+2025-12-01 14:17:20,334 - WARNING - Using default source=0, sink=149 for general_e_12.txt
+2025-12-01 14:17:20,334 - INFO - 
+Processing: general_e_12.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:20,334 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_e/general_e_12.txt
+2025-12-01 14:17:20,335 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:20,337 - INFO - Maximum flow: 459
+2025-12-01 14:17:20,337 - INFO - Minimum cut value: 459
+2025-12-01 14:17:20,337 - INFO - Total runtime: 0.001989s (BFS: 0.000629s, DFS: 0.004640s)
+2025-12-01 14:17:20,341 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_e/general_e_12_execution_data.json
+2025-12-01 14:17:20,342 - INFO - ✓ Completed: max_flow=459, min_cut=459, runtime=0.001989s
+2025-12-01 14:17:20,342 - WARNING - Using default source=0, sink=149 for general_e_13.txt
+2025-12-01 14:17:20,342 - INFO - 
+Processing: general_e_13.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:20,342 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_e/general_e_13.txt
+2025-12-01 14:17:20,343 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:20,345 - INFO - Maximum flow: 386
+2025-12-01 14:17:20,345 - INFO - Minimum cut value: 386
+2025-12-01 14:17:20,345 - INFO - Total runtime: 0.001686s (BFS: 0.000500s, DFS: 0.003878s)
+2025-12-01 14:17:20,349 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_e/general_e_13_execution_data.json
+2025-12-01 14:17:20,350 - INFO - ✓ Completed: max_flow=386, min_cut=386, runtime=0.001686s
+2025-12-01 14:17:20,350 - WARNING - Using default source=0, sink=149 for general_e_14.txt
+2025-12-01 14:17:20,350 - INFO - 
+Processing: general_e_14.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:20,350 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_e/general_e_14.txt
+2025-12-01 14:17:20,351 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:20,353 - INFO - Maximum flow: 512
+2025-12-01 14:17:20,353 - INFO - Minimum cut value: 512
+2025-12-01 14:17:20,353 - INFO - Total runtime: 0.001421s (BFS: 0.000410s, DFS: 0.003175s)
+2025-12-01 14:17:20,357 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_e/general_e_14_execution_data.json
+2025-12-01 14:17:20,358 - INFO - ✓ Completed: max_flow=512, min_cut=512, runtime=0.001421s
+2025-12-01 14:17:20,358 - WARNING - Using default source=0, sink=149 for general_e_15.txt
+2025-12-01 14:17:20,358 - INFO - 
+Processing: general_e_15.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:20,358 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_e/general_e_15.txt
+2025-12-01 14:17:20,359 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:20,362 - INFO - Maximum flow: 568
+2025-12-01 14:17:20,362 - INFO - Minimum cut value: 568
+2025-12-01 14:17:20,362 - INFO - Total runtime: 0.002316s (BFS: 0.000674s, DFS: 0.005740s)
+2025-12-01 14:17:20,367 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_e/general_e_15_execution_data.json
+2025-12-01 14:17:20,368 - INFO - ✓ Completed: max_flow=568, min_cut=568, runtime=0.002316s
+2025-12-01 14:17:20,368 - WARNING - Using default source=0, sink=149 for general_e_16.txt
+2025-12-01 14:17:20,368 - INFO - 
+Processing: general_e_16.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:20,368 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_e/general_e_16.txt
+2025-12-01 14:17:20,369 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:20,371 - INFO - Maximum flow: 394
+2025-12-01 14:17:20,371 - INFO - Minimum cut value: 394
+2025-12-01 14:17:20,371 - INFO - Total runtime: 0.001271s (BFS: 0.000417s, DFS: 0.002737s)
+2025-12-01 14:17:20,376 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_e/general_e_16_execution_data.json
+2025-12-01 14:17:20,377 - INFO - ✓ Completed: max_flow=394, min_cut=394, runtime=0.001271s
+2025-12-01 14:17:20,377 - WARNING - Using default source=0, sink=149 for general_e_17.txt
+2025-12-01 14:17:20,377 - INFO - 
+Processing: general_e_17.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:20,377 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_e/general_e_17.txt
+2025-12-01 14:17:20,378 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:20,379 - INFO - Maximum flow: 479
+2025-12-01 14:17:20,379 - INFO - Minimum cut value: 479
+2025-12-01 14:17:20,379 - INFO - Total runtime: 0.000991s (BFS: 0.000308s, DFS: 0.002129s)
+2025-12-01 14:17:20,385 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_e/general_e_17_execution_data.json
+2025-12-01 14:17:20,386 - INFO - ✓ Completed: max_flow=479, min_cut=479, runtime=0.000991s
+2025-12-01 14:17:20,386 - WARNING - Using default source=0, sink=149 for general_e_18.txt
+2025-12-01 14:17:20,386 - INFO - 
+Processing: general_e_18.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:20,386 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_e/general_e_18.txt
+2025-12-01 14:17:20,387 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:20,392 - INFO - Maximum flow: 3036
+2025-12-01 14:17:20,392 - INFO - Minimum cut value: 3036
+2025-12-01 14:17:20,392 - INFO - Total runtime: 0.004737s (BFS: 0.001100s, DFS: 0.011178s)
+2025-12-01 14:17:20,398 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_e/general_e_18_execution_data.json
+2025-12-01 14:17:20,400 - INFO - ✓ Completed: max_flow=3036, min_cut=3036, runtime=0.004737s
+2025-12-01 14:17:20,400 - WARNING - Using default source=0, sink=149 for general_e_19.txt
+2025-12-01 14:17:20,400 - INFO - 
+Processing: general_e_19.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:20,400 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_e/general_e_19.txt
+2025-12-01 14:17:20,401 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:20,404 - INFO - Maximum flow: 1095
+2025-12-01 14:17:20,404 - INFO - Minimum cut value: 1095
+2025-12-01 14:17:20,405 - INFO - Total runtime: 0.002764s (BFS: 0.000868s, DFS: 0.006358s)
+2025-12-01 14:17:20,410 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_e/general_e_19_execution_data.json
+2025-12-01 14:17:20,411 - INFO - ✓ Completed: max_flow=1095, min_cut=1095, runtime=0.002764s
+2025-12-01 14:17:20,411 - WARNING - Using default source=0, sink=149 for general_e_2.txt
+2025-12-01 14:17:20,411 - INFO - 
+Processing: general_e_2.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:20,411 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_e/general_e_2.txt
+2025-12-01 14:17:20,411 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:20,413 - INFO - Maximum flow: 210
+2025-12-01 14:17:20,413 - INFO - Minimum cut value: 210
+2025-12-01 14:17:20,413 - INFO - Total runtime: 0.001066s (BFS: 0.000313s, DFS: 0.003816s)
+2025-12-01 14:17:20,414 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_e/general_e_2_execution_data.json
+2025-12-01 14:17:20,414 - INFO - ✓ Completed: max_flow=210, min_cut=210, runtime=0.001066s
+2025-12-01 14:17:20,414 - WARNING - Using default source=0, sink=149 for general_e_20.txt
+2025-12-01 14:17:20,414 - INFO - 
+Processing: general_e_20.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:20,414 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_e/general_e_20.txt
+2025-12-01 14:17:20,416 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:20,419 - INFO - Maximum flow: 969
+2025-12-01 14:17:20,419 - INFO - Minimum cut value: 969
+2025-12-01 14:17:20,419 - INFO - Total runtime: 0.002818s (BFS: 0.000835s, DFS: 0.005899s)
+2025-12-01 14:17:20,426 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_e/general_e_20_execution_data.json
+2025-12-01 14:17:20,427 - INFO - ✓ Completed: max_flow=969, min_cut=969, runtime=0.002818s
+2025-12-01 14:17:20,427 - WARNING - Using default source=0, sink=149 for general_e_3.txt
+2025-12-01 14:17:20,427 - INFO - 
+Processing: general_e_3.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:20,427 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_e/general_e_3.txt
+2025-12-01 14:17:20,427 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:20,428 - INFO - Maximum flow: 82
+2025-12-01 14:17:20,428 - INFO - Minimum cut value: 82
+2025-12-01 14:17:20,428 - INFO - Total runtime: 0.000779s (BFS: 0.000228s, DFS: 0.002438s)
+2025-12-01 14:17:20,430 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_e/general_e_3_execution_data.json
+2025-12-01 14:17:20,430 - INFO - ✓ Completed: max_flow=82, min_cut=82, runtime=0.000779s
+2025-12-01 14:17:20,430 - WARNING - Using default source=0, sink=149 for general_e_4.txt
+2025-12-01 14:17:20,430 - INFO - 
+Processing: general_e_4.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:20,430 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_e/general_e_4.txt
+2025-12-01 14:17:20,430 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:20,432 - INFO - Maximum flow: 265
+2025-12-01 14:17:20,432 - INFO - Minimum cut value: 265
+2025-12-01 14:17:20,432 - INFO - Total runtime: 0.001333s (BFS: 0.000399s, DFS: 0.004348s)
+2025-12-01 14:17:20,434 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_e/general_e_4_execution_data.json
+2025-12-01 14:17:20,434 - INFO - ✓ Completed: max_flow=265, min_cut=265, runtime=0.001333s
+2025-12-01 14:17:20,434 - WARNING - Using default source=0, sink=149 for general_e_5.txt
+2025-12-01 14:17:20,434 - INFO - 
+Processing: general_e_5.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:20,434 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_e/general_e_5.txt
+2025-12-01 14:17:20,435 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:20,436 - INFO - Maximum flow: 121
+2025-12-01 14:17:20,436 - INFO - Minimum cut value: 121
+2025-12-01 14:17:20,436 - INFO - Total runtime: 0.001126s (BFS: 0.000348s, DFS: 0.003498s)
+2025-12-01 14:17:20,438 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_e/general_e_5_execution_data.json
+2025-12-01 14:17:20,439 - INFO - ✓ Completed: max_flow=121, min_cut=121, runtime=0.001126s
+2025-12-01 14:17:20,439 - WARNING - Using default source=0, sink=149 for general_e_6.txt
+2025-12-01 14:17:20,439 - INFO - 
+Processing: general_e_6.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:20,439 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_e/general_e_6.txt
+2025-12-01 14:17:20,440 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:20,441 - INFO - Maximum flow: 280
+2025-12-01 14:17:20,441 - INFO - Minimum cut value: 280
+2025-12-01 14:17:20,441 - INFO - Total runtime: 0.001208s (BFS: 0.000343s, DFS: 0.003907s)
+2025-12-01 14:17:20,443 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_e/general_e_6_execution_data.json
+2025-12-01 14:17:20,443 - INFO - ✓ Completed: max_flow=280, min_cut=280, runtime=0.001208s
+2025-12-01 14:17:20,444 - WARNING - Using default source=0, sink=149 for general_e_7.txt
+2025-12-01 14:17:20,444 - INFO - 
+Processing: general_e_7.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:20,444 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_e/general_e_7.txt
+2025-12-01 14:17:20,444 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:20,445 - INFO - Maximum flow: 209
+2025-12-01 14:17:20,445 - INFO - Minimum cut value: 209
+2025-12-01 14:17:20,445 - INFO - Total runtime: 0.001118s (BFS: 0.000321s, DFS: 0.003041s)
+2025-12-01 14:17:20,448 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_e/general_e_7_execution_data.json
+2025-12-01 14:17:20,449 - INFO - ✓ Completed: max_flow=209, min_cut=209, runtime=0.001118s
+2025-12-01 14:17:20,449 - WARNING - Using default source=0, sink=149 for general_e_8.txt
+2025-12-01 14:17:20,449 - INFO - 
+Processing: general_e_8.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:20,449 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_e/general_e_8.txt
+2025-12-01 14:17:20,450 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:20,451 - INFO - Maximum flow: 278
+2025-12-01 14:17:20,451 - INFO - Minimum cut value: 278
+2025-12-01 14:17:20,451 - INFO - Total runtime: 0.001157s (BFS: 0.000336s, DFS: 0.003030s)
+2025-12-01 14:17:20,454 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_e/general_e_8_execution_data.json
+2025-12-01 14:17:20,454 - INFO - ✓ Completed: max_flow=278, min_cut=278, runtime=0.001157s
+2025-12-01 14:17:20,455 - WARNING - Using default source=0, sink=149 for general_e_9.txt
+2025-12-01 14:17:20,455 - INFO - 
+Processing: general_e_9.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:20,455 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_e/general_e_9.txt
+2025-12-01 14:17:20,456 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:20,457 - INFO - Maximum flow: 580
+2025-12-01 14:17:20,457 - INFO - Minimum cut value: 580
+2025-12-01 14:17:20,457 - INFO - Total runtime: 0.001526s (BFS: 0.000433s, DFS: 0.003615s)
+2025-12-01 14:17:20,460 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_e/general_e_9_execution_data.json
+2025-12-01 14:17:20,461 - INFO - ✓ Completed: max_flow=580, min_cut=580, runtime=0.001526s
+2025-12-01 14:17:20,461 - INFO - 
+============================================================
+2025-12-01 14:17:20,461 - INFO - Batch experiments complete!
+2025-12-01 14:17:20,461 - INFO - ============================================================
+2025-12-01 14:17:20,461 - INFO - Total graphs processed: 20
+2025-12-01 14:17:20,461 - INFO - 
+Results saved to: /Users/arun/AAD_ProjectM25/algorithms/dinics/results
+2025-12-01 14:17:20,461 - INFO - Execution data organized by folder: results/graphs/, results/graphs_v/, results/graphs_e/
+2025-12-01 14:17:20,461 - INFO - 
+To generate visualizations for a specific batch, run:
+2025-12-01 14:17:20,461 - INFO -   python3 code/visualizer_script.py <batch_folder>
+2025-12-01 14:17:20,461 - INFO - 
+To generate analysis table for a specific batch, run:
+2025-12-01 14:17:20,461 - INFO -   python3 code/analyze.py <batch_folder>
+2025-12-01 14:17:20,461 - INFO - 
+To generate scatter plots for a specific batch, run:
+2025-12-01 14:17:20,461 - INFO -   python3 code/plot.py <batch_folder>
+2025-12-01 14:17:23,696 - INFO - ============================================================
+2025-12-01 14:17:23,696 - INFO - Starting batch experiments
+2025-12-01 14:17:23,696 - INFO - Processing batch folder: general_v
+2025-12-01 14:17:23,696 - INFO - ============================================================
+2025-12-01 14:17:23,696 - INFO - 
+============================================================
+2025-12-01 14:17:23,696 - INFO - Processing folder: general_v/ (20 graph(s))
+2025-12-01 14:17:23,696 - INFO - ============================================================
+2025-12-01 14:17:23,696 - WARNING - Using default source=0, sink=79 for general_v_1.txt
+2025-12-01 14:17:23,696 - INFO - 
+Processing: general_v_1.txt (family: , source: 0, sink: 79)
+2025-12-01 14:17:23,696 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_v/general_v_1.txt
+2025-12-01 14:17:23,697 - INFO - Running Dinic's algorithm: source=0, sink=79
+2025-12-01 14:17:23,697 - INFO - Maximum flow: 198
+2025-12-01 14:17:23,697 - INFO - Minimum cut value: 198
+2025-12-01 14:17:23,697 - INFO - Total runtime: 0.000442s (BFS: 0.000148s, DFS: 0.001015s)
+2025-12-01 14:17:23,698 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_v/general_v_1_execution_data.json
+2025-12-01 14:17:23,699 - INFO - ✓ Completed: max_flow=198, min_cut=198, runtime=0.000442s
+2025-12-01 14:17:23,699 - WARNING - Using default source=0, sink=259 for general_v_10.txt
+2025-12-01 14:17:23,699 - INFO - 
+Processing: general_v_10.txt (family: , source: 0, sink: 259)
+2025-12-01 14:17:23,699 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_v/general_v_10.txt
+2025-12-01 14:17:23,699 - INFO - Running Dinic's algorithm: source=0, sink=259
+2025-12-01 14:17:23,700 - INFO - Maximum flow: 20
+2025-12-01 14:17:23,700 - INFO - Minimum cut value: 20
+2025-12-01 14:17:23,700 - INFO - Total runtime: 0.000494s (BFS: 0.000144s, DFS: 0.003431s)
+2025-12-01 14:17:23,701 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_v/general_v_10_execution_data.json
+2025-12-01 14:17:23,701 - INFO - ✓ Completed: max_flow=20, min_cut=20, runtime=0.000494s
+2025-12-01 14:17:23,701 - WARNING - Using default source=0, sink=279 for general_v_11.txt
+2025-12-01 14:17:23,702 - INFO - 
+Processing: general_v_11.txt (family: , source: 0, sink: 279)
+2025-12-01 14:17:23,702 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_v/general_v_11.txt
+2025-12-01 14:17:23,702 - INFO - Running Dinic's algorithm: source=0, sink=279
+2025-12-01 14:17:23,702 - INFO - Maximum flow: 23
+2025-12-01 14:17:23,702 - INFO - Minimum cut value: 23
+2025-12-01 14:17:23,702 - INFO - Total runtime: 0.000447s (BFS: 0.000149s, DFS: 0.003030s)
+2025-12-01 14:17:23,704 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_v/general_v_11_execution_data.json
+2025-12-01 14:17:23,704 - INFO - ✓ Completed: max_flow=23, min_cut=23, runtime=0.000447s
+2025-12-01 14:17:23,704 - WARNING - Using default source=0, sink=299 for general_v_12.txt
+2025-12-01 14:17:23,704 - INFO - 
+Processing: general_v_12.txt (family: , source: 0, sink: 299)
+2025-12-01 14:17:23,704 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_v/general_v_12.txt
+2025-12-01 14:17:23,705 - INFO - Running Dinic's algorithm: source=0, sink=299
+2025-12-01 14:17:23,705 - INFO - Maximum flow: 19
+2025-12-01 14:17:23,705 - INFO - Minimum cut value: 19
+2025-12-01 14:17:23,705 - INFO - Total runtime: 0.000310s (BFS: 0.000102s, DFS: 0.001889s)
+2025-12-01 14:17:23,706 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_v/general_v_12_execution_data.json
+2025-12-01 14:17:23,706 - INFO - ✓ Completed: max_flow=19, min_cut=19, runtime=0.000310s
+2025-12-01 14:17:23,706 - WARNING - Using default source=0, sink=319 for general_v_13.txt
+2025-12-01 14:17:23,706 - INFO - 
+Processing: general_v_13.txt (family: , source: 0, sink: 319)
+2025-12-01 14:17:23,706 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_v/general_v_13.txt
+2025-12-01 14:17:23,707 - INFO - Running Dinic's algorithm: source=0, sink=319
+2025-12-01 14:17:23,707 - INFO - Maximum flow: 1
+2025-12-01 14:17:23,707 - INFO - Minimum cut value: 1
+2025-12-01 14:17:23,707 - INFO - Total runtime: 0.000081s (BFS: 0.000036s, DFS: 0.000425s)
+2025-12-01 14:17:23,708 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_v/general_v_13_execution_data.json
+2025-12-01 14:17:23,708 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000081s
+2025-12-01 14:17:23,708 - WARNING - Using default source=0, sink=339 for general_v_14.txt
+2025-12-01 14:17:23,708 - INFO - 
+Processing: general_v_14.txt (family: , source: 0, sink: 339)
+2025-12-01 14:17:23,708 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_v/general_v_14.txt
+2025-12-01 14:17:23,709 - INFO - Running Dinic's algorithm: source=0, sink=339
+2025-12-01 14:17:23,709 - INFO - Maximum flow: 2
+2025-12-01 14:17:23,709 - INFO - Minimum cut value: 2
+2025-12-01 14:17:23,709 - INFO - Total runtime: 0.000125s (BFS: 0.000039s, DFS: 0.001668s)
+2025-12-01 14:17:23,710 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_v/general_v_14_execution_data.json
+2025-12-01 14:17:23,710 - INFO - ✓ Completed: max_flow=2, min_cut=2, runtime=0.000125s
+2025-12-01 14:17:23,710 - WARNING - Using default source=0, sink=359 for general_v_15.txt
+2025-12-01 14:17:23,710 - INFO - 
+Processing: general_v_15.txt (family: , source: 0, sink: 359)
+2025-12-01 14:17:23,710 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_v/general_v_15.txt
+2025-12-01 14:17:23,711 - INFO - Running Dinic's algorithm: source=0, sink=359
+2025-12-01 14:17:23,711 - INFO - Maximum flow: 7
+2025-12-01 14:17:23,711 - INFO - Minimum cut value: 7
+2025-12-01 14:17:23,711 - INFO - Total runtime: 0.000203s (BFS: 0.000061s, DFS: 0.002760s)
+2025-12-01 14:17:23,712 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_v/general_v_15_execution_data.json
+2025-12-01 14:17:23,712 - INFO - ✓ Completed: max_flow=7, min_cut=7, runtime=0.000203s
+2025-12-01 14:17:23,712 - WARNING - Using default source=0, sink=379 for general_v_16.txt
+2025-12-01 14:17:23,712 - INFO - 
+Processing: general_v_16.txt (family: , source: 0, sink: 379)
+2025-12-01 14:17:23,712 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_v/general_v_16.txt
+2025-12-01 14:17:23,713 - INFO - Running Dinic's algorithm: source=0, sink=379
+2025-12-01 14:17:23,713 - INFO - Maximum flow: 6
+2025-12-01 14:17:23,713 - INFO - Minimum cut value: 6
+2025-12-01 14:17:23,713 - INFO - Total runtime: 0.000132s (BFS: 0.000064s, DFS: 0.001177s)
+2025-12-01 14:17:23,714 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_v/general_v_16_execution_data.json
+2025-12-01 14:17:23,714 - INFO - ✓ Completed: max_flow=6, min_cut=6, runtime=0.000132s
+2025-12-01 14:17:23,714 - WARNING - Using default source=0, sink=399 for general_v_17.txt
+2025-12-01 14:17:23,714 - INFO - 
+Processing: general_v_17.txt (family: , source: 0, sink: 399)
+2025-12-01 14:17:23,714 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_v/general_v_17.txt
+2025-12-01 14:17:23,714 - INFO - Running Dinic's algorithm: source=0, sink=399
+2025-12-01 14:17:23,715 - INFO - Maximum flow: 3
+2025-12-01 14:17:23,715 - INFO - Minimum cut value: 3
+2025-12-01 14:17:23,715 - INFO - Total runtime: 0.000114s (BFS: 0.000056s, DFS: 0.000688s)
+2025-12-01 14:17:23,716 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_v/general_v_17_execution_data.json
+2025-12-01 14:17:23,716 - INFO - ✓ Completed: max_flow=3, min_cut=3, runtime=0.000114s
+2025-12-01 14:17:23,716 - WARNING - Using default source=0, sink=419 for general_v_18.txt
+2025-12-01 14:17:23,716 - INFO - 
+Processing: general_v_18.txt (family: , source: 0, sink: 419)
+2025-12-01 14:17:23,716 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_v/general_v_18.txt
+2025-12-01 14:17:23,716 - INFO - Running Dinic's algorithm: source=0, sink=419
+2025-12-01 14:17:23,717 - INFO - Maximum flow: 1
+2025-12-01 14:17:23,717 - INFO - Minimum cut value: 1
+2025-12-01 14:17:23,717 - INFO - Total runtime: 0.000162s (BFS: 0.000061s, DFS: 0.001702s)
+2025-12-01 14:17:23,718 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_v/general_v_18_execution_data.json
+2025-12-01 14:17:23,718 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000162s
+2025-12-01 14:17:23,718 - WARNING - Using default source=0, sink=439 for general_v_19.txt
+2025-12-01 14:17:23,718 - INFO - 
+Processing: general_v_19.txt (family: , source: 0, sink: 439)
+2025-12-01 14:17:23,718 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_v/general_v_19.txt
+2025-12-01 14:17:23,718 - INFO - Running Dinic's algorithm: source=0, sink=439
+2025-12-01 14:17:23,719 - INFO - Maximum flow: 7
+2025-12-01 14:17:23,719 - INFO - Minimum cut value: 7
+2025-12-01 14:17:23,719 - INFO - Total runtime: 0.000191s (BFS: 0.000059s, DFS: 0.002782s)
+2025-12-01 14:17:23,720 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_v/general_v_19_execution_data.json
+2025-12-01 14:17:23,720 - INFO - ✓ Completed: max_flow=7, min_cut=7, runtime=0.000191s
+2025-12-01 14:17:23,720 - WARNING - Using default source=0, sink=99 for general_v_2.txt
+2025-12-01 14:17:23,720 - INFO - 
+Processing: general_v_2.txt (family: , source: 0, sink: 99)
+2025-12-01 14:17:23,720 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_v/general_v_2.txt
+2025-12-01 14:17:23,720 - INFO - Running Dinic's algorithm: source=0, sink=99
+2025-12-01 14:17:23,721 - INFO - Maximum flow: 43
+2025-12-01 14:17:23,721 - INFO - Minimum cut value: 43
+2025-12-01 14:17:23,721 - INFO - Total runtime: 0.000408s (BFS: 0.000125s, DFS: 0.001088s)
+2025-12-01 14:17:23,722 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_v/general_v_2_execution_data.json
+2025-12-01 14:17:23,723 - INFO - ✓ Completed: max_flow=43, min_cut=43, runtime=0.000408s
+2025-12-01 14:17:23,723 - WARNING - Using default source=0, sink=459 for general_v_20.txt
+2025-12-01 14:17:23,723 - INFO - 
+Processing: general_v_20.txt (family: , source: 0, sink: 459)
+2025-12-01 14:17:23,723 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_v/general_v_20.txt
+2025-12-01 14:17:23,723 - INFO - Running Dinic's algorithm: source=0, sink=459
+2025-12-01 14:17:23,723 - INFO - Maximum flow: 1
+2025-12-01 14:17:23,723 - INFO - Minimum cut value: 1
+2025-12-01 14:17:23,723 - INFO - Total runtime: 0.000135s (BFS: 0.000054s, DFS: 0.001167s)
+2025-12-01 14:17:23,725 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_v/general_v_20_execution_data.json
+2025-12-01 14:17:23,725 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000135s
+2025-12-01 14:17:23,725 - WARNING - Using default source=0, sink=119 for general_v_3.txt
+2025-12-01 14:17:23,725 - INFO - 
+Processing: general_v_3.txt (family: , source: 0, sink: 119)
+2025-12-01 14:17:23,725 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_v/general_v_3.txt
+2025-12-01 14:17:23,725 - INFO - Running Dinic's algorithm: source=0, sink=119
+2025-12-01 14:17:23,726 - INFO - Maximum flow: 149
+2025-12-01 14:17:23,726 - INFO - Minimum cut value: 149
+2025-12-01 14:17:23,726 - INFO - Total runtime: 0.000301s (BFS: 0.000094s, DFS: 0.001233s)
+2025-12-01 14:17:23,726 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_v/general_v_3_execution_data.json
+2025-12-01 14:17:23,727 - INFO - ✓ Completed: max_flow=149, min_cut=149, runtime=0.000301s
+2025-12-01 14:17:23,727 - WARNING - Using default source=0, sink=139 for general_v_4.txt
+2025-12-01 14:17:23,727 - INFO - 
+Processing: general_v_4.txt (family: , source: 0, sink: 139)
+2025-12-01 14:17:23,727 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_v/general_v_4.txt
+2025-12-01 14:17:23,727 - INFO - Running Dinic's algorithm: source=0, sink=139
+2025-12-01 14:17:23,727 - INFO - Maximum flow: 22
+2025-12-01 14:17:23,728 - INFO - Minimum cut value: 22
+2025-12-01 14:17:23,728 - INFO - Total runtime: 0.000401s (BFS: 0.000134s, DFS: 0.001594s)
+2025-12-01 14:17:23,729 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_v/general_v_4_execution_data.json
+2025-12-01 14:17:23,729 - INFO - ✓ Completed: max_flow=22, min_cut=22, runtime=0.000401s
+2025-12-01 14:17:23,729 - WARNING - Using default source=0, sink=159 for general_v_5.txt
+2025-12-01 14:17:23,729 - INFO - 
+Processing: general_v_5.txt (family: , source: 0, sink: 159)
+2025-12-01 14:17:23,729 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_v/general_v_5.txt
+2025-12-01 14:17:23,729 - INFO - Running Dinic's algorithm: source=0, sink=159
+2025-12-01 14:17:23,730 - INFO - Maximum flow: 100
+2025-12-01 14:17:23,730 - INFO - Minimum cut value: 100
+2025-12-01 14:17:23,730 - INFO - Total runtime: 0.000377s (BFS: 0.000111s, DFS: 0.001532s)
+2025-12-01 14:17:23,731 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_v/general_v_5_execution_data.json
+2025-12-01 14:17:23,731 - INFO - ✓ Completed: max_flow=100, min_cut=100, runtime=0.000377s
+2025-12-01 14:17:23,731 - WARNING - Using default source=0, sink=179 for general_v_6.txt
+2025-12-01 14:17:23,731 - INFO - 
+Processing: general_v_6.txt (family: , source: 0, sink: 179)
+2025-12-01 14:17:23,731 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_v/general_v_6.txt
+2025-12-01 14:17:23,731 - INFO - Running Dinic's algorithm: source=0, sink=179
+2025-12-01 14:17:23,732 - INFO - Maximum flow: 102
+2025-12-01 14:17:23,732 - INFO - Minimum cut value: 102
+2025-12-01 14:17:23,732 - INFO - Total runtime: 0.000509s (BFS: 0.000157s, DFS: 0.002135s)
+2025-12-01 14:17:23,733 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_v/general_v_6_execution_data.json
+2025-12-01 14:17:23,733 - INFO - ✓ Completed: max_flow=102, min_cut=102, runtime=0.000509s
+2025-12-01 14:17:23,733 - WARNING - Using default source=0, sink=199 for general_v_7.txt
+2025-12-01 14:17:23,733 - INFO - 
+Processing: general_v_7.txt (family: , source: 0, sink: 199)
+2025-12-01 14:17:23,733 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_v/general_v_7.txt
+2025-12-01 14:17:23,733 - INFO - Running Dinic's algorithm: source=0, sink=199
+2025-12-01 14:17:23,734 - INFO - Maximum flow: 59
+2025-12-01 14:17:23,734 - INFO - Minimum cut value: 59
+2025-12-01 14:17:23,734 - INFO - Total runtime: 0.000614s (BFS: 0.000195s, DFS: 0.003123s)
+2025-12-01 14:17:23,735 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_v/general_v_7_execution_data.json
+2025-12-01 14:17:23,736 - INFO - ✓ Completed: max_flow=59, min_cut=59, runtime=0.000614s
+2025-12-01 14:17:23,736 - WARNING - Using default source=0, sink=219 for general_v_8.txt
+2025-12-01 14:17:23,736 - INFO - 
+Processing: general_v_8.txt (family: , source: 0, sink: 219)
+2025-12-01 14:17:23,736 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_v/general_v_8.txt
+2025-12-01 14:17:23,736 - INFO - Running Dinic's algorithm: source=0, sink=219
+2025-12-01 14:17:23,737 - INFO - Maximum flow: 33
+2025-12-01 14:17:23,737 - INFO - Minimum cut value: 33
+2025-12-01 14:17:23,737 - INFO - Total runtime: 0.000739s (BFS: 0.000200s, DFS: 0.004978s)
+2025-12-01 14:17:23,738 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_v/general_v_8_execution_data.json
+2025-12-01 14:17:23,738 - INFO - ✓ Completed: max_flow=33, min_cut=33, runtime=0.000739s
+2025-12-01 14:17:23,738 - WARNING - Using default source=0, sink=239 for general_v_9.txt
+2025-12-01 14:17:23,738 - INFO - 
+Processing: general_v_9.txt (family: , source: 0, sink: 239)
+2025-12-01 14:17:23,738 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/general_v/general_v_9.txt
+2025-12-01 14:17:23,739 - INFO - Running Dinic's algorithm: source=0, sink=239
+2025-12-01 14:17:23,739 - INFO - Maximum flow: 34
+2025-12-01 14:17:23,739 - INFO - Minimum cut value: 34
+2025-12-01 14:17:23,739 - INFO - Total runtime: 0.000237s (BFS: 0.000078s, DFS: 0.001129s)
+2025-12-01 14:17:23,740 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/general_v/general_v_9_execution_data.json
+2025-12-01 14:17:23,740 - INFO - ✓ Completed: max_flow=34, min_cut=34, runtime=0.000237s
+2025-12-01 14:17:23,740 - INFO - 
+============================================================
+2025-12-01 14:17:23,740 - INFO - Batch experiments complete!
+2025-12-01 14:17:23,740 - INFO - ============================================================
+2025-12-01 14:17:23,740 - INFO - Total graphs processed: 20
+2025-12-01 14:17:23,740 - INFO - 
+Results saved to: /Users/arun/AAD_ProjectM25/algorithms/dinics/results
+2025-12-01 14:17:23,740 - INFO - Execution data organized by folder: results/graphs/, results/graphs_v/, results/graphs_e/
+2025-12-01 14:17:23,740 - INFO - 
+To generate visualizations for a specific batch, run:
+2025-12-01 14:17:23,740 - INFO -   python3 code/visualizer_script.py <batch_folder>
+2025-12-01 14:17:23,741 - INFO - 
+To generate analysis table for a specific batch, run:
+2025-12-01 14:17:23,741 - INFO -   python3 code/analyze.py <batch_folder>
+2025-12-01 14:17:23,741 - INFO - 
+To generate scatter plots for a specific batch, run:
+2025-12-01 14:17:23,741 - INFO -   python3 code/plot.py <batch_folder>
+2025-12-01 14:17:34,227 - INFO - ============================================================
+2025-12-01 14:17:34,227 - INFO - Starting batch experiments
+2025-12-01 14:17:34,227 - INFO - Processing batch folder: simple_e
+2025-12-01 14:17:34,227 - INFO - ============================================================
+2025-12-01 14:17:34,227 - INFO - 
+============================================================
+2025-12-01 14:17:34,227 - INFO - Processing folder: simple_e/ (20 graph(s))
+2025-12-01 14:17:34,227 - INFO - ============================================================
+2025-12-01 14:17:34,227 - WARNING - Using default source=0, sink=149 for simple_e_1.txt
+2025-12-01 14:17:34,227 - INFO - 
+Processing: simple_e_1.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:34,227 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_e/simple_e_1.txt
+2025-12-01 14:17:34,228 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:34,229 - INFO - Maximum flow: 44
+2025-12-01 14:17:34,229 - INFO - Minimum cut value: 44
+2025-12-01 14:17:34,229 - INFO - Total runtime: 0.001265s (BFS: 0.000358s, DFS: 0.004970s)
+2025-12-01 14:17:34,230 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_e/simple_e_1_execution_data.json
+2025-12-01 14:17:34,231 - INFO - ✓ Completed: max_flow=44, min_cut=44, runtime=0.001265s
+2025-12-01 14:17:34,231 - WARNING - Using default source=0, sink=149 for simple_e_10.txt
+2025-12-01 14:17:34,231 - INFO - 
+Processing: simple_e_10.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:34,231 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_e/simple_e_10.txt
+2025-12-01 14:17:34,232 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:34,234 - INFO - Maximum flow: 450
+2025-12-01 14:17:34,235 - INFO - Minimum cut value: 450
+2025-12-01 14:17:34,235 - INFO - Total runtime: 0.002508s (BFS: 0.000738s, DFS: 0.005502s)
+2025-12-01 14:17:34,240 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_e/simple_e_10_execution_data.json
+2025-12-01 14:17:34,240 - INFO - ✓ Completed: max_flow=450, min_cut=450, runtime=0.002508s
+2025-12-01 14:17:34,241 - WARNING - Using default source=0, sink=149 for simple_e_11.txt
+2025-12-01 14:17:34,241 - INFO - 
+Processing: simple_e_11.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:34,241 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_e/simple_e_11.txt
+2025-12-01 14:17:34,242 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:34,243 - INFO - Maximum flow: 209
+2025-12-01 14:17:34,243 - INFO - Minimum cut value: 209
+2025-12-01 14:17:34,243 - INFO - Total runtime: 0.001707s (BFS: 0.000608s, DFS: 0.003495s)
+2025-12-01 14:17:34,248 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_e/simple_e_11_execution_data.json
+2025-12-01 14:17:34,248 - INFO - ✓ Completed: max_flow=209, min_cut=209, runtime=0.001707s
+2025-12-01 14:17:34,249 - WARNING - Using default source=0, sink=149 for simple_e_12.txt
+2025-12-01 14:17:34,249 - INFO - 
+Processing: simple_e_12.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:34,249 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_e/simple_e_12.txt
+2025-12-01 14:17:34,250 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:34,252 - INFO - Maximum flow: 397
+2025-12-01 14:17:34,252 - INFO - Minimum cut value: 397
+2025-12-01 14:17:34,252 - INFO - Total runtime: 0.002172s (BFS: 0.000625s, DFS: 0.005045s)
+2025-12-01 14:17:34,256 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_e/simple_e_12_execution_data.json
+2025-12-01 14:17:34,257 - INFO - ✓ Completed: max_flow=397, min_cut=397, runtime=0.002172s
+2025-12-01 14:17:34,257 - WARNING - Using default source=0, sink=149 for simple_e_13.txt
+2025-12-01 14:17:34,257 - INFO - 
+Processing: simple_e_13.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:34,257 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_e/simple_e_13.txt
+2025-12-01 14:17:34,258 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:34,261 - INFO - Maximum flow: 429
+2025-12-01 14:17:34,261 - INFO - Minimum cut value: 429
+2025-12-01 14:17:34,261 - INFO - Total runtime: 0.002228s (BFS: 0.000684s, DFS: 0.004647s)
+2025-12-01 14:17:34,266 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_e/simple_e_13_execution_data.json
+2025-12-01 14:17:34,266 - INFO - ✓ Completed: max_flow=429, min_cut=429, runtime=0.002228s
+2025-12-01 14:17:34,267 - WARNING - Using default source=0, sink=149 for simple_e_14.txt
+2025-12-01 14:17:34,267 - INFO - 
+Processing: simple_e_14.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:34,267 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_e/simple_e_14.txt
+2025-12-01 14:17:34,268 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:34,269 - INFO - Maximum flow: 462
+2025-12-01 14:17:34,269 - INFO - Minimum cut value: 462
+2025-12-01 14:17:34,269 - INFO - Total runtime: 0.001389s (BFS: 0.000396s, DFS: 0.002873s)
+2025-12-01 14:17:34,274 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_e/simple_e_14_execution_data.json
+2025-12-01 14:17:34,274 - INFO - ✓ Completed: max_flow=462, min_cut=462, runtime=0.001389s
+2025-12-01 14:17:34,275 - WARNING - Using default source=0, sink=149 for simple_e_15.txt
+2025-12-01 14:17:34,275 - INFO - 
+Processing: simple_e_15.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:34,275 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_e/simple_e_15.txt
+2025-12-01 14:17:34,276 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:34,278 - INFO - Maximum flow: 461
+2025-12-01 14:17:34,278 - INFO - Minimum cut value: 461
+2025-12-01 14:17:34,278 - INFO - Total runtime: 0.002390s (BFS: 0.000810s, DFS: 0.004853s)
+2025-12-01 14:17:34,283 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_e/simple_e_15_execution_data.json
+2025-12-01 14:17:34,284 - INFO - ✓ Completed: max_flow=461, min_cut=461, runtime=0.002390s
+2025-12-01 14:17:34,284 - WARNING - Using default source=0, sink=149 for simple_e_16.txt
+2025-12-01 14:17:34,284 - INFO - 
+Processing: simple_e_16.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:34,284 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_e/simple_e_16.txt
+2025-12-01 14:17:34,286 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:34,288 - INFO - Maximum flow: 410
+2025-12-01 14:17:34,288 - INFO - Minimum cut value: 410
+2025-12-01 14:17:34,288 - INFO - Total runtime: 0.002200s (BFS: 0.000715s, DFS: 0.004913s)
+2025-12-01 14:17:34,293 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_e/simple_e_16_execution_data.json
+2025-12-01 14:17:34,295 - INFO - ✓ Completed: max_flow=410, min_cut=410, runtime=0.002200s
+2025-12-01 14:17:34,295 - WARNING - Using default source=0, sink=149 for simple_e_17.txt
+2025-12-01 14:17:34,295 - INFO - 
+Processing: simple_e_17.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:34,295 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_e/simple_e_17.txt
+2025-12-01 14:17:34,296 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:34,298 - INFO - Maximum flow: 392
+2025-12-01 14:17:34,298 - INFO - Minimum cut value: 392
+2025-12-01 14:17:34,298 - INFO - Total runtime: 0.001501s (BFS: 0.000453s, DFS: 0.003025s)
+2025-12-01 14:17:34,303 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_e/simple_e_17_execution_data.json
+2025-12-01 14:17:34,304 - INFO - ✓ Completed: max_flow=392, min_cut=392, runtime=0.001501s
+2025-12-01 14:17:34,304 - WARNING - Using default source=0, sink=149 for simple_e_18.txt
+2025-12-01 14:17:34,304 - INFO - 
+Processing: simple_e_18.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:34,304 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_e/simple_e_18.txt
+2025-12-01 14:17:34,305 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:34,310 - INFO - Maximum flow: 2423
+2025-12-01 14:17:34,310 - INFO - Minimum cut value: 2423
+2025-12-01 14:17:34,310 - INFO - Total runtime: 0.004415s (BFS: 0.001168s, DFS: 0.010293s)
+2025-12-01 14:17:34,316 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_e/simple_e_18_execution_data.json
+2025-12-01 14:17:34,317 - INFO - ✓ Completed: max_flow=2423, min_cut=2423, runtime=0.004415s
+2025-12-01 14:17:34,317 - WARNING - Using default source=0, sink=149 for simple_e_19.txt
+2025-12-01 14:17:34,318 - INFO - 
+Processing: simple_e_19.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:34,318 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_e/simple_e_19.txt
+2025-12-01 14:17:34,319 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:34,321 - INFO - Maximum flow: 506
+2025-12-01 14:17:34,321 - INFO - Minimum cut value: 506
+2025-12-01 14:17:34,321 - INFO - Total runtime: 0.001561s (BFS: 0.000507s, DFS: 0.002923s)
+2025-12-01 14:17:34,327 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_e/simple_e_19_execution_data.json
+2025-12-01 14:17:34,328 - INFO - ✓ Completed: max_flow=506, min_cut=506, runtime=0.001561s
+2025-12-01 14:17:34,328 - WARNING - Using default source=0, sink=149 for simple_e_2.txt
+2025-12-01 14:17:34,328 - INFO - 
+Processing: simple_e_2.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:34,328 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_e/simple_e_2.txt
+2025-12-01 14:17:34,328 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:34,330 - INFO - Maximum flow: 103
+2025-12-01 14:17:34,330 - INFO - Minimum cut value: 103
+2025-12-01 14:17:34,330 - INFO - Total runtime: 0.001330s (BFS: 0.000377s, DFS: 0.004334s)
+2025-12-01 14:17:34,331 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_e/simple_e_2_execution_data.json
+2025-12-01 14:17:34,331 - INFO - ✓ Completed: max_flow=103, min_cut=103, runtime=0.001330s
+2025-12-01 14:17:34,332 - WARNING - Using default source=0, sink=149 for simple_e_20.txt
+2025-12-01 14:17:34,332 - INFO - 
+Processing: simple_e_20.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:34,332 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_e/simple_e_20.txt
+2025-12-01 14:17:34,333 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:34,336 - INFO - Maximum flow: 897
+2025-12-01 14:17:34,336 - INFO - Minimum cut value: 897
+2025-12-01 14:17:34,336 - INFO - Total runtime: 0.003000s (BFS: 0.000963s, DFS: 0.005852s)
+2025-12-01 14:17:34,343 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_e/simple_e_20_execution_data.json
+2025-12-01 14:17:34,344 - INFO - ✓ Completed: max_flow=897, min_cut=897, runtime=0.003000s
+2025-12-01 14:17:34,344 - WARNING - Using default source=0, sink=149 for simple_e_3.txt
+2025-12-01 14:17:34,344 - INFO - 
+Processing: simple_e_3.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:34,344 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_e/simple_e_3.txt
+2025-12-01 14:17:34,344 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:34,345 - INFO - Maximum flow: 62
+2025-12-01 14:17:34,345 - INFO - Minimum cut value: 62
+2025-12-01 14:17:34,345 - INFO - Total runtime: 0.000777s (BFS: 0.000237s, DFS: 0.002172s)
+2025-12-01 14:17:34,347 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_e/simple_e_3_execution_data.json
+2025-12-01 14:17:34,347 - INFO - ✓ Completed: max_flow=62, min_cut=62, runtime=0.000777s
+2025-12-01 14:17:34,347 - WARNING - Using default source=0, sink=149 for simple_e_4.txt
+2025-12-01 14:17:34,347 - INFO - 
+Processing: simple_e_4.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:34,347 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_e/simple_e_4.txt
+2025-12-01 14:17:34,348 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:34,349 - INFO - Maximum flow: 188
+2025-12-01 14:17:34,349 - INFO - Minimum cut value: 188
+2025-12-01 14:17:34,349 - INFO - Total runtime: 0.000981s (BFS: 0.000299s, DFS: 0.002738s)
+2025-12-01 14:17:34,351 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_e/simple_e_4_execution_data.json
+2025-12-01 14:17:34,351 - INFO - ✓ Completed: max_flow=188, min_cut=188, runtime=0.000981s
+2025-12-01 14:17:34,351 - WARNING - Using default source=0, sink=149 for simple_e_5.txt
+2025-12-01 14:17:34,351 - INFO - 
+Processing: simple_e_5.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:34,351 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_e/simple_e_5.txt
+2025-12-01 14:17:34,352 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:34,353 - INFO - Maximum flow: 105
+2025-12-01 14:17:34,353 - INFO - Minimum cut value: 105
+2025-12-01 14:17:34,353 - INFO - Total runtime: 0.001487s (BFS: 0.000441s, DFS: 0.004006s)
+2025-12-01 14:17:34,356 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_e/simple_e_5_execution_data.json
+2025-12-01 14:17:34,356 - INFO - ✓ Completed: max_flow=105, min_cut=105, runtime=0.001487s
+2025-12-01 14:17:34,356 - WARNING - Using default source=0, sink=149 for simple_e_6.txt
+2025-12-01 14:17:34,356 - INFO - 
+Processing: simple_e_6.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:34,356 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_e/simple_e_6.txt
+2025-12-01 14:17:34,357 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:34,358 - INFO - Maximum flow: 180
+2025-12-01 14:17:34,358 - INFO - Minimum cut value: 180
+2025-12-01 14:17:34,358 - INFO - Total runtime: 0.001162s (BFS: 0.000353s, DFS: 0.002703s)
+2025-12-01 14:17:34,361 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_e/simple_e_6_execution_data.json
+2025-12-01 14:17:34,361 - INFO - ✓ Completed: max_flow=180, min_cut=180, runtime=0.001162s
+2025-12-01 14:17:34,361 - WARNING - Using default source=0, sink=149 for simple_e_7.txt
+2025-12-01 14:17:34,361 - INFO - 
+Processing: simple_e_7.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:34,361 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_e/simple_e_7.txt
+2025-12-01 14:17:34,362 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:34,363 - INFO - Maximum flow: 108
+2025-12-01 14:17:34,363 - INFO - Minimum cut value: 108
+2025-12-01 14:17:34,363 - INFO - Total runtime: 0.000995s (BFS: 0.000321s, DFS: 0.002315s)
+2025-12-01 14:17:34,366 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_e/simple_e_7_execution_data.json
+2025-12-01 14:17:34,366 - INFO - ✓ Completed: max_flow=108, min_cut=108, runtime=0.000995s
+2025-12-01 14:17:34,366 - WARNING - Using default source=0, sink=149 for simple_e_8.txt
+2025-12-01 14:17:34,366 - INFO - 
+Processing: simple_e_8.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:34,366 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_e/simple_e_8.txt
+2025-12-01 14:17:34,367 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:34,369 - INFO - Maximum flow: 255
+2025-12-01 14:17:34,369 - INFO - Minimum cut value: 255
+2025-12-01 14:17:34,369 - INFO - Total runtime: 0.001459s (BFS: 0.000418s, DFS: 0.003347s)
+2025-12-01 14:17:34,372 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_e/simple_e_8_execution_data.json
+2025-12-01 14:17:34,372 - INFO - ✓ Completed: max_flow=255, min_cut=255, runtime=0.001459s
+2025-12-01 14:17:34,372 - WARNING - Using default source=0, sink=149 for simple_e_9.txt
+2025-12-01 14:17:34,372 - INFO - 
+Processing: simple_e_9.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:34,372 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_e/simple_e_9.txt
+2025-12-01 14:17:34,373 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:34,375 - INFO - Maximum flow: 432
+2025-12-01 14:17:34,375 - INFO - Minimum cut value: 432
+2025-12-01 14:17:34,375 - INFO - Total runtime: 0.001564s (BFS: 0.000462s, DFS: 0.003431s)
+2025-12-01 14:17:34,378 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_e/simple_e_9_execution_data.json
+2025-12-01 14:17:34,379 - INFO - ✓ Completed: max_flow=432, min_cut=432, runtime=0.001564s
+2025-12-01 14:17:34,379 - INFO - 
+============================================================
+2025-12-01 14:17:34,379 - INFO - Batch experiments complete!
+2025-12-01 14:17:34,379 - INFO - ============================================================
+2025-12-01 14:17:34,379 - INFO - Total graphs processed: 20
+2025-12-01 14:17:34,379 - INFO - 
+Results saved to: /Users/arun/AAD_ProjectM25/algorithms/dinics/results
+2025-12-01 14:17:34,379 - INFO - Execution data organized by folder: results/graphs/, results/graphs_v/, results/graphs_e/
+2025-12-01 14:17:34,379 - INFO - 
+To generate visualizations for a specific batch, run:
+2025-12-01 14:17:34,379 - INFO -   python3 code/visualizer_script.py <batch_folder>
+2025-12-01 14:17:34,379 - INFO - 
+To generate analysis table for a specific batch, run:
+2025-12-01 14:17:34,379 - INFO -   python3 code/analyze.py <batch_folder>
+2025-12-01 14:17:34,379 - INFO - 
+To generate scatter plots for a specific batch, run:
+2025-12-01 14:17:34,379 - INFO -   python3 code/plot.py <batch_folder>
+2025-12-01 14:17:38,026 - INFO - ============================================================
+2025-12-01 14:17:38,026 - INFO - Starting batch experiments
+2025-12-01 14:17:38,026 - INFO - Processing batch folder: simple_v
+2025-12-01 14:17:38,026 - INFO - ============================================================
+2025-12-01 14:17:38,026 - INFO - 
+============================================================
+2025-12-01 14:17:38,026 - INFO - Processing folder: simple_v/ (20 graph(s))
+2025-12-01 14:17:38,026 - INFO - ============================================================
+2025-12-01 14:17:38,026 - WARNING - Using default source=0, sink=79 for simple_v_1.txt
+2025-12-01 14:17:38,026 - INFO - 
+Processing: simple_v_1.txt (family: , source: 0, sink: 79)
+2025-12-01 14:17:38,026 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_v/simple_v_1.txt
+2025-12-01 14:17:38,027 - INFO - Running Dinic's algorithm: source=0, sink=79
+2025-12-01 14:17:38,027 - INFO - Maximum flow: 111
+2025-12-01 14:17:38,027 - INFO - Minimum cut value: 111
+2025-12-01 14:17:38,027 - INFO - Total runtime: 0.000623s (BFS: 0.000176s, DFS: 0.001423s)
+2025-12-01 14:17:38,029 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_v/simple_v_1_execution_data.json
+2025-12-01 14:17:38,029 - INFO - ✓ Completed: max_flow=111, min_cut=111, runtime=0.000623s
+2025-12-01 14:17:38,029 - WARNING - Using default source=0, sink=259 for simple_v_10.txt
+2025-12-01 14:17:38,029 - INFO - 
+Processing: simple_v_10.txt (family: , source: 0, sink: 259)
+2025-12-01 14:17:38,029 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_v/simple_v_10.txt
+2025-12-01 14:17:38,030 - INFO - Running Dinic's algorithm: source=0, sink=259
+2025-12-01 14:17:38,030 - INFO - Maximum flow: 3
+2025-12-01 14:17:38,030 - INFO - Minimum cut value: 3
+2025-12-01 14:17:38,030 - INFO - Total runtime: 0.000201s (BFS: 0.000063s, DFS: 0.000390s)
+2025-12-01 14:17:38,031 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_v/simple_v_10_execution_data.json
+2025-12-01 14:17:38,032 - INFO - ✓ Completed: max_flow=3, min_cut=3, runtime=0.000201s
+2025-12-01 14:17:38,032 - WARNING - Using default source=0, sink=279 for simple_v_11.txt
+2025-12-01 14:17:38,032 - INFO - 
+Processing: simple_v_11.txt (family: , source: 0, sink: 279)
+2025-12-01 14:17:38,032 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_v/simple_v_11.txt
+2025-12-01 14:17:38,032 - INFO - Running Dinic's algorithm: source=0, sink=279
+2025-12-01 14:17:38,033 - INFO - Maximum flow: 4
+2025-12-01 14:17:38,033 - INFO - Minimum cut value: 4
+2025-12-01 14:17:38,033 - INFO - Total runtime: 0.000258s (BFS: 0.000078s, DFS: 0.000606s)
+2025-12-01 14:17:38,034 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_v/simple_v_11_execution_data.json
+2025-12-01 14:17:38,034 - INFO - ✓ Completed: max_flow=4, min_cut=4, runtime=0.000258s
+2025-12-01 14:17:38,034 - WARNING - Using default source=0, sink=299 for simple_v_12.txt
+2025-12-01 14:17:38,034 - INFO - 
+Processing: simple_v_12.txt (family: , source: 0, sink: 299)
+2025-12-01 14:17:38,034 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_v/simple_v_12.txt
+2025-12-01 14:17:38,035 - INFO - Running Dinic's algorithm: source=0, sink=299
+2025-12-01 14:17:38,035 - INFO - Maximum flow: 4
+2025-12-01 14:17:38,035 - INFO - Minimum cut value: 4
+2025-12-01 14:17:38,035 - INFO - Total runtime: 0.000273s (BFS: 0.000088s, DFS: 0.000565s)
+2025-12-01 14:17:38,036 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_v/simple_v_12_execution_data.json
+2025-12-01 14:17:38,037 - INFO - ✓ Completed: max_flow=4, min_cut=4, runtime=0.000273s
+2025-12-01 14:17:38,037 - WARNING - Using default source=0, sink=319 for simple_v_13.txt
+2025-12-01 14:17:38,037 - INFO - 
+Processing: simple_v_13.txt (family: , source: 0, sink: 319)
+2025-12-01 14:17:38,037 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_v/simple_v_13.txt
+2025-12-01 14:17:38,037 - INFO - Running Dinic's algorithm: source=0, sink=319
+2025-12-01 14:17:38,037 - INFO - Maximum flow: 3
+2025-12-01 14:17:38,037 - INFO - Minimum cut value: 3
+2025-12-01 14:17:38,037 - INFO - Total runtime: 0.000187s (BFS: 0.000060s, DFS: 0.000439s)
+2025-12-01 14:17:38,038 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_v/simple_v_13_execution_data.json
+2025-12-01 14:17:38,039 - INFO - ✓ Completed: max_flow=3, min_cut=3, runtime=0.000187s
+2025-12-01 14:17:38,039 - WARNING - Using default source=0, sink=339 for simple_v_14.txt
+2025-12-01 14:17:38,039 - INFO - 
+Processing: simple_v_14.txt (family: , source: 0, sink: 339)
+2025-12-01 14:17:38,039 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_v/simple_v_14.txt
+2025-12-01 14:17:38,039 - INFO - Running Dinic's algorithm: source=0, sink=339
+2025-12-01 14:17:38,039 - INFO - Maximum flow: 3
+2025-12-01 14:17:38,039 - INFO - Minimum cut value: 3
+2025-12-01 14:17:38,039 - INFO - Total runtime: 0.000153s (BFS: 0.000055s, DFS: 0.000283s)
+2025-12-01 14:17:38,040 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_v/simple_v_14_execution_data.json
+2025-12-01 14:17:38,041 - INFO - ✓ Completed: max_flow=3, min_cut=3, runtime=0.000153s
+2025-12-01 14:17:38,041 - WARNING - Using default source=0, sink=359 for simple_v_15.txt
+2025-12-01 14:17:38,041 - INFO - 
+Processing: simple_v_15.txt (family: , source: 0, sink: 359)
+2025-12-01 14:17:38,041 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_v/simple_v_15.txt
+2025-12-01 14:17:38,041 - INFO - Running Dinic's algorithm: source=0, sink=359
+2025-12-01 14:17:38,041 - INFO - Maximum flow: 1
+2025-12-01 14:17:38,041 - INFO - Minimum cut value: 1
+2025-12-01 14:17:38,041 - INFO - Total runtime: 0.000056s (BFS: 0.000022s, DFS: 0.000082s)
+2025-12-01 14:17:38,042 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_v/simple_v_15_execution_data.json
+2025-12-01 14:17:38,043 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000056s
+2025-12-01 14:17:38,043 - WARNING - Using default source=0, sink=379 for simple_v_16.txt
+2025-12-01 14:17:38,043 - INFO - 
+Processing: simple_v_16.txt (family: , source: 0, sink: 379)
+2025-12-01 14:17:38,043 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_v/simple_v_16.txt
+2025-12-01 14:17:38,043 - INFO - Running Dinic's algorithm: source=0, sink=379
+2025-12-01 14:17:38,043 - INFO - Maximum flow: 2
+2025-12-01 14:17:38,043 - INFO - Minimum cut value: 2
+2025-12-01 14:17:38,043 - INFO - Total runtime: 0.000118s (BFS: 0.000038s, DFS: 0.000218s)
+2025-12-01 14:17:38,045 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_v/simple_v_16_execution_data.json
+2025-12-01 14:17:38,045 - INFO - ✓ Completed: max_flow=2, min_cut=2, runtime=0.000118s
+2025-12-01 14:17:38,045 - WARNING - Using default source=0, sink=399 for simple_v_17.txt
+2025-12-01 14:17:38,045 - INFO - 
+Processing: simple_v_17.txt (family: , source: 0, sink: 399)
+2025-12-01 14:17:38,045 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_v/simple_v_17.txt
+2025-12-01 14:17:38,046 - INFO - Running Dinic's algorithm: source=0, sink=399
+2025-12-01 14:17:38,046 - INFO - Maximum flow: 1
+2025-12-01 14:17:38,046 - INFO - Minimum cut value: 1
+2025-12-01 14:17:38,046 - INFO - Total runtime: 0.000054s (BFS: 0.000020s, DFS: 0.000076s)
+2025-12-01 14:17:38,047 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_v/simple_v_17_execution_data.json
+2025-12-01 14:17:38,047 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000054s
+2025-12-01 14:17:38,047 - WARNING - Using default source=0, sink=419 for simple_v_18.txt
+2025-12-01 14:17:38,047 - INFO - 
+Processing: simple_v_18.txt (family: , source: 0, sink: 419)
+2025-12-01 14:17:38,047 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_v/simple_v_18.txt
+2025-12-01 14:17:38,047 - INFO - Running Dinic's algorithm: source=0, sink=419
+2025-12-01 14:17:38,048 - INFO - Maximum flow: 2
+2025-12-01 14:17:38,048 - INFO - Minimum cut value: 2
+2025-12-01 14:17:38,048 - INFO - Total runtime: 0.000165s (BFS: 0.000033s, DFS: 0.000284s)
+2025-12-01 14:17:38,049 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_v/simple_v_18_execution_data.json
+2025-12-01 14:17:38,049 - INFO - ✓ Completed: max_flow=2, min_cut=2, runtime=0.000165s
+2025-12-01 14:17:38,049 - WARNING - Using default source=0, sink=439 for simple_v_19.txt
+2025-12-01 14:17:38,049 - INFO - 
+Processing: simple_v_19.txt (family: , source: 0, sink: 439)
+2025-12-01 14:17:38,049 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_v/simple_v_19.txt
+2025-12-01 14:17:38,050 - INFO - Running Dinic's algorithm: source=0, sink=439
+2025-12-01 14:17:38,050 - INFO - Maximum flow: 1
+2025-12-01 14:17:38,050 - INFO - Minimum cut value: 1
+2025-12-01 14:17:38,050 - INFO - Total runtime: 0.000049s (BFS: 0.000018s, DFS: 0.000056s)
+2025-12-01 14:17:38,051 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_v/simple_v_19_execution_data.json
+2025-12-01 14:17:38,051 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000049s
+2025-12-01 14:17:38,052 - WARNING - Using default source=0, sink=99 for simple_v_2.txt
+2025-12-01 14:17:38,052 - INFO - 
+Processing: simple_v_2.txt (family: , source: 0, sink: 99)
+2025-12-01 14:17:38,052 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_v/simple_v_2.txt
+2025-12-01 14:17:38,052 - INFO - Running Dinic's algorithm: source=0, sink=99
+2025-12-01 14:17:38,053 - INFO - Maximum flow: 108
+2025-12-01 14:17:38,053 - INFO - Minimum cut value: 108
+2025-12-01 14:17:38,053 - INFO - Total runtime: 0.000696s (BFS: 0.000184s, DFS: 0.002176s)
+2025-12-01 14:17:38,054 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_v/simple_v_2_execution_data.json
+2025-12-01 14:17:38,054 - INFO - ✓ Completed: max_flow=108, min_cut=108, runtime=0.000696s
+2025-12-01 14:17:38,054 - WARNING - Using default source=0, sink=459 for simple_v_20.txt
+2025-12-01 14:17:38,054 - INFO - 
+Processing: simple_v_20.txt (family: , source: 0, sink: 459)
+2025-12-01 14:17:38,054 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_v/simple_v_20.txt
+2025-12-01 14:17:38,055 - INFO - Running Dinic's algorithm: source=0, sink=459
+2025-12-01 14:17:38,055 - INFO - Maximum flow: 3
+2025-12-01 14:17:38,055 - INFO - Minimum cut value: 3
+2025-12-01 14:17:38,055 - INFO - Total runtime: 0.000048s (BFS: 0.000018s, DFS: 0.000047s)
+2025-12-01 14:17:38,056 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_v/simple_v_20_execution_data.json
+2025-12-01 14:17:38,056 - INFO - ✓ Completed: max_flow=3, min_cut=3, runtime=0.000048s
+2025-12-01 14:17:38,056 - WARNING - Using default source=0, sink=119 for simple_v_3.txt
+2025-12-01 14:17:38,056 - INFO - 
+Processing: simple_v_3.txt (family: , source: 0, sink: 119)
+2025-12-01 14:17:38,056 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_v/simple_v_3.txt
+2025-12-01 14:17:38,056 - INFO - Running Dinic's algorithm: source=0, sink=119
+2025-12-01 14:17:38,057 - INFO - Maximum flow: 21
+2025-12-01 14:17:38,057 - INFO - Minimum cut value: 21
+2025-12-01 14:17:38,057 - INFO - Total runtime: 0.000916s (BFS: 0.000260s, DFS: 0.002597s)
+2025-12-01 14:17:38,059 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_v/simple_v_3_execution_data.json
+2025-12-01 14:17:38,059 - INFO - ✓ Completed: max_flow=21, min_cut=21, runtime=0.000916s
+2025-12-01 14:17:38,059 - WARNING - Using default source=0, sink=139 for simple_v_4.txt
+2025-12-01 14:17:38,059 - INFO - 
+Processing: simple_v_4.txt (family: , source: 0, sink: 139)
+2025-12-01 14:17:38,059 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_v/simple_v_4.txt
+2025-12-01 14:17:38,059 - INFO - Running Dinic's algorithm: source=0, sink=139
+2025-12-01 14:17:38,060 - INFO - Maximum flow: 7
+2025-12-01 14:17:38,060 - INFO - Minimum cut value: 7
+2025-12-01 14:17:38,060 - INFO - Total runtime: 0.000595s (BFS: 0.000184s, DFS: 0.002028s)
+2025-12-01 14:17:38,061 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_v/simple_v_4_execution_data.json
+2025-12-01 14:17:38,061 - INFO - ✓ Completed: max_flow=7, min_cut=7, runtime=0.000595s
+2025-12-01 14:17:38,062 - WARNING - Using default source=0, sink=159 for simple_v_5.txt
+2025-12-01 14:17:38,062 - INFO - 
+Processing: simple_v_5.txt (family: , source: 0, sink: 159)
+2025-12-01 14:17:38,062 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_v/simple_v_5.txt
+2025-12-01 14:17:38,062 - INFO - Running Dinic's algorithm: source=0, sink=159
+2025-12-01 14:17:38,062 - INFO - Maximum flow: 28
+2025-12-01 14:17:38,062 - INFO - Minimum cut value: 28
+2025-12-01 14:17:38,062 - INFO - Total runtime: 0.000568s (BFS: 0.000181s, DFS: 0.001517s)
+2025-12-01 14:17:38,063 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_v/simple_v_5_execution_data.json
+2025-12-01 14:17:38,064 - INFO - ✓ Completed: max_flow=28, min_cut=28, runtime=0.000568s
+2025-12-01 14:17:38,064 - WARNING - Using default source=0, sink=179 for simple_v_6.txt
+2025-12-01 14:17:38,064 - INFO - 
+Processing: simple_v_6.txt (family: , source: 0, sink: 179)
+2025-12-01 14:17:38,064 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_v/simple_v_6.txt
+2025-12-01 14:17:38,064 - INFO - Running Dinic's algorithm: source=0, sink=179
+2025-12-01 14:17:38,065 - INFO - Maximum flow: 69
+2025-12-01 14:17:38,065 - INFO - Minimum cut value: 69
+2025-12-01 14:17:38,065 - INFO - Total runtime: 0.000815s (BFS: 0.000244s, DFS: 0.002690s)
+2025-12-01 14:17:38,066 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_v/simple_v_6_execution_data.json
+2025-12-01 14:17:38,067 - INFO - ✓ Completed: max_flow=69, min_cut=69, runtime=0.000815s
+2025-12-01 14:17:38,067 - WARNING - Using default source=0, sink=199 for simple_v_7.txt
+2025-12-01 14:17:38,067 - INFO - 
+Processing: simple_v_7.txt (family: , source: 0, sink: 199)
+2025-12-01 14:17:38,067 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_v/simple_v_7.txt
+2025-12-01 14:17:38,067 - INFO - Running Dinic's algorithm: source=0, sink=199
+2025-12-01 14:17:38,067 - INFO - Maximum flow: 7
+2025-12-01 14:17:38,068 - INFO - Minimum cut value: 7
+2025-12-01 14:17:38,068 - INFO - Total runtime: 0.000274s (BFS: 0.000128s, DFS: 0.000647s)
+2025-12-01 14:17:38,068 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_v/simple_v_7_execution_data.json
+2025-12-01 14:17:38,069 - INFO - ✓ Completed: max_flow=7, min_cut=7, runtime=0.000274s
+2025-12-01 14:17:38,069 - WARNING - Using default source=0, sink=219 for simple_v_8.txt
+2025-12-01 14:17:38,069 - INFO - 
+Processing: simple_v_8.txt (family: , source: 0, sink: 219)
+2025-12-01 14:17:38,069 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_v/simple_v_8.txt
+2025-12-01 14:17:38,069 - INFO - Running Dinic's algorithm: source=0, sink=219
+2025-12-01 14:17:38,069 - INFO - Maximum flow: 4
+2025-12-01 14:17:38,069 - INFO - Minimum cut value: 4
+2025-12-01 14:17:38,069 - INFO - Total runtime: 0.000134s (BFS: 0.000049s, DFS: 0.000255s)
+2025-12-01 14:17:38,070 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_v/simple_v_8_execution_data.json
+2025-12-01 14:17:38,071 - INFO - ✓ Completed: max_flow=4, min_cut=4, runtime=0.000134s
+2025-12-01 14:17:38,071 - WARNING - Using default source=0, sink=239 for simple_v_9.txt
+2025-12-01 14:17:38,071 - INFO - 
+Processing: simple_v_9.txt (family: , source: 0, sink: 239)
+2025-12-01 14:17:38,071 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/simple_v/simple_v_9.txt
+2025-12-01 14:17:38,071 - INFO - Running Dinic's algorithm: source=0, sink=239
+2025-12-01 14:17:38,071 - INFO - Maximum flow: 7
+2025-12-01 14:17:38,071 - INFO - Minimum cut value: 7
+2025-12-01 14:17:38,071 - INFO - Total runtime: 0.000417s (BFS: 0.000138s, DFS: 0.001330s)
+2025-12-01 14:17:38,072 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/simple_v/simple_v_9_execution_data.json
+2025-12-01 14:17:38,073 - INFO - ✓ Completed: max_flow=7, min_cut=7, runtime=0.000417s
+2025-12-01 14:17:38,073 - INFO - 
+============================================================
+2025-12-01 14:17:38,073 - INFO - Batch experiments complete!
+2025-12-01 14:17:38,073 - INFO - ============================================================
+2025-12-01 14:17:38,073 - INFO - Total graphs processed: 20
+2025-12-01 14:17:38,073 - INFO - 
+Results saved to: /Users/arun/AAD_ProjectM25/algorithms/dinics/results
+2025-12-01 14:17:38,073 - INFO - Execution data organized by folder: results/graphs/, results/graphs_v/, results/graphs_e/
+2025-12-01 14:17:38,073 - INFO - 
+To generate visualizations for a specific batch, run:
+2025-12-01 14:17:38,073 - INFO -   python3 code/visualizer_script.py <batch_folder>
+2025-12-01 14:17:38,073 - INFO - 
+To generate analysis table for a specific batch, run:
+2025-12-01 14:17:38,073 - INFO -   python3 code/analyze.py <batch_folder>
+2025-12-01 14:17:38,073 - INFO - 
+To generate scatter plots for a specific batch, run:
+2025-12-01 14:17:38,073 - INFO -   python3 code/plot.py <batch_folder>
+2025-12-01 14:17:51,638 - INFO - ============================================================
+2025-12-01 14:17:51,638 - INFO - Starting batch experiments
+2025-12-01 14:17:51,638 - INFO - Processing batch folder: unitcap_e
+2025-12-01 14:17:51,638 - INFO - ============================================================
+2025-12-01 14:17:51,638 - INFO - 
+============================================================
+2025-12-01 14:17:51,638 - INFO - Processing folder: unitcap_e/ (20 graph(s))
+2025-12-01 14:17:51,638 - INFO - ============================================================
+2025-12-01 14:17:51,639 - WARNING - Using default source=0, sink=149 for unitcap_e_1.txt
+2025-12-01 14:17:51,639 - INFO - 
+Processing: unitcap_e_1.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:51,639 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_e/unitcap_e_1.txt
+2025-12-01 14:17:51,639 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:51,640 - INFO - Maximum flow: 10
+2025-12-01 14:17:51,640 - INFO - Minimum cut value: 10
+2025-12-01 14:17:51,640 - INFO - Total runtime: 0.000268s (BFS: 0.000081s, DFS: 0.001173s)
+2025-12-01 14:17:51,641 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_e/unitcap_e_1_execution_data.json
+2025-12-01 14:17:51,641 - INFO - ✓ Completed: max_flow=10, min_cut=10, runtime=0.000268s
+2025-12-01 14:17:51,642 - WARNING - Using default source=0, sink=149 for unitcap_e_10.txt
+2025-12-01 14:17:51,642 - INFO - 
+Processing: unitcap_e_10.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:51,642 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_e/unitcap_e_10.txt
+2025-12-01 14:17:51,643 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:51,644 - INFO - Maximum flow: 14
+2025-12-01 14:17:51,644 - INFO - Minimum cut value: 14
+2025-12-01 14:17:51,644 - INFO - Total runtime: 0.000856s (BFS: 0.000245s, DFS: 0.004137s)
+2025-12-01 14:17:51,649 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_e/unitcap_e_10_execution_data.json
+2025-12-01 14:17:51,650 - INFO - ✓ Completed: max_flow=14, min_cut=14, runtime=0.000856s
+2025-12-01 14:17:51,650 - WARNING - Using default source=0, sink=149 for unitcap_e_11.txt
+2025-12-01 14:17:51,650 - INFO - 
+Processing: unitcap_e_11.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:51,650 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_e/unitcap_e_11.txt
+2025-12-01 14:17:51,651 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:51,653 - INFO - Maximum flow: 14
+2025-12-01 14:17:51,653 - INFO - Minimum cut value: 14
+2025-12-01 14:17:51,653 - INFO - Total runtime: 0.000846s (BFS: 0.000247s, DFS: 0.003725s)
+2025-12-01 14:17:51,657 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_e/unitcap_e_11_execution_data.json
+2025-12-01 14:17:51,658 - INFO - ✓ Completed: max_flow=14, min_cut=14, runtime=0.000846s
+2025-12-01 14:17:51,658 - WARNING - Using default source=0, sink=149 for unitcap_e_12.txt
+2025-12-01 14:17:51,658 - INFO - 
+Processing: unitcap_e_12.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:51,658 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_e/unitcap_e_12.txt
+2025-12-01 14:17:51,659 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:51,660 - INFO - Maximum flow: 14
+2025-12-01 14:17:51,660 - INFO - Minimum cut value: 14
+2025-12-01 14:17:51,660 - INFO - Total runtime: 0.000921s (BFS: 0.000278s, DFS: 0.004033s)
+2025-12-01 14:17:51,664 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_e/unitcap_e_12_execution_data.json
+2025-12-01 14:17:51,665 - INFO - ✓ Completed: max_flow=14, min_cut=14, runtime=0.000921s
+2025-12-01 14:17:51,665 - WARNING - Using default source=0, sink=149 for unitcap_e_13.txt
+2025-12-01 14:17:51,665 - INFO - 
+Processing: unitcap_e_13.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:51,665 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_e/unitcap_e_13.txt
+2025-12-01 14:17:51,666 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:51,668 - INFO - Maximum flow: 14
+2025-12-01 14:17:51,668 - INFO - Minimum cut value: 14
+2025-12-01 14:17:51,668 - INFO - Total runtime: 0.000909s (BFS: 0.000263s, DFS: 0.004109s)
+2025-12-01 14:17:51,672 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_e/unitcap_e_13_execution_data.json
+2025-12-01 14:17:51,673 - INFO - ✓ Completed: max_flow=14, min_cut=14, runtime=0.000909s
+2025-12-01 14:17:51,673 - WARNING - Using default source=0, sink=149 for unitcap_e_14.txt
+2025-12-01 14:17:51,673 - INFO - 
+Processing: unitcap_e_14.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:51,673 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_e/unitcap_e_14.txt
+2025-12-01 14:17:51,674 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:51,675 - INFO - Maximum flow: 14
+2025-12-01 14:17:51,676 - INFO - Minimum cut value: 14
+2025-12-01 14:17:51,676 - INFO - Total runtime: 0.000967s (BFS: 0.000273s, DFS: 0.004443s)
+2025-12-01 14:17:51,680 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_e/unitcap_e_14_execution_data.json
+2025-12-01 14:17:51,681 - INFO - ✓ Completed: max_flow=14, min_cut=14, runtime=0.000967s
+2025-12-01 14:17:51,681 - WARNING - Using default source=0, sink=149 for unitcap_e_15.txt
+2025-12-01 14:17:51,681 - INFO - 
+Processing: unitcap_e_15.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:51,681 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_e/unitcap_e_15.txt
+2025-12-01 14:17:51,682 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:51,683 - INFO - Maximum flow: 14
+2025-12-01 14:17:51,683 - INFO - Minimum cut value: 14
+2025-12-01 14:17:51,683 - INFO - Total runtime: 0.001014s (BFS: 0.000284s, DFS: 0.004669s)
+2025-12-01 14:17:51,689 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_e/unitcap_e_15_execution_data.json
+2025-12-01 14:17:51,689 - INFO - ✓ Completed: max_flow=14, min_cut=14, runtime=0.001014s
+2025-12-01 14:17:51,689 - WARNING - Using default source=0, sink=149 for unitcap_e_16.txt
+2025-12-01 14:17:51,689 - INFO - 
+Processing: unitcap_e_16.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:51,690 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_e/unitcap_e_16.txt
+2025-12-01 14:17:51,691 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:51,692 - INFO - Maximum flow: 14
+2025-12-01 14:17:51,692 - INFO - Minimum cut value: 14
+2025-12-01 14:17:51,692 - INFO - Total runtime: 0.001027s (BFS: 0.000292s, DFS: 0.004708s)
+2025-12-01 14:17:51,697 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_e/unitcap_e_16_execution_data.json
+2025-12-01 14:17:51,698 - INFO - ✓ Completed: max_flow=14, min_cut=14, runtime=0.001027s
+2025-12-01 14:17:51,698 - WARNING - Using default source=0, sink=149 for unitcap_e_17.txt
+2025-12-01 14:17:51,698 - INFO - 
+Processing: unitcap_e_17.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:51,698 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_e/unitcap_e_17.txt
+2025-12-01 14:17:51,700 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:51,701 - INFO - Maximum flow: 14
+2025-12-01 14:17:51,701 - INFO - Minimum cut value: 14
+2025-12-01 14:17:51,701 - INFO - Total runtime: 0.001185s (BFS: 0.000422s, DFS: 0.004784s)
+2025-12-01 14:17:51,706 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_e/unitcap_e_17_execution_data.json
+2025-12-01 14:17:51,707 - INFO - ✓ Completed: max_flow=14, min_cut=14, runtime=0.001185s
+2025-12-01 14:17:51,707 - WARNING - Using default source=0, sink=149 for unitcap_e_18.txt
+2025-12-01 14:17:51,707 - INFO - 
+Processing: unitcap_e_18.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:51,707 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_e/unitcap_e_18.txt
+2025-12-01 14:17:51,708 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:51,710 - INFO - Maximum flow: 14
+2025-12-01 14:17:51,710 - INFO - Minimum cut value: 14
+2025-12-01 14:17:51,710 - INFO - Total runtime: 0.001264s (BFS: 0.000338s, DFS: 0.005999s)
+2025-12-01 14:17:51,716 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_e/unitcap_e_18_execution_data.json
+2025-12-01 14:17:51,717 - INFO - ✓ Completed: max_flow=14, min_cut=14, runtime=0.001264s
+2025-12-01 14:17:51,717 - WARNING - Using default source=0, sink=149 for unitcap_e_19.txt
+2025-12-01 14:17:51,717 - INFO - 
+Processing: unitcap_e_19.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:51,717 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_e/unitcap_e_19.txt
+2025-12-01 14:17:51,718 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:51,720 - INFO - Maximum flow: 14
+2025-12-01 14:17:51,720 - INFO - Minimum cut value: 14
+2025-12-01 14:17:51,720 - INFO - Total runtime: 0.001091s (BFS: 0.000323s, DFS: 0.004869s)
+2025-12-01 14:17:51,725 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_e/unitcap_e_19_execution_data.json
+2025-12-01 14:17:51,726 - INFO - ✓ Completed: max_flow=14, min_cut=14, runtime=0.001091s
+2025-12-01 14:17:51,726 - WARNING - Using default source=0, sink=149 for unitcap_e_2.txt
+2025-12-01 14:17:51,726 - INFO - 
+Processing: unitcap_e_2.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:51,726 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_e/unitcap_e_2.txt
+2025-12-01 14:17:51,727 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:51,727 - INFO - Maximum flow: 13
+2025-12-01 14:17:51,727 - INFO - Minimum cut value: 13
+2025-12-01 14:17:51,727 - INFO - Total runtime: 0.000167s (BFS: 0.000044s, DFS: 0.000571s)
+2025-12-01 14:17:51,728 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_e/unitcap_e_2_execution_data.json
+2025-12-01 14:17:51,729 - INFO - ✓ Completed: max_flow=13, min_cut=13, runtime=0.000167s
+2025-12-01 14:17:51,729 - WARNING - Using default source=0, sink=149 for unitcap_e_20.txt
+2025-12-01 14:17:51,729 - INFO - 
+Processing: unitcap_e_20.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:51,729 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_e/unitcap_e_20.txt
+2025-12-01 14:17:51,730 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:51,732 - INFO - Maximum flow: 14
+2025-12-01 14:17:51,732 - INFO - Minimum cut value: 14
+2025-12-01 14:17:51,732 - INFO - Total runtime: 0.001110s (BFS: 0.000331s, DFS: 0.004963s)
+2025-12-01 14:17:51,737 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_e/unitcap_e_20_execution_data.json
+2025-12-01 14:17:51,738 - INFO - ✓ Completed: max_flow=14, min_cut=14, runtime=0.001110s
+2025-12-01 14:17:51,738 - WARNING - Using default source=0, sink=149 for unitcap_e_3.txt
+2025-12-01 14:17:51,738 - INFO - 
+Processing: unitcap_e_3.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:51,738 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_e/unitcap_e_3.txt
+2025-12-01 14:17:51,739 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:51,739 - INFO - Maximum flow: 14
+2025-12-01 14:17:51,739 - INFO - Minimum cut value: 14
+2025-12-01 14:17:51,739 - INFO - Total runtime: 0.000318s (BFS: 0.000106s, DFS: 0.001246s)
+2025-12-01 14:17:51,741 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_e/unitcap_e_3_execution_data.json
+2025-12-01 14:17:51,741 - INFO - ✓ Completed: max_flow=14, min_cut=14, runtime=0.000318s
+2025-12-01 14:17:51,741 - WARNING - Using default source=0, sink=149 for unitcap_e_4.txt
+2025-12-01 14:17:51,741 - INFO - 
+Processing: unitcap_e_4.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:51,741 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_e/unitcap_e_4.txt
+2025-12-01 14:17:51,742 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:51,742 - INFO - Maximum flow: 14
+2025-12-01 14:17:51,742 - INFO - Minimum cut value: 14
+2025-12-01 14:17:51,742 - INFO - Total runtime: 0.000387s (BFS: 0.000129s, DFS: 0.001592s)
+2025-12-01 14:17:51,745 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_e/unitcap_e_4_execution_data.json
+2025-12-01 14:17:51,745 - INFO - ✓ Completed: max_flow=14, min_cut=14, runtime=0.000387s
+2025-12-01 14:17:51,745 - WARNING - Using default source=0, sink=149 for unitcap_e_5.txt
+2025-12-01 14:17:51,745 - INFO - 
+Processing: unitcap_e_5.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:51,745 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_e/unitcap_e_5.txt
+2025-12-01 14:17:51,746 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:51,746 - INFO - Maximum flow: 14
+2025-12-01 14:17:51,746 - INFO - Minimum cut value: 14
+2025-12-01 14:17:51,746 - INFO - Total runtime: 0.000187s (BFS: 0.000074s, DFS: 0.000553s)
+2025-12-01 14:17:51,748 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_e/unitcap_e_5_execution_data.json
+2025-12-01 14:17:51,748 - INFO - ✓ Completed: max_flow=14, min_cut=14, runtime=0.000187s
+2025-12-01 14:17:51,748 - WARNING - Using default source=0, sink=149 for unitcap_e_6.txt
+2025-12-01 14:17:51,748 - INFO - 
+Processing: unitcap_e_6.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:51,748 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_e/unitcap_e_6.txt
+2025-12-01 14:17:51,749 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:51,750 - INFO - Maximum flow: 14
+2025-12-01 14:17:51,750 - INFO - Minimum cut value: 14
+2025-12-01 14:17:51,750 - INFO - Total runtime: 0.000479s (BFS: 0.000141s, DFS: 0.002112s)
+2025-12-01 14:17:51,752 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_e/unitcap_e_6_execution_data.json
+2025-12-01 14:17:51,753 - INFO - ✓ Completed: max_flow=14, min_cut=14, runtime=0.000479s
+2025-12-01 14:17:51,753 - WARNING - Using default source=0, sink=149 for unitcap_e_7.txt
+2025-12-01 14:17:51,753 - INFO - 
+Processing: unitcap_e_7.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:51,753 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_e/unitcap_e_7.txt
+2025-12-01 14:17:51,753 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:51,754 - INFO - Maximum flow: 14
+2025-12-01 14:17:51,754 - INFO - Minimum cut value: 14
+2025-12-01 14:17:51,754 - INFO - Total runtime: 0.000556s (BFS: 0.000162s, DFS: 0.002455s)
+2025-12-01 14:17:51,757 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_e/unitcap_e_7_execution_data.json
+2025-12-01 14:17:51,758 - INFO - ✓ Completed: max_flow=14, min_cut=14, runtime=0.000556s
+2025-12-01 14:17:51,758 - WARNING - Using default source=0, sink=149 for unitcap_e_8.txt
+2025-12-01 14:17:51,758 - INFO - 
+Processing: unitcap_e_8.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:51,758 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_e/unitcap_e_8.txt
+2025-12-01 14:17:51,758 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:51,759 - INFO - Maximum flow: 14
+2025-12-01 14:17:51,759 - INFO - Minimum cut value: 14
+2025-12-01 14:17:51,759 - INFO - Total runtime: 0.000793s (BFS: 0.000287s, DFS: 0.003271s)
+2025-12-01 14:17:51,762 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_e/unitcap_e_8_execution_data.json
+2025-12-01 14:17:51,763 - INFO - ✓ Completed: max_flow=14, min_cut=14, runtime=0.000793s
+2025-12-01 14:17:51,763 - WARNING - Using default source=0, sink=149 for unitcap_e_9.txt
+2025-12-01 14:17:51,763 - INFO - 
+Processing: unitcap_e_9.txt (family: , source: 0, sink: 149)
+2025-12-01 14:17:51,763 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_e/unitcap_e_9.txt
+2025-12-01 14:17:51,764 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:17:51,764 - INFO - Maximum flow: 14
+2025-12-01 14:17:51,764 - INFO - Minimum cut value: 14
+2025-12-01 14:17:51,764 - INFO - Total runtime: 0.000640s (BFS: 0.000188s, DFS: 0.002865s)
+2025-12-01 14:17:51,768 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_e/unitcap_e_9_execution_data.json
+2025-12-01 14:17:51,768 - INFO - ✓ Completed: max_flow=14, min_cut=14, runtime=0.000640s
+2025-12-01 14:17:51,768 - INFO - 
+============================================================
+2025-12-01 14:17:51,768 - INFO - Batch experiments complete!
+2025-12-01 14:17:51,768 - INFO - ============================================================
+2025-12-01 14:17:51,768 - INFO - Total graphs processed: 20
+2025-12-01 14:17:51,768 - INFO - 
+Results saved to: /Users/arun/AAD_ProjectM25/algorithms/dinics/results
+2025-12-01 14:17:51,768 - INFO - Execution data organized by folder: results/graphs/, results/graphs_v/, results/graphs_e/
+2025-12-01 14:17:51,768 - INFO - 
+To generate visualizations for a specific batch, run:
+2025-12-01 14:17:51,768 - INFO -   python3 code/visualizer_script.py <batch_folder>
+2025-12-01 14:17:51,768 - INFO - 
+To generate analysis table for a specific batch, run:
+2025-12-01 14:17:51,768 - INFO -   python3 code/analyze.py <batch_folder>
+2025-12-01 14:17:51,768 - INFO - 
+To generate scatter plots for a specific batch, run:
+2025-12-01 14:17:51,768 - INFO -   python3 code/plot.py <batch_folder>
+2025-12-01 14:17:55,422 - INFO - ============================================================
+2025-12-01 14:17:55,422 - INFO - Starting batch experiments
+2025-12-01 14:17:55,422 - INFO - Processing batch folder: unitcap_v
+2025-12-01 14:17:55,422 - INFO - ============================================================
+2025-12-01 14:17:55,422 - INFO - 
+============================================================
+2025-12-01 14:17:55,422 - INFO - Processing folder: unitcap_v/ (20 graph(s))
+2025-12-01 14:17:55,422 - INFO - ============================================================
+2025-12-01 14:17:55,423 - WARNING - Using default source=0, sink=79 for unitcap_v_1.txt
+2025-12-01 14:17:55,423 - INFO - 
+Processing: unitcap_v_1.txt (family: , source: 0, sink: 79)
+2025-12-01 14:17:55,423 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_v/unitcap_v_1.txt
+2025-12-01 14:17:55,424 - INFO - Running Dinic's algorithm: source=0, sink=79
+2025-12-01 14:17:55,424 - INFO - Maximum flow: 13
+2025-12-01 14:17:55,424 - INFO - Minimum cut value: 13
+2025-12-01 14:17:55,424 - INFO - Total runtime: 0.000158s (BFS: 0.000047s, DFS: 0.000362s)
+2025-12-01 14:17:55,425 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_v/unitcap_v_1_execution_data.json
+2025-12-01 14:17:55,426 - INFO - ✓ Completed: max_flow=13, min_cut=13, runtime=0.000158s
+2025-12-01 14:17:55,426 - WARNING - Using default source=0, sink=259 for unitcap_v_10.txt
+2025-12-01 14:17:55,426 - INFO - 
+Processing: unitcap_v_10.txt (family: , source: 0, sink: 259)
+2025-12-01 14:17:55,426 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_v/unitcap_v_10.txt
+2025-12-01 14:17:55,426 - INFO - Running Dinic's algorithm: source=0, sink=259
+2025-12-01 14:17:55,426 - INFO - Maximum flow: 1
+2025-12-01 14:17:55,426 - INFO - Minimum cut value: 1
+2025-12-01 14:17:55,426 - INFO - Total runtime: 0.000108s (BFS: 0.000045s, DFS: 0.000251s)
+2025-12-01 14:17:55,428 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_v/unitcap_v_10_execution_data.json
+2025-12-01 14:17:55,428 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000108s
+2025-12-01 14:17:55,428 - WARNING - Using default source=0, sink=279 for unitcap_v_11.txt
+2025-12-01 14:17:55,428 - INFO - 
+Processing: unitcap_v_11.txt (family: , source: 0, sink: 279)
+2025-12-01 14:17:55,428 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_v/unitcap_v_11.txt
+2025-12-01 14:17:55,429 - INFO - Running Dinic's algorithm: source=0, sink=279
+2025-12-01 14:17:55,429 - INFO - Maximum flow: 2
+2025-12-01 14:17:55,429 - INFO - Minimum cut value: 2
+2025-12-01 14:17:55,429 - INFO - Total runtime: 0.000108s (BFS: 0.000049s, DFS: 0.000269s)
+2025-12-01 14:17:55,430 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_v/unitcap_v_11_execution_data.json
+2025-12-01 14:17:55,430 - INFO - ✓ Completed: max_flow=2, min_cut=2, runtime=0.000108s
+2025-12-01 14:17:55,430 - WARNING - Using default source=0, sink=299 for unitcap_v_12.txt
+2025-12-01 14:17:55,430 - INFO - 
+Processing: unitcap_v_12.txt (family: , source: 0, sink: 299)
+2025-12-01 14:17:55,430 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_v/unitcap_v_12.txt
+2025-12-01 14:17:55,431 - INFO - Running Dinic's algorithm: source=0, sink=299
+2025-12-01 14:17:55,431 - INFO - Maximum flow: 1
+2025-12-01 14:17:55,431 - INFO - Minimum cut value: 1
+2025-12-01 14:17:55,431 - INFO - Total runtime: 0.000078s (BFS: 0.000032s, DFS: 0.000217s)
+2025-12-01 14:17:55,432 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_v/unitcap_v_12_execution_data.json
+2025-12-01 14:17:55,432 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000078s
+2025-12-01 14:17:55,432 - WARNING - Using default source=0, sink=319 for unitcap_v_13.txt
+2025-12-01 14:17:55,432 - INFO - 
+Processing: unitcap_v_13.txt (family: , source: 0, sink: 319)
+2025-12-01 14:17:55,432 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_v/unitcap_v_13.txt
+2025-12-01 14:17:55,433 - INFO - Running Dinic's algorithm: source=0, sink=319
+2025-12-01 14:17:55,433 - INFO - Maximum flow: 1
+2025-12-01 14:17:55,433 - INFO - Minimum cut value: 1
+2025-12-01 14:17:55,433 - INFO - Total runtime: 0.000089s (BFS: 0.000039s, DFS: 0.000184s)
+2025-12-01 14:17:55,434 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_v/unitcap_v_13_execution_data.json
+2025-12-01 14:17:55,434 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000089s
+2025-12-01 14:17:55,434 - WARNING - Using default source=0, sink=339 for unitcap_v_14.txt
+2025-12-01 14:17:55,434 - INFO - 
+Processing: unitcap_v_14.txt (family: , source: 0, sink: 339)
+2025-12-01 14:17:55,434 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_v/unitcap_v_14.txt
+2025-12-01 14:17:55,435 - INFO - Running Dinic's algorithm: source=0, sink=339
+2025-12-01 14:17:55,435 - INFO - Maximum flow: 1
+2025-12-01 14:17:55,435 - INFO - Minimum cut value: 1
+2025-12-01 14:17:55,435 - INFO - Total runtime: 0.000083s (BFS: 0.000032s, DFS: 0.000203s)
+2025-12-01 14:17:55,436 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_v/unitcap_v_14_execution_data.json
+2025-12-01 14:17:55,437 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000083s
+2025-12-01 14:17:55,437 - WARNING - Using default source=0, sink=359 for unitcap_v_15.txt
+2025-12-01 14:17:55,437 - INFO - 
+Processing: unitcap_v_15.txt (family: , source: 0, sink: 359)
+2025-12-01 14:17:55,437 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_v/unitcap_v_15.txt
+2025-12-01 14:17:55,437 - INFO - Running Dinic's algorithm: source=0, sink=359
+2025-12-01 14:17:55,437 - INFO - Maximum flow: 1
+2025-12-01 14:17:55,437 - INFO - Minimum cut value: 1
+2025-12-01 14:17:55,437 - INFO - Total runtime: 0.000080s (BFS: 0.000031s, DFS: 0.000175s)
+2025-12-01 14:17:55,438 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_v/unitcap_v_15_execution_data.json
+2025-12-01 14:17:55,439 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000080s
+2025-12-01 14:17:55,439 - WARNING - Using default source=0, sink=379 for unitcap_v_16.txt
+2025-12-01 14:17:55,439 - INFO - 
+Processing: unitcap_v_16.txt (family: , source: 0, sink: 379)
+2025-12-01 14:17:55,439 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_v/unitcap_v_16.txt
+2025-12-01 14:17:55,439 - INFO - Running Dinic's algorithm: source=0, sink=379
+2025-12-01 14:17:55,439 - INFO - Maximum flow: 1
+2025-12-01 14:17:55,439 - INFO - Minimum cut value: 1
+2025-12-01 14:17:55,439 - INFO - Total runtime: 0.000036s (BFS: 0.000014s, DFS: 0.000096s)
+2025-12-01 14:17:55,440 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_v/unitcap_v_16_execution_data.json
+2025-12-01 14:17:55,441 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000036s
+2025-12-01 14:17:55,441 - WARNING - Using default source=0, sink=399 for unitcap_v_17.txt
+2025-12-01 14:17:55,441 - INFO - 
+Processing: unitcap_v_17.txt (family: , source: 0, sink: 399)
+2025-12-01 14:17:55,441 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_v/unitcap_v_17.txt
+2025-12-01 14:17:55,441 - INFO - Running Dinic's algorithm: source=0, sink=399
+2025-12-01 14:17:55,441 - INFO - Maximum flow: 1
+2025-12-01 14:17:55,441 - INFO - Minimum cut value: 1
+2025-12-01 14:17:55,441 - INFO - Total runtime: 0.000044s (BFS: 0.000017s, DFS: 0.000131s)
+2025-12-01 14:17:55,442 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_v/unitcap_v_17_execution_data.json
+2025-12-01 14:17:55,443 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000044s
+2025-12-01 14:17:55,443 - WARNING - Using default source=0, sink=419 for unitcap_v_18.txt
+2025-12-01 14:17:55,443 - INFO - 
+Processing: unitcap_v_18.txt (family: , source: 0, sink: 419)
+2025-12-01 14:17:55,443 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_v/unitcap_v_18.txt
+2025-12-01 14:17:55,443 - INFO - Running Dinic's algorithm: source=0, sink=419
+2025-12-01 14:17:55,443 - INFO - Maximum flow: 1
+2025-12-01 14:17:55,443 - INFO - Minimum cut value: 1
+2025-12-01 14:17:55,443 - INFO - Total runtime: 0.000053s (BFS: 0.000021s, DFS: 0.000127s)
+2025-12-01 14:17:55,445 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_v/unitcap_v_18_execution_data.json
+2025-12-01 14:17:55,445 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000053s
+2025-12-01 14:17:55,445 - WARNING - Using default source=0, sink=439 for unitcap_v_19.txt
+2025-12-01 14:17:55,445 - INFO - 
+Processing: unitcap_v_19.txt (family: , source: 0, sink: 439)
+2025-12-01 14:17:55,445 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_v/unitcap_v_19.txt
+2025-12-01 14:17:55,445 - INFO - Running Dinic's algorithm: source=0, sink=439
+2025-12-01 14:17:55,445 - INFO - Maximum flow: 1
+2025-12-01 14:17:55,445 - INFO - Minimum cut value: 1
+2025-12-01 14:17:55,445 - INFO - Total runtime: 0.000050s (BFS: 0.000019s, DFS: 0.000125s)
+2025-12-01 14:17:55,447 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_v/unitcap_v_19_execution_data.json
+2025-12-01 14:17:55,447 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000050s
+2025-12-01 14:17:55,447 - WARNING - Using default source=0, sink=99 for unitcap_v_2.txt
+2025-12-01 14:17:55,447 - INFO - 
+Processing: unitcap_v_2.txt (family: , source: 0, sink: 99)
+2025-12-01 14:17:55,447 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_v/unitcap_v_2.txt
+2025-12-01 14:17:55,447 - INFO - Running Dinic's algorithm: source=0, sink=99
+2025-12-01 14:17:55,448 - INFO - Maximum flow: 10
+2025-12-01 14:17:55,448 - INFO - Minimum cut value: 10
+2025-12-01 14:17:55,448 - INFO - Total runtime: 0.000204s (BFS: 0.000058s, DFS: 0.000685s)
+2025-12-01 14:17:55,449 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_v/unitcap_v_2_execution_data.json
+2025-12-01 14:17:55,449 - INFO - ✓ Completed: max_flow=10, min_cut=10, runtime=0.000204s
+2025-12-01 14:17:55,449 - WARNING - Using default source=0, sink=459 for unitcap_v_20.txt
+2025-12-01 14:17:55,449 - INFO - 
+Processing: unitcap_v_20.txt (family: , source: 0, sink: 459)
+2025-12-01 14:17:55,449 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_v/unitcap_v_20.txt
+2025-12-01 14:17:55,449 - INFO - Running Dinic's algorithm: source=0, sink=459
+2025-12-01 14:17:55,450 - INFO - Maximum flow: 1
+2025-12-01 14:17:55,450 - INFO - Minimum cut value: 1
+2025-12-01 14:17:55,450 - INFO - Total runtime: 0.000059s (BFS: 0.000024s, DFS: 0.000153s)
+2025-12-01 14:17:55,451 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_v/unitcap_v_20_execution_data.json
+2025-12-01 14:17:55,451 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000059s
+2025-12-01 14:17:55,451 - WARNING - Using default source=0, sink=119 for unitcap_v_3.txt
+2025-12-01 14:17:55,451 - INFO - 
+Processing: unitcap_v_3.txt (family: , source: 0, sink: 119)
+2025-12-01 14:17:55,451 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_v/unitcap_v_3.txt
+2025-12-01 14:17:55,452 - INFO - Running Dinic's algorithm: source=0, sink=119
+2025-12-01 14:17:55,452 - INFO - Maximum flow: 12
+2025-12-01 14:17:55,452 - INFO - Minimum cut value: 12
+2025-12-01 14:17:55,452 - INFO - Total runtime: 0.000187s (BFS: 0.000065s, DFS: 0.000518s)
+2025-12-01 14:17:55,453 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_v/unitcap_v_3_execution_data.json
+2025-12-01 14:17:55,453 - INFO - ✓ Completed: max_flow=12, min_cut=12, runtime=0.000187s
+2025-12-01 14:17:55,453 - WARNING - Using default source=0, sink=139 for unitcap_v_4.txt
+2025-12-01 14:17:55,453 - INFO - 
+Processing: unitcap_v_4.txt (family: , source: 0, sink: 139)
+2025-12-01 14:17:55,453 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_v/unitcap_v_4.txt
+2025-12-01 14:17:55,454 - INFO - Running Dinic's algorithm: source=0, sink=139
+2025-12-01 14:17:55,454 - INFO - Maximum flow: 14
+2025-12-01 14:17:55,454 - INFO - Minimum cut value: 14
+2025-12-01 14:17:55,454 - INFO - Total runtime: 0.000357s (BFS: 0.000125s, DFS: 0.001484s)
+2025-12-01 14:17:55,455 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_v/unitcap_v_4_execution_data.json
+2025-12-01 14:17:55,456 - INFO - ✓ Completed: max_flow=14, min_cut=14, runtime=0.000357s
+2025-12-01 14:17:55,456 - WARNING - Using default source=0, sink=159 for unitcap_v_5.txt
+2025-12-01 14:17:55,456 - INFO - 
+Processing: unitcap_v_5.txt (family: , source: 0, sink: 159)
+2025-12-01 14:17:55,456 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_v/unitcap_v_5.txt
+2025-12-01 14:17:55,456 - INFO - Running Dinic's algorithm: source=0, sink=159
+2025-12-01 14:17:55,456 - INFO - Maximum flow: 11
+2025-12-01 14:17:55,456 - INFO - Minimum cut value: 11
+2025-12-01 14:17:55,456 - INFO - Total runtime: 0.000263s (BFS: 0.000095s, DFS: 0.001099s)
+2025-12-01 14:17:55,457 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_v/unitcap_v_5_execution_data.json
+2025-12-01 14:17:55,458 - INFO - ✓ Completed: max_flow=11, min_cut=11, runtime=0.000263s
+2025-12-01 14:17:55,458 - WARNING - Using default source=0, sink=179 for unitcap_v_6.txt
+2025-12-01 14:17:55,458 - INFO - 
+Processing: unitcap_v_6.txt (family: , source: 0, sink: 179)
+2025-12-01 14:17:55,458 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_v/unitcap_v_6.txt
+2025-12-01 14:17:55,458 - INFO - Running Dinic's algorithm: source=0, sink=179
+2025-12-01 14:17:55,458 - INFO - Maximum flow: 6
+2025-12-01 14:17:55,458 - INFO - Minimum cut value: 6
+2025-12-01 14:17:55,458 - INFO - Total runtime: 0.000108s (BFS: 0.000040s, DFS: 0.000313s)
+2025-12-01 14:17:55,459 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_v/unitcap_v_6_execution_data.json
+2025-12-01 14:17:55,460 - INFO - ✓ Completed: max_flow=6, min_cut=6, runtime=0.000108s
+2025-12-01 14:17:55,460 - WARNING - Using default source=0, sink=199 for unitcap_v_7.txt
+2025-12-01 14:17:55,460 - INFO - 
+Processing: unitcap_v_7.txt (family: , source: 0, sink: 199)
+2025-12-01 14:17:55,460 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_v/unitcap_v_7.txt
+2025-12-01 14:17:55,460 - INFO - Running Dinic's algorithm: source=0, sink=199
+2025-12-01 14:17:55,460 - INFO - Maximum flow: 5
+2025-12-01 14:17:55,460 - INFO - Minimum cut value: 5
+2025-12-01 14:17:55,460 - INFO - Total runtime: 0.000192s (BFS: 0.000073s, DFS: 0.000527s)
+2025-12-01 14:17:55,461 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_v/unitcap_v_7_execution_data.json
+2025-12-01 14:17:55,462 - INFO - ✓ Completed: max_flow=5, min_cut=5, runtime=0.000192s
+2025-12-01 14:17:55,462 - WARNING - Using default source=0, sink=219 for unitcap_v_8.txt
+2025-12-01 14:17:55,462 - INFO - 
+Processing: unitcap_v_8.txt (family: , source: 0, sink: 219)
+2025-12-01 14:17:55,462 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_v/unitcap_v_8.txt
+2025-12-01 14:17:55,462 - INFO - Running Dinic's algorithm: source=0, sink=219
+2025-12-01 14:17:55,462 - INFO - Maximum flow: 5
+2025-12-01 14:17:55,462 - INFO - Minimum cut value: 5
+2025-12-01 14:17:55,462 - INFO - Total runtime: 0.000146s (BFS: 0.000055s, DFS: 0.000475s)
+2025-12-01 14:17:55,463 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_v/unitcap_v_8_execution_data.json
+2025-12-01 14:17:55,464 - INFO - ✓ Completed: max_flow=5, min_cut=5, runtime=0.000146s
+2025-12-01 14:17:55,464 - WARNING - Using default source=0, sink=239 for unitcap_v_9.txt
+2025-12-01 14:17:55,464 - INFO - 
+Processing: unitcap_v_9.txt (family: , source: 0, sink: 239)
+2025-12-01 14:17:55,464 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/unitcap_v/unitcap_v_9.txt
+2025-12-01 14:17:55,464 - INFO - Running Dinic's algorithm: source=0, sink=239
+2025-12-01 14:17:55,464 - INFO - Maximum flow: 2
+2025-12-01 14:17:55,464 - INFO - Minimum cut value: 2
+2025-12-01 14:17:55,464 - INFO - Total runtime: 0.000080s (BFS: 0.000030s, DFS: 0.000264s)
+2025-12-01 14:17:55,465 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/unitcap_v/unitcap_v_9_execution_data.json
+2025-12-01 14:17:55,465 - INFO - ✓ Completed: max_flow=2, min_cut=2, runtime=0.000080s
+2025-12-01 14:17:55,466 - INFO - 
+============================================================
+2025-12-01 14:17:55,466 - INFO - Batch experiments complete!
+2025-12-01 14:17:55,466 - INFO - ============================================================
+2025-12-01 14:17:55,466 - INFO - Total graphs processed: 20
+2025-12-01 14:17:55,466 - INFO - 
+Results saved to: /Users/arun/AAD_ProjectM25/algorithms/dinics/results
+2025-12-01 14:17:55,466 - INFO - Execution data organized by folder: results/graphs/, results/graphs_v/, results/graphs_e/
+2025-12-01 14:17:55,466 - INFO - 
+To generate visualizations for a specific batch, run:
+2025-12-01 14:17:55,466 - INFO -   python3 code/visualizer_script.py <batch_folder>
+2025-12-01 14:17:55,466 - INFO - 
+To generate analysis table for a specific batch, run:
+2025-12-01 14:17:55,466 - INFO -   python3 code/analyze.py <batch_folder>
+2025-12-01 14:17:55,466 - INFO - 
+To generate scatter plots for a specific batch, run:
+2025-12-01 14:17:55,466 - INFO -   python3 code/plot.py <batch_folder>
+2025-12-01 14:18:09,240 - INFO - ============================================================
+2025-12-01 14:18:09,240 - INFO - Starting batch experiments
+2025-12-01 14:18:09,240 - INFO - Processing batch folder: worst_e
+2025-12-01 14:18:09,240 - INFO - ============================================================
+2025-12-01 14:18:09,240 - INFO - 
+============================================================
+2025-12-01 14:18:09,240 - INFO - Processing folder: worst_e/ (20 graph(s))
+2025-12-01 14:18:09,240 - INFO - ============================================================
+2025-12-01 14:18:09,241 - WARNING - Using default source=0, sink=149 for worst_e_1.txt
+2025-12-01 14:18:09,241 - INFO - 
+Processing: worst_e_1.txt (family: , source: 0, sink: 149)
+2025-12-01 14:18:09,241 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_e/worst_e_1.txt
+2025-12-01 14:18:09,241 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:18:09,242 - INFO - Maximum flow: 1
+2025-12-01 14:18:09,242 - INFO - Minimum cut value: 1
+2025-12-01 14:18:09,242 - INFO - Total runtime: 0.000136s (BFS: 0.000050s, DFS: 0.000766s)
+2025-12-01 14:18:09,243 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_e/worst_e_1_execution_data.json
+2025-12-01 14:18:09,244 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000136s
+2025-12-01 14:18:09,244 - WARNING - Using default source=0, sink=149 for worst_e_10.txt
+2025-12-01 14:18:09,244 - INFO - 
+Processing: worst_e_10.txt (family: , source: 0, sink: 149)
+2025-12-01 14:18:09,244 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_e/worst_e_10.txt
+2025-12-01 14:18:09,245 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:18:09,246 - INFO - Maximum flow: 6
+2025-12-01 14:18:09,246 - INFO - Minimum cut value: 6
+2025-12-01 14:18:09,246 - INFO - Total runtime: 0.001134s (BFS: 0.000393s, DFS: 0.002482s)
+2025-12-01 14:18:09,251 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_e/worst_e_10_execution_data.json
+2025-12-01 14:18:09,252 - INFO - ✓ Completed: max_flow=6, min_cut=6, runtime=0.001134s
+2025-12-01 14:18:09,252 - WARNING - Using default source=0, sink=149 for worst_e_11.txt
+2025-12-01 14:18:09,252 - INFO - 
+Processing: worst_e_11.txt (family: , source: 0, sink: 149)
+2025-12-01 14:18:09,252 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_e/worst_e_11.txt
+2025-12-01 14:18:09,253 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:18:09,255 - INFO - Maximum flow: 7
+2025-12-01 14:18:09,255 - INFO - Minimum cut value: 7
+2025-12-01 14:18:09,255 - INFO - Total runtime: 0.001432s (BFS: 0.000482s, DFS: 0.003922s)
+2025-12-01 14:18:09,259 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_e/worst_e_11_execution_data.json
+2025-12-01 14:18:09,260 - INFO - ✓ Completed: max_flow=7, min_cut=7, runtime=0.001432s
+2025-12-01 14:18:09,260 - WARNING - Using default source=0, sink=149 for worst_e_12.txt
+2025-12-01 14:18:09,260 - INFO - 
+Processing: worst_e_12.txt (family: , source: 0, sink: 149)
+2025-12-01 14:18:09,260 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_e/worst_e_12.txt
+2025-12-01 14:18:09,261 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:18:09,262 - INFO - Maximum flow: 3
+2025-12-01 14:18:09,262 - INFO - Minimum cut value: 3
+2025-12-01 14:18:09,262 - INFO - Total runtime: 0.000426s (BFS: 0.000124s, DFS: 0.001129s)
+2025-12-01 14:18:09,266 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_e/worst_e_12_execution_data.json
+2025-12-01 14:18:09,267 - INFO - ✓ Completed: max_flow=3, min_cut=3, runtime=0.000426s
+2025-12-01 14:18:09,267 - WARNING - Using default source=0, sink=149 for worst_e_13.txt
+2025-12-01 14:18:09,267 - INFO - 
+Processing: worst_e_13.txt (family: , source: 0, sink: 149)
+2025-12-01 14:18:09,267 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_e/worst_e_13.txt
+2025-12-01 14:18:09,268 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:18:09,269 - INFO - Maximum flow: 3
+2025-12-01 14:18:09,269 - INFO - Minimum cut value: 3
+2025-12-01 14:18:09,269 - INFO - Total runtime: 0.000852s (BFS: 0.000267s, DFS: 0.002268s)
+2025-12-01 14:18:09,273 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_e/worst_e_13_execution_data.json
+2025-12-01 14:18:09,274 - INFO - ✓ Completed: max_flow=3, min_cut=3, runtime=0.000852s
+2025-12-01 14:18:09,274 - WARNING - Using default source=0, sink=149 for worst_e_14.txt
+2025-12-01 14:18:09,274 - INFO - 
+Processing: worst_e_14.txt (family: , source: 0, sink: 149)
+2025-12-01 14:18:09,274 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_e/worst_e_14.txt
+2025-12-01 14:18:09,275 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:18:09,278 - INFO - Maximum flow: 16
+2025-12-01 14:18:09,278 - INFO - Minimum cut value: 16
+2025-12-01 14:18:09,278 - INFO - Total runtime: 0.002320s (BFS: 0.000701s, DFS: 0.005843s)
+2025-12-01 14:18:09,282 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_e/worst_e_14_execution_data.json
+2025-12-01 14:18:09,283 - INFO - ✓ Completed: max_flow=16, min_cut=16, runtime=0.002320s
+2025-12-01 14:18:09,284 - WARNING - Using default source=0, sink=149 for worst_e_15.txt
+2025-12-01 14:18:09,284 - INFO - 
+Processing: worst_e_15.txt (family: , source: 0, sink: 149)
+2025-12-01 14:18:09,284 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_e/worst_e_15.txt
+2025-12-01 14:18:09,285 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:18:09,286 - INFO - Maximum flow: 6
+2025-12-01 14:18:09,286 - INFO - Minimum cut value: 6
+2025-12-01 14:18:09,286 - INFO - Total runtime: 0.000648s (BFS: 0.000259s, DFS: 0.001212s)
+2025-12-01 14:18:09,290 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_e/worst_e_15_execution_data.json
+2025-12-01 14:18:09,291 - INFO - ✓ Completed: max_flow=6, min_cut=6, runtime=0.000648s
+2025-12-01 14:18:09,291 - WARNING - Using default source=0, sink=149 for worst_e_16.txt
+2025-12-01 14:18:09,292 - INFO - 
+Processing: worst_e_16.txt (family: , source: 0, sink: 149)
+2025-12-01 14:18:09,292 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_e/worst_e_16.txt
+2025-12-01 14:18:09,293 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:18:09,294 - INFO - Maximum flow: 6
+2025-12-01 14:18:09,294 - INFO - Minimum cut value: 6
+2025-12-01 14:18:09,294 - INFO - Total runtime: 0.000864s (BFS: 0.000291s, DFS: 0.001970s)
+2025-12-01 14:18:09,298 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_e/worst_e_16_execution_data.json
+2025-12-01 14:18:09,299 - INFO - ✓ Completed: max_flow=6, min_cut=6, runtime=0.000864s
+2025-12-01 14:18:09,299 - WARNING - Using default source=0, sink=149 for worst_e_17.txt
+2025-12-01 14:18:09,299 - INFO - 
+Processing: worst_e_17.txt (family: , source: 0, sink: 149)
+2025-12-01 14:18:09,299 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_e/worst_e_17.txt
+2025-12-01 14:18:09,301 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:18:09,301 - INFO - Maximum flow: 3
+2025-12-01 14:18:09,301 - INFO - Minimum cut value: 3
+2025-12-01 14:18:09,301 - INFO - Total runtime: 0.000493s (BFS: 0.000154s, DFS: 0.001281s)
+2025-12-01 14:18:09,306 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_e/worst_e_17_execution_data.json
+2025-12-01 14:18:09,307 - INFO - ✓ Completed: max_flow=3, min_cut=3, runtime=0.000493s
+2025-12-01 14:18:09,307 - WARNING - Using default source=0, sink=149 for worst_e_18.txt
+2025-12-01 14:18:09,307 - INFO - 
+Processing: worst_e_18.txt (family: , source: 0, sink: 149)
+2025-12-01 14:18:09,307 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_e/worst_e_18.txt
+2025-12-01 14:18:09,308 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:18:09,309 - INFO - Maximum flow: 9
+2025-12-01 14:18:09,309 - INFO - Minimum cut value: 9
+2025-12-01 14:18:09,309 - INFO - Total runtime: 0.001033s (BFS: 0.000425s, DFS: 0.001994s)
+2025-12-01 14:18:09,315 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_e/worst_e_18_execution_data.json
+2025-12-01 14:18:09,316 - INFO - ✓ Completed: max_flow=9, min_cut=9, runtime=0.001033s
+2025-12-01 14:18:09,316 - WARNING - Using default source=0, sink=149 for worst_e_19.txt
+2025-12-01 14:18:09,316 - INFO - 
+Processing: worst_e_19.txt (family: , source: 0, sink: 149)
+2025-12-01 14:18:09,316 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_e/worst_e_19.txt
+2025-12-01 14:18:09,317 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:18:09,319 - INFO - Maximum flow: 12
+2025-12-01 14:18:09,319 - INFO - Minimum cut value: 12
+2025-12-01 14:18:09,319 - INFO - Total runtime: 0.001967s (BFS: 0.000647s, DFS: 0.004235s)
+2025-12-01 14:18:09,325 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_e/worst_e_19_execution_data.json
+2025-12-01 14:18:09,326 - INFO - ✓ Completed: max_flow=12, min_cut=12, runtime=0.001967s
+2025-12-01 14:18:09,326 - WARNING - Using default source=0, sink=149 for worst_e_2.txt
+2025-12-01 14:18:09,326 - INFO - 
+Processing: worst_e_2.txt (family: , source: 0, sink: 149)
+2025-12-01 14:18:09,326 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_e/worst_e_2.txt
+2025-12-01 14:18:09,327 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:18:09,327 - INFO - Maximum flow: 3
+2025-12-01 14:18:09,327 - INFO - Minimum cut value: 3
+2025-12-01 14:18:09,327 - INFO - Total runtime: 0.000335s (BFS: 0.000121s, DFS: 0.000992s)
+2025-12-01 14:18:09,328 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_e/worst_e_2_execution_data.json
+2025-12-01 14:18:09,329 - INFO - ✓ Completed: max_flow=3, min_cut=3, runtime=0.000335s
+2025-12-01 14:18:09,329 - WARNING - Using default source=0, sink=149 for worst_e_20.txt
+2025-12-01 14:18:09,329 - INFO - 
+Processing: worst_e_20.txt (family: , source: 0, sink: 149)
+2025-12-01 14:18:09,329 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_e/worst_e_20.txt
+2025-12-01 14:18:09,330 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:18:09,333 - INFO - Maximum flow: 13
+2025-12-01 14:18:09,333 - INFO - Minimum cut value: 13
+2025-12-01 14:18:09,333 - INFO - Total runtime: 0.002221s (BFS: 0.000816s, DFS: 0.004419s)
+2025-12-01 14:18:09,339 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_e/worst_e_20_execution_data.json
+2025-12-01 14:18:09,340 - INFO - ✓ Completed: max_flow=13, min_cut=13, runtime=0.002221s
+2025-12-01 14:18:09,340 - WARNING - Using default source=0, sink=149 for worst_e_3.txt
+2025-12-01 14:18:09,340 - INFO - 
+Processing: worst_e_3.txt (family: , source: 0, sink: 149)
+2025-12-01 14:18:09,340 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_e/worst_e_3.txt
+2025-12-01 14:18:09,340 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:18:09,341 - INFO - Maximum flow: 2
+2025-12-01 14:18:09,341 - INFO - Minimum cut value: 2
+2025-12-01 14:18:09,341 - INFO - Total runtime: 0.000183s (BFS: 0.000108s, DFS: 0.000400s)
+2025-12-01 14:18:09,343 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_e/worst_e_3_execution_data.json
+2025-12-01 14:18:09,343 - INFO - ✓ Completed: max_flow=2, min_cut=2, runtime=0.000183s
+2025-12-01 14:18:09,343 - WARNING - Using default source=0, sink=149 for worst_e_4.txt
+2025-12-01 14:18:09,343 - INFO - 
+Processing: worst_e_4.txt (family: , source: 0, sink: 149)
+2025-12-01 14:18:09,343 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_e/worst_e_4.txt
+2025-12-01 14:18:09,343 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:18:09,344 - INFO - Maximum flow: 2
+2025-12-01 14:18:09,344 - INFO - Minimum cut value: 2
+2025-12-01 14:18:09,344 - INFO - Total runtime: 0.000553s (BFS: 0.000198s, DFS: 0.001406s)
+2025-12-01 14:18:09,346 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_e/worst_e_4_execution_data.json
+2025-12-01 14:18:09,347 - INFO - ✓ Completed: max_flow=2, min_cut=2, runtime=0.000553s
+2025-12-01 14:18:09,347 - WARNING - Using default source=0, sink=149 for worst_e_5.txt
+2025-12-01 14:18:09,347 - INFO - 
+Processing: worst_e_5.txt (family: , source: 0, sink: 149)
+2025-12-01 14:18:09,347 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_e/worst_e_5.txt
+2025-12-01 14:18:09,347 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:18:09,348 - INFO - Maximum flow: 3
+2025-12-01 14:18:09,348 - INFO - Minimum cut value: 3
+2025-12-01 14:18:09,348 - INFO - Total runtime: 0.000656s (BFS: 0.000197s, DFS: 0.002194s)
+2025-12-01 14:18:09,350 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_e/worst_e_5_execution_data.json
+2025-12-01 14:18:09,350 - INFO - ✓ Completed: max_flow=3, min_cut=3, runtime=0.000656s
+2025-12-01 14:18:09,350 - WARNING - Using default source=0, sink=149 for worst_e_6.txt
+2025-12-01 14:18:09,351 - INFO - 
+Processing: worst_e_6.txt (family: , source: 0, sink: 149)
+2025-12-01 14:18:09,351 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_e/worst_e_6.txt
+2025-12-01 14:18:09,351 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:18:09,352 - INFO - Maximum flow: 3
+2025-12-01 14:18:09,352 - INFO - Minimum cut value: 3
+2025-12-01 14:18:09,352 - INFO - Total runtime: 0.000598s (BFS: 0.000210s, DFS: 0.001720s)
+2025-12-01 14:18:09,354 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_e/worst_e_6_execution_data.json
+2025-12-01 14:18:09,354 - INFO - ✓ Completed: max_flow=3, min_cut=3, runtime=0.000598s
+2025-12-01 14:18:09,354 - WARNING - Using default source=0, sink=149 for worst_e_7.txt
+2025-12-01 14:18:09,354 - INFO - 
+Processing: worst_e_7.txt (family: , source: 0, sink: 149)
+2025-12-01 14:18:09,354 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_e/worst_e_7.txt
+2025-12-01 14:18:09,355 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:18:09,356 - INFO - Maximum flow: 2
+2025-12-01 14:18:09,356 - INFO - Minimum cut value: 2
+2025-12-01 14:18:09,356 - INFO - Total runtime: 0.000573s (BFS: 0.000162s, DFS: 0.001799s)
+2025-12-01 14:18:09,358 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_e/worst_e_7_execution_data.json
+2025-12-01 14:18:09,359 - INFO - ✓ Completed: max_flow=2, min_cut=2, runtime=0.000573s
+2025-12-01 14:18:09,359 - WARNING - Using default source=0, sink=149 for worst_e_8.txt
+2025-12-01 14:18:09,359 - INFO - 
+Processing: worst_e_8.txt (family: , source: 0, sink: 149)
+2025-12-01 14:18:09,359 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_e/worst_e_8.txt
+2025-12-01 14:18:09,360 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:18:09,360 - INFO - Maximum flow: 6
+2025-12-01 14:18:09,360 - INFO - Minimum cut value: 6
+2025-12-01 14:18:09,360 - INFO - Total runtime: 0.000541s (BFS: 0.000164s, DFS: 0.001401s)
+2025-12-01 14:18:09,363 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_e/worst_e_8_execution_data.json
+2025-12-01 14:18:09,363 - INFO - ✓ Completed: max_flow=6, min_cut=6, runtime=0.000541s
+2025-12-01 14:18:09,363 - WARNING - Using default source=0, sink=149 for worst_e_9.txt
+2025-12-01 14:18:09,363 - INFO - 
+Processing: worst_e_9.txt (family: , source: 0, sink: 149)
+2025-12-01 14:18:09,363 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_e/worst_e_9.txt
+2025-12-01 14:18:09,364 - INFO - Running Dinic's algorithm: source=0, sink=149
+2025-12-01 14:18:09,365 - INFO - Maximum flow: 7
+2025-12-01 14:18:09,365 - INFO - Minimum cut value: 7
+2025-12-01 14:18:09,365 - INFO - Total runtime: 0.000633s (BFS: 0.000200s, DFS: 0.001593s)
+2025-12-01 14:18:09,368 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_e/worst_e_9_execution_data.json
+2025-12-01 14:18:09,368 - INFO - ✓ Completed: max_flow=7, min_cut=7, runtime=0.000633s
+2025-12-01 14:18:09,368 - INFO - 
+============================================================
+2025-12-01 14:18:09,368 - INFO - Batch experiments complete!
+2025-12-01 14:18:09,368 - INFO - ============================================================
+2025-12-01 14:18:09,368 - INFO - Total graphs processed: 20
+2025-12-01 14:18:09,369 - INFO - 
+Results saved to: /Users/arun/AAD_ProjectM25/algorithms/dinics/results
+2025-12-01 14:18:09,369 - INFO - Execution data organized by folder: results/graphs/, results/graphs_v/, results/graphs_e/
+2025-12-01 14:18:09,369 - INFO - 
+To generate visualizations for a specific batch, run:
+2025-12-01 14:18:09,369 - INFO -   python3 code/visualizer_script.py <batch_folder>
+2025-12-01 14:18:09,369 - INFO - 
+To generate analysis table for a specific batch, run:
+2025-12-01 14:18:09,369 - INFO -   python3 code/analyze.py <batch_folder>
+2025-12-01 14:18:09,369 - INFO - 
+To generate scatter plots for a specific batch, run:
+2025-12-01 14:18:09,369 - INFO -   python3 code/plot.py <batch_folder>
+2025-12-01 14:18:12,550 - INFO - ============================================================
+2025-12-01 14:18:12,550 - INFO - Starting batch experiments
+2025-12-01 14:18:12,550 - INFO - Processing batch folder: worst_v
+2025-12-01 14:18:12,550 - INFO - ============================================================
+2025-12-01 14:18:12,550 - INFO - 
+============================================================
+2025-12-01 14:18:12,550 - INFO - Processing folder: worst_v/ (20 graph(s))
+2025-12-01 14:18:12,550 - INFO - ============================================================
+2025-12-01 14:18:12,551 - WARNING - Using default source=0, sink=79 for worst_v_1.txt
+2025-12-01 14:18:12,551 - INFO - 
+Processing: worst_v_1.txt (family: , source: 0, sink: 79)
+2025-12-01 14:18:12,551 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_v/worst_v_1.txt
+2025-12-01 14:18:12,551 - INFO - Running Dinic's algorithm: source=0, sink=79
+2025-12-01 14:18:12,552 - INFO - Maximum flow: 4
+2025-12-01 14:18:12,552 - INFO - Minimum cut value: 4
+2025-12-01 14:18:12,552 - INFO - Total runtime: 0.000468s (BFS: 0.000138s, DFS: 0.001349s)
+2025-12-01 14:18:12,553 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_v/worst_v_1_execution_data.json
+2025-12-01 14:18:12,554 - INFO - ✓ Completed: max_flow=4, min_cut=4, runtime=0.000468s
+2025-12-01 14:18:12,554 - WARNING - Using default source=0, sink=259 for worst_v_10.txt
+2025-12-01 14:18:12,554 - INFO - 
+Processing: worst_v_10.txt (family: , source: 0, sink: 259)
+2025-12-01 14:18:12,554 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_v/worst_v_10.txt
+2025-12-01 14:18:12,554 - INFO - Running Dinic's algorithm: source=0, sink=259
+2025-12-01 14:18:12,554 - INFO - Maximum flow: 1
+2025-12-01 14:18:12,554 - INFO - Minimum cut value: 1
+2025-12-01 14:18:12,554 - INFO - Total runtime: 0.000116s (BFS: 0.000041s, DFS: 0.000936s)
+2025-12-01 14:18:12,555 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_v/worst_v_10_execution_data.json
+2025-12-01 14:18:12,556 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000116s
+2025-12-01 14:18:12,556 - WARNING - Using default source=0, sink=279 for worst_v_11.txt
+2025-12-01 14:18:12,556 - INFO - 
+Processing: worst_v_11.txt (family: , source: 0, sink: 279)
+2025-12-01 14:18:12,556 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_v/worst_v_11.txt
+2025-12-01 14:18:12,556 - INFO - Running Dinic's algorithm: source=0, sink=279
+2025-12-01 14:18:12,556 - INFO - Maximum flow: 1
+2025-12-01 14:18:12,557 - INFO - Minimum cut value: 1
+2025-12-01 14:18:12,557 - INFO - Total runtime: 0.000087s (BFS: 0.000035s, DFS: 0.000423s)
+2025-12-01 14:18:12,558 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_v/worst_v_11_execution_data.json
+2025-12-01 14:18:12,558 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000087s
+2025-12-01 14:18:12,558 - WARNING - Using default source=0, sink=299 for worst_v_12.txt
+2025-12-01 14:18:12,558 - INFO - 
+Processing: worst_v_12.txt (family: , source: 0, sink: 299)
+2025-12-01 14:18:12,558 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_v/worst_v_12.txt
+2025-12-01 14:18:12,558 - INFO - Running Dinic's algorithm: source=0, sink=299
+2025-12-01 14:18:12,559 - INFO - Maximum flow: 1
+2025-12-01 14:18:12,559 - INFO - Minimum cut value: 1
+2025-12-01 14:18:12,559 - INFO - Total runtime: 0.000081s (BFS: 0.000032s, DFS: 0.000726s)
+2025-12-01 14:18:12,560 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_v/worst_v_12_execution_data.json
+2025-12-01 14:18:12,560 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000081s
+2025-12-01 14:18:12,560 - WARNING - Using default source=0, sink=319 for worst_v_13.txt
+2025-12-01 14:18:12,560 - INFO - 
+Processing: worst_v_13.txt (family: , source: 0, sink: 319)
+2025-12-01 14:18:12,560 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_v/worst_v_13.txt
+2025-12-01 14:18:12,561 - INFO - Running Dinic's algorithm: source=0, sink=319
+2025-12-01 14:18:12,561 - INFO - Maximum flow: 1
+2025-12-01 14:18:12,561 - INFO - Minimum cut value: 1
+2025-12-01 14:18:12,561 - INFO - Total runtime: 0.000153s (BFS: 0.000060s, DFS: 0.003353s)
+2025-12-01 14:18:12,562 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_v/worst_v_13_execution_data.json
+2025-12-01 14:18:12,563 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000153s
+2025-12-01 14:18:12,563 - WARNING - Using default source=0, sink=339 for worst_v_14.txt
+2025-12-01 14:18:12,563 - INFO - 
+Processing: worst_v_14.txt (family: , source: 0, sink: 339)
+2025-12-01 14:18:12,563 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_v/worst_v_14.txt
+2025-12-01 14:18:12,563 - INFO - Running Dinic's algorithm: source=0, sink=339
+2025-12-01 14:18:12,563 - INFO - Maximum flow: 1
+2025-12-01 14:18:12,563 - INFO - Minimum cut value: 1
+2025-12-01 14:18:12,563 - INFO - Total runtime: 0.000107s (BFS: 0.000034s, DFS: 0.002280s)
+2025-12-01 14:18:12,564 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_v/worst_v_14_execution_data.json
+2025-12-01 14:18:12,565 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000107s
+2025-12-01 14:18:12,565 - WARNING - Using default source=0, sink=359 for worst_v_15.txt
+2025-12-01 14:18:12,565 - INFO - 
+Processing: worst_v_15.txt (family: , source: 0, sink: 359)
+2025-12-01 14:18:12,565 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_v/worst_v_15.txt
+2025-12-01 14:18:12,565 - INFO - Running Dinic's algorithm: source=0, sink=359
+2025-12-01 14:18:12,565 - INFO - Maximum flow: 1
+2025-12-01 14:18:12,565 - INFO - Minimum cut value: 1
+2025-12-01 14:18:12,566 - INFO - Total runtime: 0.000095s (BFS: 0.000036s, DFS: 0.000893s)
+2025-12-01 14:18:12,567 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_v/worst_v_15_execution_data.json
+2025-12-01 14:18:12,567 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000095s
+2025-12-01 14:18:12,567 - WARNING - Using default source=0, sink=379 for worst_v_16.txt
+2025-12-01 14:18:12,567 - INFO - 
+Processing: worst_v_16.txt (family: , source: 0, sink: 379)
+2025-12-01 14:18:12,567 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_v/worst_v_16.txt
+2025-12-01 14:18:12,568 - INFO - Running Dinic's algorithm: source=0, sink=379
+2025-12-01 14:18:12,568 - INFO - Maximum flow: 1
+2025-12-01 14:18:12,568 - INFO - Minimum cut value: 1
+2025-12-01 14:18:12,568 - INFO - Total runtime: 0.000109s (BFS: 0.000035s, DFS: 0.001529s)
+2025-12-01 14:18:12,569 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_v/worst_v_16_execution_data.json
+2025-12-01 14:18:12,570 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000109s
+2025-12-01 14:18:12,570 - WARNING - Using default source=0, sink=399 for worst_v_17.txt
+2025-12-01 14:18:12,570 - INFO - 
+Processing: worst_v_17.txt (family: , source: 0, sink: 399)
+2025-12-01 14:18:12,570 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_v/worst_v_17.txt
+2025-12-01 14:18:12,570 - INFO - Running Dinic's algorithm: source=0, sink=399
+2025-12-01 14:18:12,570 - INFO - Maximum flow: 1
+2025-12-01 14:18:12,570 - INFO - Minimum cut value: 1
+2025-12-01 14:18:12,570 - INFO - Total runtime: 0.000130s (BFS: 0.000037s, DFS: 0.002006s)
+2025-12-01 14:18:12,571 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_v/worst_v_17_execution_data.json
+2025-12-01 14:18:12,572 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000130s
+2025-12-01 14:18:12,572 - WARNING - Using default source=0, sink=419 for worst_v_18.txt
+2025-12-01 14:18:12,572 - INFO - 
+Processing: worst_v_18.txt (family: , source: 0, sink: 419)
+2025-12-01 14:18:12,572 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_v/worst_v_18.txt
+2025-12-01 14:18:12,572 - INFO - Running Dinic's algorithm: source=0, sink=419
+2025-12-01 14:18:12,572 - INFO - Maximum flow: 1
+2025-12-01 14:18:12,572 - INFO - Minimum cut value: 1
+2025-12-01 14:18:12,572 - INFO - Total runtime: 0.000122s (BFS: 0.000035s, DFS: 0.004856s)
+2025-12-01 14:18:12,573 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_v/worst_v_18_execution_data.json
+2025-12-01 14:18:12,574 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000122s
+2025-12-01 14:18:12,574 - WARNING - Using default source=0, sink=439 for worst_v_19.txt
+2025-12-01 14:18:12,574 - INFO - 
+Processing: worst_v_19.txt (family: , source: 0, sink: 439)
+2025-12-01 14:18:12,574 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_v/worst_v_19.txt
+2025-12-01 14:18:12,574 - INFO - Running Dinic's algorithm: source=0, sink=439
+2025-12-01 14:18:12,574 - INFO - Maximum flow: 1
+2025-12-01 14:18:12,574 - INFO - Minimum cut value: 1
+2025-12-01 14:18:12,574 - INFO - Total runtime: 0.000143s (BFS: 0.000038s, DFS: 0.005638s)
+2025-12-01 14:18:12,576 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_v/worst_v_19_execution_data.json
+2025-12-01 14:18:12,576 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000143s
+2025-12-01 14:18:12,576 - WARNING - Using default source=0, sink=99 for worst_v_2.txt
+2025-12-01 14:18:12,576 - INFO - 
+Processing: worst_v_2.txt (family: , source: 0, sink: 99)
+2025-12-01 14:18:12,576 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_v/worst_v_2.txt
+2025-12-01 14:18:12,577 - INFO - Running Dinic's algorithm: source=0, sink=99
+2025-12-01 14:18:12,577 - INFO - Maximum flow: 3
+2025-12-01 14:18:12,577 - INFO - Minimum cut value: 3
+2025-12-01 14:18:12,577 - INFO - Total runtime: 0.000218s (BFS: 0.000093s, DFS: 0.000601s)
+2025-12-01 14:18:12,578 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_v/worst_v_2_execution_data.json
+2025-12-01 14:18:12,578 - INFO - ✓ Completed: max_flow=3, min_cut=3, runtime=0.000218s
+2025-12-01 14:18:12,578 - WARNING - Using default source=0, sink=459 for worst_v_20.txt
+2025-12-01 14:18:12,578 - INFO - 
+Processing: worst_v_20.txt (family: , source: 0, sink: 459)
+2025-12-01 14:18:12,578 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_v/worst_v_20.txt
+2025-12-01 14:18:12,579 - INFO - Running Dinic's algorithm: source=0, sink=459
+2025-12-01 14:18:12,579 - INFO - Maximum flow: 1
+2025-12-01 14:18:12,579 - INFO - Minimum cut value: 1
+2025-12-01 14:18:12,579 - INFO - Total runtime: 0.000138s (BFS: 0.000034s, DFS: 0.004940s)
+2025-12-01 14:18:12,580 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_v/worst_v_20_execution_data.json
+2025-12-01 14:18:12,580 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000138s
+2025-12-01 14:18:12,580 - WARNING - Using default source=0, sink=119 for worst_v_3.txt
+2025-12-01 14:18:12,580 - INFO - 
+Processing: worst_v_3.txt (family: , source: 0, sink: 119)
+2025-12-01 14:18:12,580 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_v/worst_v_3.txt
+2025-12-01 14:18:12,581 - INFO - Running Dinic's algorithm: source=0, sink=119
+2025-12-01 14:18:12,581 - INFO - Maximum flow: 1
+2025-12-01 14:18:12,581 - INFO - Minimum cut value: 1
+2025-12-01 14:18:12,581 - INFO - Total runtime: 0.000141s (BFS: 0.000065s, DFS: 0.000322s)
+2025-12-01 14:18:12,582 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_v/worst_v_3_execution_data.json
+2025-12-01 14:18:12,582 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000141s
+2025-12-01 14:18:12,582 - WARNING - Using default source=0, sink=139 for worst_v_4.txt
+2025-12-01 14:18:12,582 - INFO - 
+Processing: worst_v_4.txt (family: , source: 0, sink: 139)
+2025-12-01 14:18:12,582 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_v/worst_v_4.txt
+2025-12-01 14:18:12,583 - INFO - Running Dinic's algorithm: source=0, sink=139
+2025-12-01 14:18:12,583 - INFO - Maximum flow: 2
+2025-12-01 14:18:12,583 - INFO - Minimum cut value: 2
+2025-12-01 14:18:12,583 - INFO - Total runtime: 0.000169s (BFS: 0.000064s, DFS: 0.000569s)
+2025-12-01 14:18:12,584 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_v/worst_v_4_execution_data.json
+2025-12-01 14:18:12,584 - INFO - ✓ Completed: max_flow=2, min_cut=2, runtime=0.000169s
+2025-12-01 14:18:12,584 - WARNING - Using default source=0, sink=159 for worst_v_5.txt
+2025-12-01 14:18:12,584 - INFO - 
+Processing: worst_v_5.txt (family: , source: 0, sink: 159)
+2025-12-01 14:18:12,584 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_v/worst_v_5.txt
+2025-12-01 14:18:12,585 - INFO - Running Dinic's algorithm: source=0, sink=159
+2025-12-01 14:18:12,585 - INFO - Maximum flow: 1
+2025-12-01 14:18:12,585 - INFO - Minimum cut value: 1
+2025-12-01 14:18:12,585 - INFO - Total runtime: 0.000135s (BFS: 0.000065s, DFS: 0.000392s)
+2025-12-01 14:18:12,586 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_v/worst_v_5_execution_data.json
+2025-12-01 14:18:12,587 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000135s
+2025-12-01 14:18:12,587 - WARNING - Using default source=0, sink=179 for worst_v_6.txt
+2025-12-01 14:18:12,587 - INFO - 
+Processing: worst_v_6.txt (family: , source: 0, sink: 179)
+2025-12-01 14:18:12,587 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_v/worst_v_6.txt
+2025-12-01 14:18:12,587 - INFO - Running Dinic's algorithm: source=0, sink=179
+2025-12-01 14:18:12,587 - INFO - Maximum flow: 2
+2025-12-01 14:18:12,587 - INFO - Minimum cut value: 2
+2025-12-01 14:18:12,587 - INFO - Total runtime: 0.000168s (BFS: 0.000065s, DFS: 0.000894s)
+2025-12-01 14:18:12,588 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_v/worst_v_6_execution_data.json
+2025-12-01 14:18:12,588 - INFO - ✓ Completed: max_flow=2, min_cut=2, runtime=0.000168s
+2025-12-01 14:18:12,589 - WARNING - Using default source=0, sink=199 for worst_v_7.txt
+2025-12-01 14:18:12,589 - INFO - 
+Processing: worst_v_7.txt (family: , source: 0, sink: 199)
+2025-12-01 14:18:12,589 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_v/worst_v_7.txt
+2025-12-01 14:18:12,589 - INFO - Running Dinic's algorithm: source=0, sink=199
+2025-12-01 14:18:12,589 - INFO - Maximum flow: 2
+2025-12-01 14:18:12,589 - INFO - Minimum cut value: 2
+2025-12-01 14:18:12,589 - INFO - Total runtime: 0.000130s (BFS: 0.000054s, DFS: 0.000428s)
+2025-12-01 14:18:12,590 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_v/worst_v_7_execution_data.json
+2025-12-01 14:18:12,591 - INFO - ✓ Completed: max_flow=2, min_cut=2, runtime=0.000130s
+2025-12-01 14:18:12,591 - WARNING - Using default source=0, sink=219 for worst_v_8.txt
+2025-12-01 14:18:12,591 - INFO - 
+Processing: worst_v_8.txt (family: , source: 0, sink: 219)
+2025-12-01 14:18:12,591 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_v/worst_v_8.txt
+2025-12-01 14:18:12,591 - INFO - Running Dinic's algorithm: source=0, sink=219
+2025-12-01 14:18:12,591 - INFO - Maximum flow: 1
+2025-12-01 14:18:12,591 - INFO - Minimum cut value: 1
+2025-12-01 14:18:12,591 - INFO - Total runtime: 0.000112s (BFS: 0.000035s, DFS: 0.000742s)
+2025-12-01 14:18:12,592 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_v/worst_v_8_execution_data.json
+2025-12-01 14:18:12,593 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000112s
+2025-12-01 14:18:12,593 - WARNING - Using default source=0, sink=239 for worst_v_9.txt
+2025-12-01 14:18:12,593 - INFO - 
+Processing: worst_v_9.txt (family: , source: 0, sink: 239)
+2025-12-01 14:18:12,593 - INFO - Loading graph from: /Users/arun/AAD_ProjectM25/algorithms/dinics/worst_v/worst_v_9.txt
+2025-12-01 14:18:12,593 - INFO - Running Dinic's algorithm: source=0, sink=239
+2025-12-01 14:18:12,594 - INFO - Maximum flow: 1
+2025-12-01 14:18:12,594 - INFO - Minimum cut value: 1
+2025-12-01 14:18:12,594 - INFO - Total runtime: 0.000132s (BFS: 0.000063s, DFS: 0.000556s)
+2025-12-01 14:18:12,595 - INFO - Saved execution data: /Users/arun/AAD_ProjectM25/algorithms/dinics/results/worst_v/worst_v_9_execution_data.json
+2025-12-01 14:18:12,595 - INFO - ✓ Completed: max_flow=1, min_cut=1, runtime=0.000132s
+2025-12-01 14:18:12,595 - INFO - 
+============================================================
+2025-12-01 14:18:12,595 - INFO - Batch experiments complete!
+2025-12-01 14:18:12,595 - INFO - ============================================================
+2025-12-01 14:18:12,595 - INFO - Total graphs processed: 20
+2025-12-01 14:18:12,595 - INFO - 
+Results saved to: /Users/arun/AAD_ProjectM25/algorithms/dinics/results
+2025-12-01 14:18:12,595 - INFO - Execution data organized by folder: results/graphs/, results/graphs_v/, results/graphs_e/
+2025-12-01 14:18:12,595 - INFO - 
+To generate visualizations for a specific batch, run:
+2025-12-01 14:18:12,595 - INFO -   python3 code/visualizer_script.py <batch_folder>
+2025-12-01 14:18:12,595 - INFO - 
+To generate analysis table for a specific batch, run:
+2025-12-01 14:18:12,595 - INFO -   python3 code/analyze.py <batch_folder>
+2025-12-01 14:18:12,595 - INFO - 
+To generate scatter plots for a specific batch, run:
+2025-12-01 14:18:12,595 - INFO -   python3 code/plot.py <batch_folder>
