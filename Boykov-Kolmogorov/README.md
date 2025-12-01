@@ -146,7 +146,7 @@ for grid-based image graphs.
   T_{\text{worst}} = O(m\,n^{2}\,|C|).
   ```
 
-- **For an $`H \times W`$ image (4-neighbour grid):**  
+- **For an `H \times W` image (4-neighbour grid):**  
   ```math
   T_{\text{worst}} = O(H^{3}W^{3}|C|).
   ```
