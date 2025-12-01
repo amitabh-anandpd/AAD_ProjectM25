@@ -216,3 +216,62 @@ The near-linear behavior observed in the benchmarks can be attributed to:
 - Regular and sparse graph structure.
 
 This empirical efficiency explains why the Boykov–Kolmogorov algorithm remains a standard choice for energy minimization and segmentation tasks in computer vision.
+
+## 6. Why Max-Flow Equals Min-Cut in the Boykov–Kolmogorov Algorithm
+
+The Boykov–Kolmogorov (BK) algorithm is an augmenting-path-based **maximum flow** algorithm.  
+Therefore, the classical **Max-Flow Min-Cut Theorem** applies:
+
+```math
+\text{Maximum flow value} = \text{Minimum s–t cut capacity}
+```
+
+The BK algorithm guarantees this equality through its structure and termination condition. This section explains conceptually and operationally why the result holds.
+
+### 6.1 Flow Validity
+
+At all times during execution, BK maintains a valid flow:
+
+* Flow pushed only along edges with positive residual capacity
+
+* Capacity constraints are never violated
+
+* Flow conservation holds at all intermediate nodes
+
+Thus, every augmentation produces another feasible flow.
+
+### 6.2 Termination Condition and Residual Graph
+
+The algorithm maintains two search trees:
+
+* S-tree rooted at the source
+
+* T-tree rooted at the sink
+
+The algorithm terminates when neither tree can grow further, i.e., when:
+
+$`There exists no path from source to sink in the residual graph`$
+
+At termination, define:
+
+* `S`: all nodes reachable from the source in the final residual graph
+
+* `T = V \ S`
+
+This `(S, T)` partition defines an s–t cut.
+
+### 6.3 Why the Cut is Minimum
+
+At termination:
+
+1. All edges from S to T are saturated
+  If an edge from S to T had remaining capacity, the T endpoint would be reachable from S, contradicting the definition of S.
+
+2. All edges from T to S carry zero flow
+Otherwise, there would exist a reverse residual edge allowing reachability.
+
+3. Flow value equals cut capacity
+
+```math
+|f| = \sum_{u \in S,\, v \in T} c(u, v) = c(S, T)
+```
