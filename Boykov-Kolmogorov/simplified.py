@@ -120,35 +120,34 @@ def build_grid_graph(H, W):
 
 # ---------------- Timing Experiment ----------------
 
-sizes = [32, 64, 96, 128, 160, 192, 224, 256]
-times = []
-vertices = []
-edges = []
+if __name__ == "__main__":
+    sizes = [32, 64, 96, 128, 160, 192, 224, 256]
+    times = []
+    vertices = []
+    edges = []
 
-for S in sizes:
-    H = W = S
-    g = build_grid_graph(H, W)
+    for S in sizes:
+        H = W = S
+        g = build_grid_graph(H, W)
 
-    V = 2 + H * W
-    E = sum(len(g.adj[u]) for u in range(g.n))
+        V = 2 + H * W
+        E = sum(len(g.adj[u]) for u in range(g.n))
 
-    vertices.append(V)
-    edges.append(E)
+        vertices.append(V)
+        edges.append(E)
 
-    start = time.time()
-    g.max_flow(0, 1)
-    end = time.time()
-    times.append(end - start)
+        start = time.time()
+        g.max_flow(0, 1)
+        end = time.time()
+        times.append(end - start)
 
-# ---------------- Plot Results ----------------
+    plt.figure(figsize=(10, 6))
+    plt.bar([str(s) for s in sizes], times)
+    plt.xlabel("Image Size (N x N)")
+    plt.ylabel("Time (seconds)")
+    plt.title("BK Runtime vs Image Size")
+    plt.show()
 
-plt.figure(figsize=(10, 6))
-plt.bar([str(s) for s in sizes], times)
-plt.xlabel("Image Size (N x N)")
-plt.ylabel("Time (seconds)")
-plt.title("BK Runtime vs Image Size")
-plt.show()
-
-print("Vertices:", vertices)
-print("Edges:", edges)
-print("Times:", times)
+    print("Vertices:", vertices)
+    print("Edges:", edges)
+    print("Times:", times)
