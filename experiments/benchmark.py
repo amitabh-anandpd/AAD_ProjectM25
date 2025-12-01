@@ -6,11 +6,19 @@ import time
 
 # Add parent directory to path so we can import from algorithms/utils
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+import importlib.util
 
+def import_from_path(module_name, file_path):
+    spec = importlib.util.spec_from_file_location(module_name, file_path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+FordFulkerson = import_from_path('fordfulkerson', './algorithms/fordfulkerson/code/ff.py')  # Update path if needed
+Dinics = import_from_path('dinics', './algorithms/dinics/code/dinics.py')
+PushRelabel = import_from_path('push_relabel', './algorithms/push_relabel/code/push_relabel.py')
+BK = import_from_path('bk', './Boykov-Kolmogorov/working4.py')
 from utils.graph_generator import GraphGenerator
-from algorithms.fordfulkerson import FordFulkerson
-from algorithms.dinics import Dinics
-from algorithms.push_relabel import PushRelabel
 
 def run_large_scale_benchmark():
     generator = GraphGenerator()
@@ -45,24 +53,36 @@ def run_large_scale_benchmark():
                 sink = len(graph) - 1 # <-- FIXED: Do not use 'n - 1'
                 # --- FIX END ---
 
+                def adjdict_to_edgelist(adj):
+                    edges = []
+                    for u, nbrs in adj.items():
+                        for v, c in nbrs.items():
+                            edges.append((u, v, c))
+                    return edges
+
+                num_vertices = len(graph)
+                edge_list = adjdict_to_edgelist(graph)
+
                 # 2. Run Algorithms
                 # Deepcopy is ESSENTIAL because algorithms modify residual capacities in place.
                 
                 # --- Ford-Fulkerson ---
                 graph_ff = copy.deepcopy(graph)
                 start = time.perf_counter()
-                ff = FordFulkerson(graph_ff, source, sink)
-                flow_ff = ff.run()
+                ff = FordFulkerson.FordFulkerson(num_vertices, edge_list, source, sink)
+                flow_ff, _ = ff.run()
                 time_ff = time.perf_counter() - start
 
                 # --- Dinic's ---
                 graph_dn = copy.deepcopy(graph)
-                dn = Dinics(graph_dn, source, sink)
-                flow_dn, time_dn = dn.run()
+                dn = Dinics.Dinics(num_vertices, edge_list, source, sink)
+                flow_dn, _ = dn.run()
+                time_dn = time.perf_counter() - start
 
                 # --- Push-Relabel ---
+                # (Push-Relabel expects an adjacency dict, so your current usage is correct)
                 graph_pr = copy.deepcopy(graph)
-                pr = PushRelabel(graph_pr, source, sink)
+                pr = PushRelabel.PushRelabel(graph_pr, source, sink)
                 flow_pr, time_pr = pr.run()
 
                 # 3. Verification
