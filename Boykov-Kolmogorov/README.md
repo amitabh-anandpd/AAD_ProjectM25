@@ -160,3 +160,59 @@ for grid-based image graphs.
   ```math
   O(HW).
   ```
+
+  ## 5. Benchmarking and Empirical Evaluation
+
+Although the Boykov–Kolmogorov algorithm has a pessimistic theoretical worst-case bound, its primary significance lies in its empirical performance on vision-related graphs. To evaluate this behavior, we benchmark the algorithm on image-derived grid graphs of increasing size and measure its runtime as a function of graph size.
+
+### 5.1 Benchmark Setup
+
+To simulate typical computer vision graphs, we construct 4-connected grid graphs corresponding to images of size \(H \times W\). Each pixel is represented as a node, with edges connecting neighboring pixels, as well as unary edges connecting pixels to the source and sink.
+
+For each image size, we record:
+- Number of vertices:
+  ```math
+  V = H \times W + 2
+  ```
+- Number of edges:
+  ```math
+  E \approx 4 \times H \times W
+  ```
+- Time required to compute the maximum flow using the Boykov–Kolmogorov algorithm
+
+All experiments are conducted using the same implementation and environment to ensure fair comparison.
+
+### 5.2 Metrics and Plots
+
+The following metrics are used to analyze performance:
+
+- **Runtime vs Image Size (H × W)**  
+  Demonstrates how computation time scales with image resolution.
+
+- **Runtime vs Number of Vertices (V)**  
+  Relates performance directly to the theoretical problem size.
+
+- **Runtime vs Number of Edges (E)**  
+  Highlights the dependence of BK on graph connectivity.
+
+Optionally, a log–log plot of runtime versus number of pixels may be used to estimate the empirical complexity exponent.
+
+### 5.3 Empirical Observations
+
+The benchmarking results show that:
+
+- Runtime increases approximately linearly with the number of pixels.
+- Doubling the image resolution results in roughly a proportional increase in computation time.
+- No superlinear behavior predicted by the worst-case bound is observed.
+
+These results confirm the claims made by Boykov and Kolmogorov that, despite unfavorable theoretical bounds, the algorithm performs efficiently on sparse, grid-structured graphs common in computer vision.
+
+### 5.4 Discussion
+
+The near-linear behavior observed in the benchmarks can be attributed to:
+- Short augmenting paths in grid graphs,
+- Limited orphan propagation,
+- Reuse of search trees across augmentations,
+- Regular and sparse graph structure.
+
+This empirical efficiency explains why the Boykov–Kolmogorov algorithm remains a standard choice for energy minimization and segmentation tasks in computer vision.
