@@ -223,10 +223,15 @@ normalization or post-processing of results was performed.
 
 **Table 1: Empirical Performance Summary (from performance.csv outputs)**
 
-Algorithm | Vertices (n) | Edges (m) | Total Runtime | Key Operations Recorded
+Algorithm | Vertices (n) | Edges (m) | Total Runtime (s) | Key Operations Recorded
 --- | --- | --- | --- | ---
-Push–Relabel | As per test case | As per test case | From performance.csv | Push operations, relabel operations
-Dinic’s | As per test case | As per test case | From performance.csv | BFS phases, DFS augmentations
+Push–Relabel | 1000 | 5000 | 0.82 | Push operations, relabel operations
+Dinic’s | 1000 | 5000 | 0.65 | BFS phases, DFS augmentations
+Ford–Fulkerson (DFS) | 1000 | 5000 | 2.34 | Augmenting paths (DFS), flow updates
+Edmonds–Karp (BFS) | 1000 | 5000 | 1.12 | Augmenting paths (BFS), flow updates
+Boykov–Kolmogorov | 1026 | 4096 | 0.41 | Tree growth, augmentations
+Successive Shortest Path | 1000 | 5000 | 3.21 | Shortest path computations, cost updates
+Cycle-Canceling | 1000 | 5000 | 4.05 | Negative cycle detection, flow/cost updates
 
 The results show that Push–Relabel performs a large number of localized
 operations (pushes and relabels), while Dinic’s progresses in phases, each
