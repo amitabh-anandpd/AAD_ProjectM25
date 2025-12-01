@@ -207,11 +207,11 @@ algorithm execution.
 ### 5.1 Test Cases and Experimental Setup
 
 For empirical evaluation of the Boykov–Kolmogorov algorithm, a sequence of square grid graphs 
-derived from image-like structures was used. For a grid of size \( S \times S \), each pixel 
+derived from image-like structures was used. For a grid of size \( S × S \), each pixel 
 corresponds to a vertex, with edges connecting spatial neighbors, as well as source and sink 
 connections.
 
-The benchmark includes grid sizes ranging from \( 1 \times 1 \) up to \( 128 \times 128 \), 
+The benchmark includes grid sizes ranging from \( 1 × 1 \) up to \( 128 × 128 \), 
 resulting in graphs with up to 16,386 vertices and 130,560 edges. 
 For each grid size, the maximum flow and wall-clock runtime were recorded.
 
