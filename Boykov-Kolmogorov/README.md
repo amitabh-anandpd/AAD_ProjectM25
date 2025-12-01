@@ -146,7 +146,7 @@ for grid-based image graphs.
   T_{\text{worst}} = O(m\,n^{2}\,|C|).
   ```
 
-- **For an `H \times W` image (4-neighbour grid):**  
+- **For an `H × W` image (4-neighbour grid):**  
   ```math
   T_{\text{worst}} = O(H^{3}W^{3}|C|).
   ```
@@ -161,13 +161,13 @@ for grid-based image graphs.
   O(HW).
   ```
 
-  ## 5. Benchmarking and Empirical Evaluation
+## 5. Benchmarking and Empirical Evaluation
 
 Although the Boykov–Kolmogorov algorithm has a pessimistic theoretical worst-case bound, its primary significance lies in its empirical performance on vision-related graphs. To evaluate this behavior, we benchmark the algorithm on image-derived grid graphs of increasing size and measure its runtime as a function of graph size.
 
 ### 5.1 Benchmark Setup
 
-To simulate typical computer vision graphs, we construct 4-connected grid graphs corresponding to images of size \(H \times W\). Each pixel is represented as a node, with edges connecting neighboring pixels, as well as unary edges connecting pixels to the source and sink.
+To simulate typical computer vision graphs, we construct 4-connected grid graphs corresponding to images of size (H × W). Each pixel is represented as a node, with edges connecting neighboring pixels, as well as unary edges connecting pixels to the source and sink.
 
 For each image size, we record:
 - Number of vertices:
