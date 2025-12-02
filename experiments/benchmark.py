@@ -31,8 +31,8 @@ def run_large_scale_benchmark():
     #families = ['sparse', 'dense', 'layered']
     families = ['sparse','layered','dense']
 
-    print(f"{'Nodes':<6} | {'Family':<8} | {'Trial':<5} | {'FF (s)':<10} | {'Dinic (s)':<10} | {'PR (s)':<10} | {'Winner':<10}")
-    print("-" * 85)
+    print(f"{'Nodes':<6} | {'Edges':<6} | {'Family':<8} | {'Trial':<5} | {'FF (s)':<10} | {'Dinic (s)':<10} | {'PR (s)':<10} | {'Winner':<10}")
+    print("-" * 95)
 
     for n in graph_sizes:
         for family in families:
@@ -62,6 +62,7 @@ def run_large_scale_benchmark():
 
                 num_vertices = len(graph)
                 edge_list = adjdict_to_edgelist(graph)
+                num_edges = len(edge_list)
 
                 # 2. Run Algorithms
                 # Deepcopy is ESSENTIAL because algorithms modify residual capacities in place.
@@ -98,7 +99,8 @@ def run_large_scale_benchmark():
 
                 # 5. Log Results
                 results.append({
-                    'nodes': len(graph), # Log actual size
+                    'nodes': num_vertices, # Log actual size
+                    'edges': num_edges,
                     'family': family,
                     'trial': t,
                     'ff_time': time_ff,
@@ -109,7 +111,7 @@ def run_large_scale_benchmark():
                     'correct': is_correct
                 })
                 
-                print(f"{len(graph):<6} | {family:<8} | {t:<5} | {time_ff:.6f}   | {time_dn:.6f}   | {time_pr:.6f}   | {winner:<10}")
+                print(f"{num_vertices:<6} | {num_edges:<6} | {family:<8} | {t:<5} | {time_ff:.6f}   | {time_dn:.6f}   | {time_pr:.6f}   | {winner:<10}")
 
     # 6. Save to CSV
     os.makedirs('results', exist_ok=True)
