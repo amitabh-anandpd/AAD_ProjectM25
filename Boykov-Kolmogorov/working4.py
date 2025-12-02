@@ -5,9 +5,9 @@ from collections import deque
 import matplotlib.pyplot as plt
 
 MAX_SIDE = 256      # max image side to work on
-K_CLUSTERS = 3      # k-means clusters for auto-seeding
-LAMBDA = 5.0       # pairwise strength
-SIGMA = 5.0        # color similarity scale (pairwise)
+K_CLUSTERS = 2      # k-means clusters for auto-seeding
+LAMBDA = 15.0       # pairwise strength
+SIGMA = 1.0        # color similarity scale (pairwise)
 STRONG_SEED = 1e6   # capacity to enforce hard seeds
 
 def fast_kmeans(pixels, k=3, iters=20):
@@ -235,13 +235,26 @@ def segment_image_with_bk(img_arr, auto_seed=True, fg_clusters=None, bg_cluster=
             dbg = np.linalg.norm(col - bg_color)
             aff_fg = 1.0 / (dfg + eps)
             aff_bg = 1.0 / (dbg + eps)
-            cap_fg = aff_fg * 100.0
-            cap_bg = aff_bg * 100.0
+            cap_fg = aff_fg * 10.0
+            cap_bg = aff_bg * 10.0
+            # cost_fg = aff_fg * 100.0
+            # cost_bg = aff_bg * 100.0
+            # cap_fg = dbg * 10.0
+            # cap_bg = dfg * 10.0
             if auto_seed:
                 if labels2d[i,j] in fg_clusters_choice:
                     cap_fg = STRONG_SEED; cap_bg = 0.0
                 if labels2d[i,j] == bg_cluster_choice:
                     cap_bg = STRONG_SEED; cap_fg = 0.0
+            # if auto_seed:
+            #     if labels2d[i, j] in fg_clusters_choice:
+            #         cost_fg = 0.0
+            #         cost_bg = STRONG_SEED
+            #     if labels2d[i, j] == bg_cluster_choice:
+            #         cost_fg = STRONG_SEED
+            #     cost_bg = 0.0
+            # bk.add_edge(SOURCE, node, cost_bg)
+            # bk.add_edge(node, SINK, cost_fg)
             bk.add_edge(SOURCE, node, cap_fg)
             bk.add_edge(node, SINK, cap_bg)
     two_sigma_sq = 2 * (sigma ** 2)
@@ -273,7 +286,7 @@ def segment_image_with_bk(img_arr, auto_seed=True, fg_clusters=None, bg_cluster=
     return mask
 
 def main():
-    input_path = "path/to/image.png"
+    input_path = "image.png"
     img = Image.open(input_path).convert("RGB")
     arr = np.array(img)
     mask = segment_image_with_bk(arr, auto_seed=True)
